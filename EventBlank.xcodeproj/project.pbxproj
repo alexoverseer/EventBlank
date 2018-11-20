@@ -11,6 +11,26 @@
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
 		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
 		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
+		BC366C4321A46474006111DF /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4221A46474006111DF /* AppAssembler.swift */; };
+		BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4421A46487006111DF /* DefaultAppAssembler.swift */; };
+		BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4621A464AD006111DF /* FactoryAssembly.swift */; };
+		BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */; };
+		BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
+		BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */; };
+		BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4E21A46516006111DF /* BaseCoordinator.swift */; };
+		BC366C5521A465A4006111DF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5221A465A4006111DF /* BaseView.swift */; };
+		BC366C5621A465A4006111DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5321A465A4006111DF /* Coordinator.swift */; };
+		BC366C5721A465A4006111DF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5421A465A4006111DF /* Presentable.swift */; };
+		BC366C5B21A4660A006111DF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5921A46609006111DF /* Router.swift */; };
+		BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5A21A46609006111DF /* RouterImplementation.swift */; };
+		BC366C6121A46756006111DF /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6021A46756006111DF /* CoordinatorFactory.swift */; };
+		BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6221A4678C006111DF /* BaseFactory.swift */; };
+		BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6721A467E9006111DF /* ScheduleModuleFactory.swift */; };
+		BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6921A467F5006111DF /* FeedModuleFactory.swift */; };
+		BC366C6C21A467FF006111DF /* SpeakersModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6B21A467FF006111DF /* SpeakersModuleFactory.swift */; };
+		BC366C6E21A46829006111DF /* DefaultScheduleModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6D21A46829006111DF /* DefaultScheduleModuleFactory.swift */; };
+		BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6F21A46831006111DF /* DefaultFeedModuleFactory.swift */; };
+		BC366C7221A46839006111DF /* DefaultSpeakersModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C7121A46839006111DF /* DefaultSpeakersModuleFactory.swift */; };
 		BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43944121A4609400FE2BE1 /* AppDelegate.swift */; };
 		BC43944421A4609400FE2BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43944321A4609400FE2BE1 /* ViewController.swift */; };
 		BC43944721A4609400FE2BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC43944521A4609400FE2BE1 /* Main.storyboard */; };
@@ -37,6 +57,26 @@
 		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC366C3C21A462BB006111DF /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BC366C3D21A462BB006111DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BC366C4221A46474006111DF /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
+		BC366C4421A46487006111DF /* DefaultAppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAppAssembler.swift; sourceTree = "<group>"; };
+		BC366C4621A464AD006111DF /* FactoryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryAssembly.swift; sourceTree = "<group>"; };
+		BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceAssembly.swift; sourceTree = "<group>"; };
+		BC366C4821A464AD006111DF /* ViewModelAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		BC366C4E21A46516006111DF /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		BC366C5221A465A4006111DF /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BC366C5321A465A4006111DF /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BC366C5421A465A4006111DF /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		BC366C5921A46609006111DF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BC366C5A21A46609006111DF /* RouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImplementation.swift; sourceTree = "<group>"; };
+		BC366C6021A46756006111DF /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		BC366C6221A4678C006111DF /* BaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFactory.swift; sourceTree = "<group>"; };
+		BC366C6721A467E9006111DF /* ScheduleModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6921A467F5006111DF /* FeedModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6B21A467FF006111DF /* SpeakersModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6D21A46829006111DF /* DefaultScheduleModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScheduleModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6F21A46831006111DF /* DefaultFeedModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFeedModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C7121A46839006111DF /* DefaultSpeakersModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakersModuleFactory.swift; sourceTree = "<group>"; };
 		BC43943E21A4609400FE2BE1 /* EventBlank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBlank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC43944121A4609400FE2BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC43944321A4609400FE2BE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +135,8 @@
 			children = (
 				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
 				BC366C3B21A4625C006111DF /* Common */,
+				BC366C4121A46462006111DF /* Assemblies */,
+				BC366C4C21A464FC006111DF /* Coordinator */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -106,6 +148,108 @@
 				BC366C3C21A462BB006111DF /* TabItem.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BC366C4121A46462006111DF /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C4221A46474006111DF /* AppAssembler.swift */,
+				BC366C4421A46487006111DF /* DefaultAppAssembler.swift */,
+				BC366C4621A464AD006111DF /* FactoryAssembly.swift */,
+				BC366C4821A464AD006111DF /* ViewModelAssembly.swift */,
+				BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		BC366C4C21A464FC006111DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C4E21A46516006111DF /* BaseCoordinator.swift */,
+				BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BC366C5121A46584006111DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C5321A465A4006111DF /* Coordinator.swift */,
+				BC366C5421A465A4006111DF /* Presentable.swift */,
+				BC366C5221A465A4006111DF /* BaseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC366C5821A46609006111DF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C5921A46609006111DF /* Router.swift */,
+				BC366C5A21A46609006111DF /* RouterImplementation.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC366C5D21A4669C006111DF /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C5E21A46710006111DF /* Coordinator */,
+				BC366C5F21A46717006111DF /* Modules */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		BC366C5E21A46710006111DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6021A46756006111DF /* CoordinatorFactory.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BC366C5F21A46717006111DF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6221A4678C006111DF /* BaseFactory.swift */,
+				BC366C6421A467B2006111DF /* Schedule */,
+				BC366C6521A467BA006111DF /* Feed */,
+				BC366C6621A467C1006111DF /* Speakers */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC366C6421A467B2006111DF /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6721A467E9006111DF /* ScheduleModuleFactory.swift */,
+				BC366C6D21A46829006111DF /* DefaultScheduleModuleFactory.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		BC366C6521A467BA006111DF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6921A467F5006111DF /* FeedModuleFactory.swift */,
+				BC366C6F21A46831006111DF /* DefaultFeedModuleFactory.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BC366C6621A467C1006111DF /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6B21A467FF006111DF /* SpeakersModuleFactory.swift */,
+				BC366C7121A46839006111DF /* DefaultSpeakersModuleFactory.swift */,
+			);
+			path = Speakers;
+			sourceTree = "<group>";
+		};
+		BC366C7321A468EE006111DF /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
 			sourceTree = "<group>";
 		};
 		BC43943521A4609400FE2BE1 = {
@@ -132,6 +276,10 @@
 			isa = PBXGroup;
 			children = (
 				BC366C3A21A46178006111DF /* Application */,
+				BC366C5121A46584006111DF /* Protocols */,
+				BC366C5821A46609006111DF /* Router */,
+				BC366C5D21A4669C006111DF /* Factories */,
+				BC366C7321A468EE006111DF /* Flows */,
 				BC43944321A4609400FE2BE1 /* ViewController.swift */,
 				BC43944521A4609400FE2BE1 /* Main.storyboard */,
 				BC43944821A4609500FE2BE1 /* Assets.xcassets */,
@@ -342,10 +490,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC366C6C21A467FF006111DF /* SpeakersModuleFactory.swift in Sources */,
 				BC43944421A4609400FE2BE1 /* ViewController.swift in Sources */,
+				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
+				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
+				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
+				BC366C7221A46839006111DF /* DefaultSpeakersModuleFactory.swift in Sources */,
+				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
+				BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */,
+				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
+				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
 				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
+				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
+				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,
+				BC366C4321A46474006111DF /* AppAssembler.swift in Sources */,
+				BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */,
+				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
+				BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */,
+				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
+				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
 				BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */,
+				BC366C6E21A46829006111DF /* DefaultScheduleModuleFactory.swift in Sources */,
+				BC366C6121A46756006111DF /* CoordinatorFactory.swift in Sources */,
+				BC366C5721A465A4006111DF /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
