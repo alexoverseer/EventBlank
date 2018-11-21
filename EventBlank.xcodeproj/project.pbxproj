@@ -35,6 +35,18 @@
 		BC43944921A4609500FE2BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC43944821A4609500FE2BE1 /* Assets.xcassets */; };
 		BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC43944A21A4609500FE2BE1 /* LaunchScreen.storyboard */; };
 		BC43945721A4609500FE2BE1 /* EventBlankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43945621A4609500FE2BE1 /* EventBlankTests.swift */; };
+		BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38821A5432E00988533 /* MainTabBarView.swift */; };
+		BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */; };
+		BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */; };
+		BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38E21A5469E00988533 /* MainTabBarController.swift */; };
+		BC70A39421A5482A00988533 /* ScheduleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39321A5482A00988533 /* ScheduleCoordinator.swift */; };
+		BC70A39721A548B700988533 /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39621A548B700988533 /* ScheduleListView.swift */; };
+		BC70A39921A548D300988533 /* ScheduleListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39821A548D300988533 /* ScheduleListViewModelOutput.swift */; };
+		BC70A39B21A548E200988533 /* ScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39A21A548E200988533 /* ScheduleListViewModel.swift */; };
+		BC70A39D21A548F500988533 /* DefaultScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39C21A548F500988533 /* DefaultScheduleListViewModel.swift */; };
+		BC70A3A021A5491000988533 /* ScheduleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39E21A5491000988533 /* ScheduleListViewController.swift */; };
+		BC70A3A121A5491000988533 /* ScheduleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A39F21A5491000988533 /* ScheduleListViewController.xib */; };
+		BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +95,18 @@
 		BC43945221A4609500FE2BE1 /* EventBlankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBlankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC43945621A4609500FE2BE1 /* EventBlankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBlankTests.swift; sourceTree = "<group>"; };
 		BC43945821A4609500FE2BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC70A38821A5432E00988533 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinatorOutput.swift; sourceTree = "<group>"; };
+		BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		BC70A38E21A5469E00988533 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BC70A39321A5482A00988533 /* ScheduleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCoordinator.swift; sourceTree = "<group>"; };
+		BC70A39621A548B700988533 /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
+		BC70A39821A548D300988533 /* ScheduleListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModelOutput.swift; sourceTree = "<group>"; };
+		BC70A39A21A548E200988533 /* ScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModel.swift; sourceTree = "<group>"; };
+		BC70A39C21A548F500988533 /* DefaultScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScheduleListViewModel.swift; sourceTree = "<group>"; };
+		BC70A39E21A5491000988533 /* ScheduleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewController.swift; sourceTree = "<group>"; };
+		BC70A39F21A5491000988533 /* ScheduleListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleListViewController.xib; sourceTree = "<group>"; };
+		BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 		EA1FA9B40F469556048AED71 /* Pods-EventBlank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlank.release.xcconfig"; path = "Target Support Files/Pods-EventBlank/Pods-EventBlank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				BC366C6021A46756006111DF /* CoordinatorFactory.swift */,
+				BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -252,6 +277,13 @@
 		BC366C7421A46931006111DF /* Main Flow */ = {
 			isa = PBXGroup;
 			children = (
+				BC70A38821A5432E00988533 /* MainTabBarView.swift */,
+				BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */,
+				BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */,
+				BC70A38E21A5469E00988533 /* MainTabBarController.swift */,
+				BC70A39221A547C300988533 /* Schedule */,
+				BC70A39121A547C100988533 /* Feed */,
+				BC70A39021A547B900988533 /* Speakers */,
 			);
 			path = "Main Flow";
 			sourceTree = "<group>";
@@ -298,6 +330,42 @@
 				BC43945821A4609500FE2BE1 /* Info.plist */,
 			);
 			path = EventBlankTests;
+			sourceTree = "<group>";
+		};
+		BC70A39021A547B900988533 /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Speakers;
+			sourceTree = "<group>";
+		};
+		BC70A39121A547C100988533 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BC70A39221A547C300988533 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A39321A5482A00988533 /* ScheduleCoordinator.swift */,
+				BC70A39521A5489500988533 /* ScheduleList */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		BC70A39521A5489500988533 /* ScheduleList */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A39621A548B700988533 /* ScheduleListView.swift */,
+				BC70A39821A548D300988533 /* ScheduleListViewModelOutput.swift */,
+				BC70A39A21A548E200988533 /* ScheduleListViewModel.swift */,
+				BC70A39C21A548F500988533 /* DefaultScheduleListViewModel.swift */,
+				BC70A39E21A5491000988533 /* ScheduleListViewController.swift */,
+				BC70A39F21A5491000988533 /* ScheduleListViewController.xib */,
+			);
+			path = ScheduleList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC70A3A121A5491000988533 /* ScheduleListViewController.xib in Resources */,
 				BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */,
 				BC43944921A4609500FE2BE1 /* Assets.xcassets in Resources */,
 			);
@@ -453,12 +522,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EventBlank/Pods-EventBlank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,21 +569,32 @@
 				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
 				BC366C7221A46839006111DF /* DefaultSpeakersModuleFactory.swift in Sources */,
 				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
+				BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */,
 				BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */,
+				BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */,
+				BC70A3A021A5491000988533 /* ScheduleListViewController.swift in Sources */,
 				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
 				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
+				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
 				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
+				BC70A39421A5482A00988533 /* ScheduleCoordinator.swift in Sources */,
+				BC70A39B21A548E200988533 /* ScheduleListViewModel.swift in Sources */,
 				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
 				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,
 				BC366C4321A46474006111DF /* AppAssembler.swift in Sources */,
 				BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */,
+				BC70A39D21A548F500988533 /* DefaultScheduleListViewModel.swift in Sources */,
 				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
 				BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */,
 				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
+				BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */,
 				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
+				BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */,
 				BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */,
 				BC366C6E21A46829006111DF /* DefaultScheduleModuleFactory.swift in Sources */,
 				BC366C6121A46756006111DF /* CoordinatorFactory.swift in Sources */,
+				BC70A39721A548B700988533 /* ScheduleListView.swift in Sources */,
+				BC70A39921A548D300988533 /* ScheduleListViewModelOutput.swift in Sources */,
 				BC366C5721A465A4006111DF /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,9 +2,7 @@ class BaseCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator] = []
     
-    func start() {
-        
-    }
+    func start() { }
     
     func addDependency(_ coordinator: Coordinator) {
         

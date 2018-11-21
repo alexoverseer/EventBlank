@@ -6,6 +6,7 @@ target 'EventBlank' do
 
   pod 'SwiftLint'
   pod 'Swinject'
+  pod 'ESTabBarController-swift'
 
   target 'EventBlankTests' do
     inherit! :search_paths

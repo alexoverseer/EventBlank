@@ -14,6 +14,13 @@ final class ApplicationCoordinator: BaseCoordinator {
     }
     
     override func start() {
-        
+        runMainFlow()
+    }
+    
+    private func runMainFlow() {
+        let (coordinator, module) = coordinatorFactory.makeTabBarCoordinator(router: router)
+        addDependency(coordinator)
+        router.setRootModule(module, hideBar: true)
+        coordinator.start()
     }
 }
