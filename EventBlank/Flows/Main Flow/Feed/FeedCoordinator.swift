@@ -18,6 +18,14 @@ final class FeedCoordinator: BaseCoordinator {
     
     private func showFeedList() {
         let feedOutput = factory.makeFeedListOutput()
+        feedOutput.onShowConferenceDetails = { [weak self] in
+            self?.showConferenceDetails()
+        }
         router.setRootModule(feedOutput)
+    }
+    
+    private func showConferenceDetails() {
+        let conferenceOutput = factory.makeConferenceOutput()
+        router.push(conferenceOutput)
     }
 }

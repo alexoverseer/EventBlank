@@ -16,5 +16,9 @@ class ViewModelAssembly: Assembly {
         container.register(FavouritesListViewModel.self) { _ in
             return DefaultFavouritesListViewModel()
         }
+        
+        container.register(ConferenceViewModel.self) { _ in
+            return DefaultConferenceViewModel()
+        }
     }
 }

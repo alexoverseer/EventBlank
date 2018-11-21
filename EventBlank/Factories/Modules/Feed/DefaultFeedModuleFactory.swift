@@ -10,4 +10,13 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         
         return controller
     }
+    
+    func makeConferenceOutput() -> ConferenceView {
+        let viewModel = resolver.resolve(ConferenceViewModel.self)!
+        let controller = ConferenceViewController()
+        controller.viewModel = viewModel
+        viewModel.output = controller
+        
+        return controller
+    }
 }

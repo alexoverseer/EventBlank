@@ -16,7 +16,7 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
             navigationController.enableLargeTitles()
             navigationController.setTitleAttributesColor()
             navigationController.navigationBar.barTintColor = Color.appMagenta
-            navigationController.navigationBar.isTranslucent = false
+            navigationController.navigationBar.tintColor = Color.appWhite
             
             navigationController.tabBarItem = tab
             controllers.append(navigationController)

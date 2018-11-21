@@ -32,6 +32,12 @@
 		BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */; };
 		BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */; };
 		BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */; };
+		BC01751E21A5C0780090DAE2 /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751D21A5C0780090DAE2 /* ConferenceView.swift */; };
+		BC01752021A5C08D0090DAE2 /* ConferenceViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751F21A5C08D0090DAE2 /* ConferenceViewModelOutput.swift */; };
+		BC01752221A5C09C0090DAE2 /* ConferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01752121A5C09C0090DAE2 /* ConferenceViewModel.swift */; };
+		BC01752421A5C0B10090DAE2 /* DefaultConferenceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01752321A5C0B10090DAE2 /* DefaultConferenceDetailsViewModel.swift */; };
+		BC01752B21A5C1BD0090DAE2 /* ConferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01752921A5C1BD0090DAE2 /* ConferenceViewController.swift */; };
+		BC01752C21A5C1BD0090DAE2 /* ConferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC01752A21A5C1BD0090DAE2 /* ConferenceViewController.xib */; };
 		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
 		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
 		BC366C4321A46474006111DF /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4221A46474006111DF /* AppAssembler.swift */; };
@@ -132,6 +138,12 @@
 		BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BC01751D21A5C0780090DAE2 /* ConferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
+		BC01751F21A5C08D0090DAE2 /* ConferenceViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewModelOutput.swift; sourceTree = "<group>"; };
+		BC01752121A5C09C0090DAE2 /* ConferenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewModel.swift; sourceTree = "<group>"; };
+		BC01752321A5C0B10090DAE2 /* DefaultConferenceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConferenceDetailsViewModel.swift; sourceTree = "<group>"; };
+		BC01752921A5C1BD0090DAE2 /* ConferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewController.swift; sourceTree = "<group>"; };
+		BC01752A21A5C1BD0090DAE2 /* ConferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConferenceViewController.xib; sourceTree = "<group>"; };
 		BC366C3C21A462BB006111DF /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BC366C3D21A462BB006111DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BC366C4221A46474006111DF /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
@@ -303,6 +315,19 @@
 				BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BC01751C21A5C0590090DAE2 /* Conference */ = {
+			isa = PBXGroup;
+			children = (
+				BC01751D21A5C0780090DAE2 /* ConferenceView.swift */,
+				BC01751F21A5C08D0090DAE2 /* ConferenceViewModelOutput.swift */,
+				BC01752121A5C09C0090DAE2 /* ConferenceViewModel.swift */,
+				BC01752321A5C0B10090DAE2 /* DefaultConferenceDetailsViewModel.swift */,
+				BC01752921A5C1BD0090DAE2 /* ConferenceViewController.swift */,
+				BC01752A21A5C1BD0090DAE2 /* ConferenceViewController.xib */,
+			);
+			path = Conference;
 			sourceTree = "<group>";
 		};
 		BC366C3A21A46178006111DF /* Application */ = {
@@ -482,6 +507,7 @@
 			children = (
 				BC70A3A421A5521C00988533 /* FeedCoordinator.swift */,
 				BC70A3A621A5526800988533 /* FeedList */,
+				BC01751C21A5C0590090DAE2 /* Conference */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -687,6 +713,7 @@
 				BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */,
 				BC70A3FF21A59C3300988533 /* FavouritesListViewController.xib in Resources */,
 				BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */,
+				BC01752C21A5C1BD0090DAE2 /* ConferenceViewController.xib in Resources */,
 				BC70A3E021A5943D00988533 /* AppInfoViewController.xib in Resources */,
 				62DE44A621A5A85F00C3AC14 /* resources.json in Resources */,
 				62DE44A421A5A84700C3AC14 /* speakers.json in Resources */,
@@ -820,8 +847,10 @@
 				BC70A3D821A5940800988533 /* AppInfoViewModelOutput.swift in Sources */,
 				BC70A3FE21A59C3300988533 /* FavouritesListViewController.swift in Sources */,
 				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
+				BC01751E21A5C0780090DAE2 /* ConferenceView.swift in Sources */,
 				BC70A3EE21A599F800988533 /* FavouritesListViewModel.swift in Sources */,
 				BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */,
+				BC01752021A5C08D0090DAE2 /* ConferenceViewModelOutput.swift in Sources */,
 				BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */,
 				BC70A3F221A59A0D00988533 /* DefaultFavouritesListViewModel.swift in Sources */,
 				BC70A3EC21A599EC00988533 /* FavouritesListViewModelOutput.swift in Sources */,
@@ -841,8 +870,11 @@
 				62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */,
 				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
 				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,
+				BC01752221A5C09C0090DAE2 /* ConferenceViewModel.swift in Sources */,
 				BC70A3B121A552BB00988533 /* FeedListViewController.swift in Sources */,
+				BC01752B21A5C1BD0090DAE2 /* ConferenceViewController.swift in Sources */,
 				BC7F0DB321A5A4E4003825F2 /* FeedTableViewCell.swift in Sources */,
+				BC01752421A5C0B10090DAE2 /* DefaultConferenceDetailsViewModel.swift in Sources */,
 				BC366C4321A46474006111DF /* AppAssembler.swift in Sources */,
 				BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */,
 				BC70A3DA21A5941900988533 /* AppInfoViewModel.swift in Sources */,

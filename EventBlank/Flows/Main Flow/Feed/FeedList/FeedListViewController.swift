@@ -1,8 +1,9 @@
 import UIKit
 
 class FeedListViewController: UIViewController, FeedListView {
-
+    
     var viewModel: FeedListViewModel!
+    var onShowConferenceDetails: (() -> Void)?
     
     @IBOutlet weak var feedTableView: UITableView!
     
@@ -41,6 +42,6 @@ extension FeedListViewController: UITableViewDataSource {
 extension FeedListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        onShowConferenceDetails?()
     }
 }
