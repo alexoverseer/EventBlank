@@ -1,5 +1,5 @@
 //
-//  Location.swift
+//  TalkViewModel.swift
 //  EventBlank
 //
 //  Created by Ilia Gutu on 11/21/18.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-struct Location: Codable {
-    var lat: Double
-    var lon: Double
+struct TalkViewModel {
+    let talk: Topic
+    let speaker: Speaker
+    let resouces: [Resource]
 }

@@ -9,9 +9,10 @@
 import Foundation
 
 struct Topic: Codable {
-    var uid:String
+    var uid: String
+    var conference: String
     var title: String
-    var speaker:String
+    var speaker: String
     var description: String
     var media: [String] // ids for MediaItem object 
     var startDate: Int

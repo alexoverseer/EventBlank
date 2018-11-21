@@ -1,5 +1,5 @@
 //
-//  Speaker.swift
+//  Repository.swift
 //  EventBlank
 //
 //  Created by Ilia Gutu on 11/21/18.
@@ -8,9 +8,8 @@
 
 import Foundation
 
-struct Speaker: Codable {
-    var uid: String
-    var name: String
-    var title: String
-    var photo: String
+protocol Repository {
+    associatedtype T
+    func getAll() -> [T]
+    func getBy(uid: String) -> T?
 }
