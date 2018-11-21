@@ -7,12 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364159C228B9BC6AD8E4AF82 /* Pods_EventBlankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D23B5C2A76CC3F724F73BE2 /* Pods_EventBlankTests.framework */; };
+		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
+		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
+		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
+		BC366C4321A46474006111DF /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4221A46474006111DF /* AppAssembler.swift */; };
+		BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4421A46487006111DF /* DefaultAppAssembler.swift */; };
+		BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4621A464AD006111DF /* FactoryAssembly.swift */; };
+		BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */; };
+		BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
+		BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */; };
+		BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4E21A46516006111DF /* BaseCoordinator.swift */; };
+		BC366C5521A465A4006111DF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5221A465A4006111DF /* BaseView.swift */; };
+		BC366C5621A465A4006111DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5321A465A4006111DF /* Coordinator.swift */; };
+		BC366C5721A465A4006111DF /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5421A465A4006111DF /* Presentable.swift */; };
+		BC366C5B21A4660A006111DF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5921A46609006111DF /* Router.swift */; };
+		BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5A21A46609006111DF /* RouterImplementation.swift */; };
+		BC366C6121A46756006111DF /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6021A46756006111DF /* CoordinatorFactory.swift */; };
+		BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6221A4678C006111DF /* BaseFactory.swift */; };
+		BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6721A467E9006111DF /* ScheduleModuleFactory.swift */; };
+		BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6921A467F5006111DF /* FeedModuleFactory.swift */; };
+		BC366C6C21A467FF006111DF /* SpeakersModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6B21A467FF006111DF /* SpeakersModuleFactory.swift */; };
+		BC366C6E21A46829006111DF /* DefaultScheduleModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6D21A46829006111DF /* DefaultScheduleModuleFactory.swift */; };
+		BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C6F21A46831006111DF /* DefaultFeedModuleFactory.swift */; };
+		BC366C7221A46839006111DF /* DefaultSpeakersModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C7121A46839006111DF /* DefaultSpeakersModuleFactory.swift */; };
 		BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43944121A4609400FE2BE1 /* AppDelegate.swift */; };
-		BC43944421A4609400FE2BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43944321A4609400FE2BE1 /* ViewController.swift */; };
-		BC43944721A4609400FE2BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC43944521A4609400FE2BE1 /* Main.storyboard */; };
 		BC43944921A4609500FE2BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC43944821A4609500FE2BE1 /* Assets.xcassets */; };
 		BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC43944A21A4609500FE2BE1 /* LaunchScreen.storyboard */; };
 		BC43945721A4609500FE2BE1 /* EventBlankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC43945621A4609500FE2BE1 /* EventBlankTests.swift */; };
+		BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38821A5432E00988533 /* MainTabBarView.swift */; };
+		BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */; };
+		BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */; };
+		BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38E21A5469E00988533 /* MainTabBarController.swift */; };
+		BC70A39421A5482A00988533 /* ScheduleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39321A5482A00988533 /* ScheduleCoordinator.swift */; };
+		BC70A39721A548B700988533 /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39621A548B700988533 /* ScheduleListView.swift */; };
+		BC70A39921A548D300988533 /* ScheduleListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39821A548D300988533 /* ScheduleListViewModelOutput.swift */; };
+		BC70A39B21A548E200988533 /* ScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39A21A548E200988533 /* ScheduleListViewModel.swift */; };
+		BC70A39D21A548F500988533 /* DefaultScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39C21A548F500988533 /* DefaultScheduleListViewModel.swift */; };
+		BC70A3A021A5491000988533 /* ScheduleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A39E21A5491000988533 /* ScheduleListViewController.swift */; };
+		BC70A3A121A5491000988533 /* ScheduleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A39F21A5491000988533 /* ScheduleListViewController.xib */; };
+		BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */; };
+		BC70A3A521A5521C00988533 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A421A5521C00988533 /* FeedCoordinator.swift */; };
+		BC70A3A821A5527A00988533 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A721A5527A00988533 /* FeedListView.swift */; };
+		BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */; };
+		BC70A3AC21A5528D00988533 /* FeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3AB21A5528D00988533 /* FeedListViewModel.swift */; };
+		BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3AD21A5529800988533 /* DefaultFeedListViewModel.swift */; };
+		BC70A3B121A552BB00988533 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3AF21A552BB00988533 /* FeedListViewController.swift */; };
+		BC70A3B221A552BB00988533 /* FeedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3B021A552BB00988533 /* FeedListViewController.xib */; };
+		BC70A3B421A5560800988533 /* SpeakersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3B321A5560800988533 /* SpeakersCoordinator.swift */; };
+		BC70A3B721A568DE00988533 /* SpeakersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3B621A568DE00988533 /* SpeakersListView.swift */; };
+		BC70A3B921A568F000988533 /* SpeakersListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3B821A568F000988533 /* SpeakersListViewModelOutput.swift */; };
+		BC70A3BB21A5690700988533 /* SpeakersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BA21A5690700988533 /* SpeakersListViewModel.swift */; };
+		BC70A3BD21A5691200988533 /* DefaultSpeakersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BC21A5691200988533 /* DefaultSpeakersListViewModel.swift */; };
+		BC70A3C021A5693900988533 /* SpeakersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */; };
+		BC70A3C121A5693900988533 /* SpeakersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */; };
+		BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */; };
+		BC70A3C921A5717300988533 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3CB21A5717300988533 /* Localizable.strings */; };
+		BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3CC21A571D000988533 /* Stylesheet.swift */; };
+		BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +78,72 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B5499287F3170D942C97F2E /* Pods-EventBlankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.release.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.release.xcconfig"; sourceTree = "<group>"; };
+		4547956158FFF18147EFCEB8 /* Pods-EventBlank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlank.debug.xcconfig"; path = "Target Support Files/Pods-EventBlank/Pods-EventBlank.debug.xcconfig"; sourceTree = "<group>"; };
+		4D23B5C2A76CC3F724F73BE2 /* Pods_EventBlankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventBlankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A95354DF73E836795643492 /* Pods_EventBlank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventBlank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC366C3C21A462BB006111DF /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		BC366C3D21A462BB006111DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BC366C4221A46474006111DF /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
+		BC366C4421A46487006111DF /* DefaultAppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAppAssembler.swift; sourceTree = "<group>"; };
+		BC366C4621A464AD006111DF /* FactoryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryAssembly.swift; sourceTree = "<group>"; };
+		BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceAssembly.swift; sourceTree = "<group>"; };
+		BC366C4821A464AD006111DF /* ViewModelAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		BC366C4E21A46516006111DF /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		BC366C5221A465A4006111DF /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BC366C5321A465A4006111DF /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BC366C5421A465A4006111DF /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		BC366C5921A46609006111DF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BC366C5A21A46609006111DF /* RouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImplementation.swift; sourceTree = "<group>"; };
+		BC366C6021A46756006111DF /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		BC366C6221A4678C006111DF /* BaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFactory.swift; sourceTree = "<group>"; };
+		BC366C6721A467E9006111DF /* ScheduleModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6921A467F5006111DF /* FeedModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6B21A467FF006111DF /* SpeakersModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6D21A46829006111DF /* DefaultScheduleModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScheduleModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C6F21A46831006111DF /* DefaultFeedModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFeedModuleFactory.swift; sourceTree = "<group>"; };
+		BC366C7121A46839006111DF /* DefaultSpeakersModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakersModuleFactory.swift; sourceTree = "<group>"; };
 		BC43943E21A4609400FE2BE1 /* EventBlank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBlank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC43944121A4609400FE2BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC43944321A4609400FE2BE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC43944621A4609400FE2BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC43944821A4609500FE2BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC43944B21A4609500FE2BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC43944D21A4609500FE2BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC43945221A4609500FE2BE1 /* EventBlankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBlankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC43945621A4609500FE2BE1 /* EventBlankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBlankTests.swift; sourceTree = "<group>"; };
 		BC43945821A4609500FE2BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC70A38821A5432E00988533 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinatorOutput.swift; sourceTree = "<group>"; };
+		BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		BC70A38E21A5469E00988533 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BC70A39321A5482A00988533 /* ScheduleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCoordinator.swift; sourceTree = "<group>"; };
+		BC70A39621A548B700988533 /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
+		BC70A39821A548D300988533 /* ScheduleListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModelOutput.swift; sourceTree = "<group>"; };
+		BC70A39A21A548E200988533 /* ScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModel.swift; sourceTree = "<group>"; };
+		BC70A39C21A548F500988533 /* DefaultScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScheduleListViewModel.swift; sourceTree = "<group>"; };
+		BC70A39E21A5491000988533 /* ScheduleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewController.swift; sourceTree = "<group>"; };
+		BC70A39F21A5491000988533 /* ScheduleListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleListViewController.xib; sourceTree = "<group>"; };
+		BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
+		BC70A3A421A5521C00988533 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		BC70A3A721A5527A00988533 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
+		BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewModelOutput.swift; sourceTree = "<group>"; };
+		BC70A3AB21A5528D00988533 /* FeedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewModel.swift; sourceTree = "<group>"; };
+		BC70A3AD21A5529800988533 /* DefaultFeedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFeedListViewModel.swift; sourceTree = "<group>"; };
+		BC70A3AF21A552BB00988533 /* FeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
+		BC70A3B021A552BB00988533 /* FeedListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedListViewController.xib; sourceTree = "<group>"; };
+		BC70A3B321A5560800988533 /* SpeakersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersCoordinator.swift; sourceTree = "<group>"; };
+		BC70A3B621A568DE00988533 /* SpeakersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListView.swift; sourceTree = "<group>"; };
+		BC70A3B821A568F000988533 /* SpeakersListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewModelOutput.swift; sourceTree = "<group>"; };
+		BC70A3BA21A5690700988533 /* SpeakersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewModel.swift; sourceTree = "<group>"; };
+		BC70A3BC21A5691200988533 /* DefaultSpeakersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakersListViewModel.swift; sourceTree = "<group>"; };
+		BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewController.swift; sourceTree = "<group>"; };
+		BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakersListViewController.xib; sourceTree = "<group>"; };
+		BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		BC70A3CA21A5717300988533 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC70A3CC21A571D000988533 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		EA1FA9B40F469556048AED71 /* Pods-EventBlank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlank.release.xcconfig"; path = "Target Support Files/Pods-EventBlank/Pods-EventBlank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +159,180 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364159C228B9BC6AD8E4AF82 /* Pods_EventBlankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D70578A1FEA3FC039B9404B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A95354DF73E836795643492 /* Pods_EventBlank.framework */,
+				4D23B5C2A76CC3F724F73BE2 /* Pods_EventBlankTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95409B95AAF8E58D1E16B6E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4547956158FFF18147EFCEB8 /* Pods-EventBlank.debug.xcconfig */,
+				EA1FA9B40F469556048AED71 /* Pods-EventBlank.release.xcconfig */,
+				6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */,
+				1B5499287F3170D942C97F2E /* Pods-EventBlankTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC366C3A21A46178006111DF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
+				BC366C3B21A4625C006111DF /* Common */,
+				BC366C4121A46462006111DF /* Assemblies */,
+				BC366C4C21A464FC006111DF /* Coordinator */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC366C3B21A4625C006111DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C3D21A462BB006111DF /* Alert.swift */,
+				BC366C3C21A462BB006111DF /* TabItem.swift */,
+				BC70A3CC21A571D000988533 /* Stylesheet.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC366C4121A46462006111DF /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C4221A46474006111DF /* AppAssembler.swift */,
+				BC366C4421A46487006111DF /* DefaultAppAssembler.swift */,
+				BC366C4621A464AD006111DF /* FactoryAssembly.swift */,
+				BC366C4821A464AD006111DF /* ViewModelAssembly.swift */,
+				BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		BC366C4C21A464FC006111DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C4E21A46516006111DF /* BaseCoordinator.swift */,
+				BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BC366C5121A46584006111DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C5321A465A4006111DF /* Coordinator.swift */,
+				BC366C5421A465A4006111DF /* Presentable.swift */,
+				BC366C5221A465A4006111DF /* BaseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC366C5821A46609006111DF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C5921A46609006111DF /* Router.swift */,
+				BC366C5A21A46609006111DF /* RouterImplementation.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC366C5D21A4669C006111DF /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C5E21A46710006111DF /* Coordinator */,
+				BC366C5F21A46717006111DF /* Modules */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		BC366C5E21A46710006111DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6021A46756006111DF /* CoordinatorFactory.swift */,
+				BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BC366C5F21A46717006111DF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6221A4678C006111DF /* BaseFactory.swift */,
+				BC366C6421A467B2006111DF /* Schedule */,
+				BC366C6521A467BA006111DF /* Feed */,
+				BC366C6621A467C1006111DF /* Speakers */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC366C6421A467B2006111DF /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6721A467E9006111DF /* ScheduleModuleFactory.swift */,
+				BC366C6D21A46829006111DF /* DefaultScheduleModuleFactory.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		BC366C6521A467BA006111DF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6921A467F5006111DF /* FeedModuleFactory.swift */,
+				BC366C6F21A46831006111DF /* DefaultFeedModuleFactory.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BC366C6621A467C1006111DF /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C6B21A467FF006111DF /* SpeakersModuleFactory.swift */,
+				BC366C7121A46839006111DF /* DefaultSpeakersModuleFactory.swift */,
+			);
+			path = Speakers;
+			sourceTree = "<group>";
+		};
+		BC366C7321A468EE006111DF /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				BC366C7421A46931006111DF /* Main Flow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		BC366C7421A46931006111DF /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A38821A5432E00988533 /* MainTabBarView.swift */,
+				BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */,
+				BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */,
+				BC70A38E21A5469E00988533 /* MainTabBarController.swift */,
+				BC70A39221A547C300988533 /* Schedule */,
+				BC70A39121A547C100988533 /* Feed */,
+				BC70A39021A547B900988533 /* Speakers */,
+			);
+			path = "Main Flow";
+			sourceTree = "<group>";
+		};
 		BC43943521A4609400FE2BE1 = {
 			isa = PBXGroup;
 			children = (
 				BC43944021A4609400FE2BE1 /* EventBlank */,
 				BC43945521A4609500FE2BE1 /* EventBlankTests */,
 				BC43943F21A4609400FE2BE1 /* Products */,
+				95409B95AAF8E58D1E16B6E5 /* Pods */,
+				6D70578A1FEA3FC039B9404B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +348,13 @@
 		BC43944021A4609400FE2BE1 /* EventBlank */ = {
 			isa = PBXGroup;
 			children = (
-				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
-				BC43944321A4609400FE2BE1 /* ViewController.swift */,
-				BC43944521A4609400FE2BE1 /* Main.storyboard */,
+				BC366C3A21A46178006111DF /* Application */,
+				BC70A3C221A56C5B00988533 /* Extensions */,
+				BC366C5121A46584006111DF /* Protocols */,
+				BC366C5821A46609006111DF /* Router */,
+				BC366C5D21A4669C006111DF /* Factories */,
+				BC366C7321A468EE006111DF /* Flows */,
+				BC70A3C521A5713100988533 /* Resources */,
 				BC43944821A4609500FE2BE1 /* Assets.xcassets */,
 				BC43944A21A4609500FE2BE1 /* LaunchScreen.storyboard */,
 				BC43944D21A4609500FE2BE1 /* Info.plist */,
@@ -96,6 +371,97 @@
 			path = EventBlankTests;
 			sourceTree = "<group>";
 		};
+		BC70A39021A547B900988533 /* Speakers */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3B321A5560800988533 /* SpeakersCoordinator.swift */,
+				BC70A3B521A5560D00988533 /* SpeakerList */,
+			);
+			path = Speakers;
+			sourceTree = "<group>";
+		};
+		BC70A39121A547C100988533 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3A421A5521C00988533 /* FeedCoordinator.swift */,
+				BC70A3A621A5526800988533 /* FeedList */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BC70A39221A547C300988533 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A39321A5482A00988533 /* ScheduleCoordinator.swift */,
+				BC70A39521A5489500988533 /* ScheduleList */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		BC70A39521A5489500988533 /* ScheduleList */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A39621A548B700988533 /* ScheduleListView.swift */,
+				BC70A39821A548D300988533 /* ScheduleListViewModelOutput.swift */,
+				BC70A39A21A548E200988533 /* ScheduleListViewModel.swift */,
+				BC70A39C21A548F500988533 /* DefaultScheduleListViewModel.swift */,
+				BC70A39E21A5491000988533 /* ScheduleListViewController.swift */,
+				BC70A39F21A5491000988533 /* ScheduleListViewController.xib */,
+			);
+			path = ScheduleList;
+			sourceTree = "<group>";
+		};
+		BC70A3A621A5526800988533 /* FeedList */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3A721A5527A00988533 /* FeedListView.swift */,
+				BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */,
+				BC70A3AB21A5528D00988533 /* FeedListViewModel.swift */,
+				BC70A3AD21A5529800988533 /* DefaultFeedListViewModel.swift */,
+				BC70A3AF21A552BB00988533 /* FeedListViewController.swift */,
+				BC70A3B021A552BB00988533 /* FeedListViewController.xib */,
+			);
+			path = FeedList;
+			sourceTree = "<group>";
+		};
+		BC70A3B521A5560D00988533 /* SpeakerList */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3B621A568DE00988533 /* SpeakersListView.swift */,
+				BC70A3B821A568F000988533 /* SpeakersListViewModelOutput.swift */,
+				BC70A3BA21A5690700988533 /* SpeakersListViewModel.swift */,
+				BC70A3BC21A5691200988533 /* DefaultSpeakersListViewModel.swift */,
+				BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */,
+				BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */,
+			);
+			path = SpeakerList;
+			sourceTree = "<group>";
+		};
+		BC70A3C221A56C5B00988533 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */,
+				BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC70A3C521A5713100988533 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3C621A5713F00988533 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC70A3C621A5713F00988533 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3CB21A5717300988533 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +469,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC43945B21A4609500FE2BE1 /* Build configuration list for PBXNativeTarget "EventBlank" */;
 			buildPhases = (
+				5C9705B4E25BDCF7CE1370FF /* [CP] Check Pods Manifest.lock */,
 				BC43943A21A4609400FE2BE1 /* Sources */,
 				BC43943B21A4609400FE2BE1 /* Frameworks */,
 				BC43943C21A4609400FE2BE1 /* Resources */,
+				AE28EC508E0849F807B1E053 /* [CP] Embed Pods Frameworks */,
+				BC366C4021A463C5006111DF /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -120,6 +489,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC43945E21A4609500FE2BE1 /* Build configuration list for PBXNativeTarget "EventBlankTests" */;
 			buildPhases = (
+				242879DCDD4767CE03ADB940 /* [CP] Check Pods Manifest.lock */,
 				BC43944E21A4609500FE2BE1 /* Sources */,
 				BC43944F21A4609500FE2BE1 /* Frameworks */,
 				BC43945021A4609500FE2BE1 /* Resources */,
@@ -177,9 +547,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC70A3A121A5491000988533 /* ScheduleListViewController.xib in Resources */,
+				BC70A3C921A5717300988533 /* Localizable.strings in Resources */,
 				BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */,
+				BC70A3C121A5693900988533 /* SpeakersListViewController.xib in Resources */,
+				BC70A3B221A552BB00988533 /* FeedListViewController.xib in Resources */,
 				BC43944921A4609500FE2BE1 /* Assets.xcassets in Resources */,
-				BC43944721A4609400FE2BE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +565,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		242879DCDD4767CE03ADB940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventBlankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C9705B4E25BDCF7CE1370FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventBlank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE28EC508E0849F807B1E053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventBlank/Pods-EventBlank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventBlank/Pods-EventBlank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC366C4021A463C5006111DF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC43943A21A4609400FE2BE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC43944421A4609400FE2BE1 /* ViewController.swift in Sources */,
+				BC70A3A821A5527A00988533 /* FeedListView.swift in Sources */,
+				BC366C6C21A467FF006111DF /* SpeakersModuleFactory.swift in Sources */,
+				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
+				BC70A3B421A5560800988533 /* SpeakersCoordinator.swift in Sources */,
+				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
+				BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */,
+				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
+				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
+				BC366C7221A46839006111DF /* DefaultSpeakersModuleFactory.swift in Sources */,
+				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
+				BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */,
+				BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */,
+				BC70A3AC21A5528D00988533 /* FeedListViewModel.swift in Sources */,
+				BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */,
+				BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */,
+				BC70A3A521A5521C00988533 /* FeedCoordinator.swift in Sources */,
+				BC70A3A021A5491000988533 /* ScheduleListViewController.swift in Sources */,
+				BC70A3BD21A5691200988533 /* DefaultSpeakersListViewModel.swift in Sources */,
+				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
+				BC70A3BB21A5690700988533 /* SpeakersListViewModel.swift in Sources */,
+				BC70A3B921A568F000988533 /* SpeakersListViewModelOutput.swift in Sources */,
+				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
+				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
+				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
+				BC70A3C021A5693900988533 /* SpeakersListViewController.swift in Sources */,
+				BC70A39421A5482A00988533 /* ScheduleCoordinator.swift in Sources */,
+				BC70A39B21A548E200988533 /* ScheduleListViewModel.swift in Sources */,
+				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
+				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,
+				BC70A3B121A552BB00988533 /* FeedListViewController.swift in Sources */,
+				BC366C4321A46474006111DF /* AppAssembler.swift in Sources */,
+				BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */,
+				BC70A39D21A548F500988533 /* DefaultScheduleListViewModel.swift in Sources */,
+				BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */,
+				BC70A3B721A568DE00988533 /* SpeakersListView.swift in Sources */,
+				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
+				BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */,
+				BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */,
+				BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */,
+				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
+				BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */,
+				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
+				BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */,
 				BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */,
+				BC366C6E21A46829006111DF /* DefaultScheduleModuleFactory.swift in Sources */,
+				BC366C6121A46756006111DF /* CoordinatorFactory.swift in Sources */,
+				BC70A39721A548B700988533 /* ScheduleListView.swift in Sources */,
+				BC70A39921A548D300988533 /* ScheduleListViewModelOutput.swift in Sources */,
+				BC366C5721A465A4006111DF /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,20 +730,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC43944521A4609400FE2BE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC43944621A4609400FE2BE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC43944A21A4609500FE2BE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BC43944B21A4609500FE2BE1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC70A3CB21A5717300988533 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC70A3CA21A5717300988533 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -358,10 +867,12 @@
 		};
 		BC43945C21A4609500FE2BE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4547956158FFF18147EFCEB8 /* Pods-EventBlank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EventBlank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,10 +886,12 @@
 		};
 		BC43945D21A4609500FE2BE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1FA9B40F469556048AED71 /* Pods-EventBlank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EventBlank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +905,7 @@
 		};
 		BC43945F21A4609500FE2BE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +926,7 @@
 		};
 		BC43946021A4609500FE2BE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5499287F3170D942C97F2E /* Pods-EventBlankTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
