@@ -20,10 +20,9 @@ extension UINavigationController {
         
         let lightAttributes = [NSAttributedString.Key.foregroundColor: color]
         
+        navigationBar.titleTextAttributes = lightAttributes
         if #available(iOS 11.0, *) {
             navigationBar.largeTitleTextAttributes = lightAttributes
-        } else {
-            navigationBar.titleTextAttributes = lightAttributes
         }
     }
 }

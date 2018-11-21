@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedListViewController" customModule="EventBlank" customModuleProvider="target">
             <connections>
+                <outlet property="feedTableView" destination="Uab-NI-Rdv" id="3td-AS-DOa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,17 +21,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FeedListViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj3-i4-8rb">
-                    <rect key="frame" x="98.666666666666686" y="395.66666666666669" width="178" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-NI-Rdv">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vPJ-TF-ntj"/>
+                        <outlet property="delegate" destination="-1" id="a2U-IW-9Yo"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="dj3-i4-8rb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cGZ-KR-S5O"/>
-                <constraint firstItem="dj3-i4-8rb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xuu-68-Hof"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Uab-NI-Rdv" secondAttribute="bottom" id="HjP-aB-RnI"/>
+                <constraint firstItem="Uab-NI-Rdv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JuA-7G-t8c"/>
+                <constraint firstItem="Uab-NI-Rdv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MU0-tk-01p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uab-NI-Rdv" secondAttribute="trailing" id="vtQ-pq-7eP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
