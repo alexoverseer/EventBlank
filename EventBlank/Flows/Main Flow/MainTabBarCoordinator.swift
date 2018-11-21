@@ -32,7 +32,9 @@ final class MainTabBarCoordinator: BaseCoordinator, MainTabCoordinatorOutput {
     private func runFeedFlow() -> ((UINavigationController) -> Void) {
         return { navigationController in
             if navigationController.viewControllers.isEmpty == true {
-                
+                let feedCoordinator = self.coordinatorFactory.makeFeedCoordinator(navigationController: navigationController)
+                feedCoordinator.start()
+                self.addDependency(feedCoordinator)
             }
         }
     }

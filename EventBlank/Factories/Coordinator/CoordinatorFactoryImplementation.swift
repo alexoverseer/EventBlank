@@ -30,6 +30,16 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
         
         return coordinator
     }
+    
+    func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
+        
+        let factory = DefaultFeedModuleFactory(resolver: self.resolver)
+        let coordinator = FeedCoordinator(router: router(navigationController),
+                                          factory: factory,
+                                          coordinatorFactory: CoordinatorFactoryImplementation())
+        
+        return coordinator
+    }
 }
 
 extension CoordinatorFactoryImplementation {

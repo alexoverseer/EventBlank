@@ -8,5 +8,9 @@ class ViewModelAssembly: Assembly {
         container.register(ScheduleListViewModel.self) { _ in
             return DefaultScheduleListViewModel()
         }
+        
+        container.register(FeedListViewModel.self) { _ in
+            return DefaultFeedListViewModel()
+        }
     }
 }
