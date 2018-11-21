@@ -27,6 +27,7 @@
 		62DE44BB21A5BB7A00C3AC14 /* ConferenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BA21A5BB7A00C3AC14 /* ConferenceViewModel.swift */; };
 		62DE44BD21A5BBBA00C3AC14 /* TalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */; };
 		62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */; };
+		62DE44C121A5CE2100C3AC14 /* SpeakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44C021A5CE2100C3AC14 /* SpeakerViewModel.swift */; };
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
 		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
 		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
@@ -121,6 +122,7 @@
 		62DE44BA21A5BB7A00C3AC14 /* ConferenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewModel.swift; sourceTree = "<group>"; };
 		62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewModel.swift; sourceTree = "<group>"; };
 		62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBuilder.swift; sourceTree = "<group>"; };
+		62DE44C021A5CE2100C3AC14 /* SpeakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewModel.swift; sourceTree = "<group>"; };
 		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		706116DDD0077B9BFC8BD0F3 /* Pods-EventBlankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DEB18537BE8DE1DF662BE2A /* Pods-EventBlank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlank.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventBlank/Pods-EventBlank.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				62DE44BA21A5BB7A00C3AC14 /* ConferenceViewModel.swift */,
 				62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */,
 				62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */,
+				62DE44C021A5CE2100C3AC14 /* SpeakerViewModel.swift */,
 			);
 			path = ContentBuilder;
 			sourceTree = "<group>";
@@ -826,6 +829,7 @@
 				62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */,
 				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
 				BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */,
+				62DE44C121A5CE2100C3AC14 /* SpeakerViewModel.swift in Sources */,
 				BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */,
 				BC70A3DF21A5943D00988533 /* AppInfoViewController.swift in Sources */,
 				BC366C6121A46756006111DF /* CoordinatorFactory.swift in Sources */,

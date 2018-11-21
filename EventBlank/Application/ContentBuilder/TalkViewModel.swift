@@ -10,6 +10,14 @@ import UIKit
 
 struct TalkViewModel {
     let talk: Topic
-    let speaker: Speaker
+    let speaker: SpeakerViewModel
     let resouces: [Resource]
+    
+    var video:Resource?{
+        return resouces.first(where: {$0.mediaType == .video })
+    }
+    
+    var images:[Resource]{
+       return resouces.filter{$0.mediaType == .image }
+    }
 }

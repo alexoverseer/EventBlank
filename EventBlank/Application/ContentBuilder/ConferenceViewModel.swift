@@ -11,6 +11,6 @@ import UIKit
 struct ConferenceViewModel {
     let conference: Conference
     let resouces: [Resource]
-    let people: [Speaker]
-    let topics: [Topic]
+    let people: [SpeakerViewModel]
+    let topics: [TalkViewModel]
 }
