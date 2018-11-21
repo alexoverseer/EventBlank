@@ -1,7 +1,140 @@
 [{
-    "uid":"dbyebdyebdye",
-    "name":"Sundel rambo"
-    "title": "senior pomidor"
-    "photo":"https://2018.nsspain.com/images/speakers/mattt.jpeg"
-    
-}]
+    "uid":"00001",
+    "name":"Diego Freniche",
+    "title": "iOS/Android developer",
+    "photo":"https://pbs.twimg.com/profile_images/600326381671690240/caZU9AsZ_400x400.jpg"
+    "page":"http://www.twitter.com/dfreniche"
+},{
+    "uid":"00002",
+    "name":"Fernando Rodriguez",
+    "title": "Chief Learning Officer & Co-Founder at @KeepCoding_ Mobile & Blockchain nerd.",
+    "photo":"https://pbs.twimg.com/profile_images/1042829565473828864/q24pRil9_400x400.jpg"
+    "page":"https://twitter.com/frr149"
+},{
+    "uid":"00003",
+    "name":"Aral Balkan",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/873476708497838080/rdwukUAR_400x400.jpg"
+    "page":"https://twitter.com/aral"
+},{
+    "uid":"00004",
+    "name":"Sommer Panage",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/854048921785556996/Ih8pVA7s_400x400.jpg"
+    "page":"https://twitter.com/sommer"
+},{
+    "uid":"00005",
+    "name":"William Sackfield",
+    "title": "",
+    "photo":""
+    "page":""
+},{
+    "uid":"00006",
+    "name":"Nacho Soto",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/888820890917588992/UHo8-kEo_400x400.jpg"
+    "page":"https://twitter.com/NachoSoto"
+},{
+    "uid":"00007",
+    "name":"Boris Bügling",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/839830093686050816/c1WsoCk8_400x400.jpg"
+    "page":"https://twitter.com/NeoNacho"
+},{
+    "uid":"00008",
+    "name":"Orta Therox",
+    "title": "Front-end",
+    "photo":"https://pbs.twimg.com/profile_images/879777800311451648/5HSjNITG_400x400.jpg"
+    "page":"https://twitter.com/orta"
+},{
+    "uid":"00009",
+    "name":"Fabio Pelosin",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/764045743250432000/NHBqeQEr_400x400.jpg"
+    "page":"https://twitter.com/fabiopelosin"
+},{
+    "uid":"00010",
+    "name":"Alfonso Alba García",
+    "title": "RoR/PHP Backend Developer",
+    "photo":"https://pbs.twimg.com/profile_images/3435437917/62edba6effa752fdc1dd46872ea662a1_400x400.jpeg"
+    "page":"https://twitter.com/aalbagarcia"
+},{
+    "uid":"00011",
+    "name":"Daniel Eggert",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/1380982800/IMG_3309_400x400.jpg"
+    "page":"https://twitter.com/danielboedewadt"
+},{
+    "uid":"00012",
+    "name":"Delisa Mason",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/872867748954611712/jQkBQXy4_400x400.jpg"
+    "page":"https://twitter.com/kattrali"
+},{
+    "uid":"00013",
+    "name":"Peter Steinberger",
+    "title": "Founder/CEO",
+    "photo":"https://pbs.twimg.com/profile_images/792759342927843328/onx286KO_400x400.jpg"
+    "page":"https://twitter.com/steipete"
+},{
+    "uid":"00014",
+    "name":"Chris Eidhof",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/496291231690137600/TmQRrofs_400x400.jpeg"
+    "page":"https://twitter.com/chriseidhof"
+},{
+    "uid":"00015",
+    "name":"Marin Usalj",
+    "title": "",
+    "photo":""
+    "page":""
+},{
+    "uid":"00016",
+    "name":"Florian Kugler",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/742074750281887744/_DNy2mAN_400x400.jpg"
+    "page":"https://twitter.com/floriankugler"
+},{
+    "uid":"00017",
+    "name":"Robert Bönkhe",
+    "title": "",
+    "photo":""
+    "page":"https://twitter.com/ceterum_censeo"
+},{
+    "uid":"00018",
+    "name":"Tim Brückmann",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/658964281199861761/W_ccsiDa_400x400.jpg"
+    "page":"https://twitter.com/tibr"
+},{
+    "uid":"00019",
+    "name":"Javier Sanchez",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/695316203280195584/_YRFIyQi_400x400.png"
+    "page":"https://twitter.com/jsanchezsierra"
+},{
+    "uid":"00020",
+    "name":"Luis Solano",
+    "title": "Full Stack Developer",
+    "photo":"https://pbs.twimg.com/profile_images/527622047665356800/VNHK_Ulx_400x400.jpeg"
+    "page":"https://twitter.com/luisobo"
+},{
+    "uid":"00021",
+    "name":"Alberto Gimeno",
+    "title": "Ecosystems engineer at github",
+    "photo":"https://pbs.twimg.com/profile_images/3038751292/27acfc434e4c840a87a23863df1a4208_400x400.jpeg"
+    "page":"https://twitter.com/gimenete"
+},{
+    "uid":"00022",
+    "name":"Krzysztof Zabłocki",
+    "title": "",
+    "photo":"https://pbs.twimg.com/profile_images/1036876946448232449/yqhZsnBS_400x400.jpg"
+    "page":"https://twitter.com/merowing_"
+},{
+    "uid":"000",
+    "name":"",
+    "title": "",
+    "photo":""
+    "page":""
+}
+]

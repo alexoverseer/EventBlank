@@ -13,6 +13,7 @@ struct SpeakerViewVModel {
     var name: String
     var title: String
     var photo: String
+    var page: URL
     
     let topics: [TalkViewModel]
     
@@ -21,6 +22,7 @@ struct SpeakerViewVModel {
         self.name = speaker.name
         self.title = speaker.title
         self.photo = speaker.photo
+        self.page = speaker.page
         self.topics = topics
     }
 }
