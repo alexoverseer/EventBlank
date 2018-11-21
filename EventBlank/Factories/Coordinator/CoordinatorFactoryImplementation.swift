@@ -29,16 +29,6 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
         return (coordinator, controller)
     }
     
-    func makeScheduleCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        
-        let factory = DefaultScheduleModuleFactory(resolver: self.resolver)
-        let coordinator = ScheduleCoordinator(router: router(navigationController),
-                                              factory: factory,
-                                              coordinatorFactory: CoordinatorFactoryImplementation())
-        
-        return coordinator
-    }
-    
     func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
         
         let factory = DefaultFeedModuleFactory(resolver: self.resolver)
@@ -49,11 +39,20 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
         return coordinator
     }
     
-    func makeSpeakersCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultSpeakersModuleFactory(resolver: self.resolver)
-        let coordinator = SpeakersCoordinator(router: router(navigationController),
-                                              factory: factory,
-                                              coordinatorFactory: CoordinatorFactoryImplementation())
+    func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
+        let factory = DefaultAppInfoModuleFactory(resolver: self.resolver)
+        let coordinator = AppInfoCoordinator(router: router(navigationController),
+                                             factory: factory,
+                                             coordinatorFactory: CoordinatorFactoryImplementation())
+        
+        return coordinator
+    }
+    
+    func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
+        let factory = DefaultFavouritesModuleFactory(resolver: self.resolver)
+        let coordinator = FavouritesCoordinator(router: router(navigationController),
+                                                factory: factory,
+                                                coordinatorFactory: CoordinatorFactoryImplementation())
         
         return coordinator
     }

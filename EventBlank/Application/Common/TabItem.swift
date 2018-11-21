@@ -2,29 +2,29 @@ import UIKit
 
 enum TabItem: Int, CaseIterable {
     
-    case schedule
     case feed
-    case speakers
+    case about
+    case favourites
     
     var title: String {
         switch self {
-        case .schedule:
-            return NSLocalizedString("tab.schedule", comment: "")
         case .feed:
             return NSLocalizedString("tab.feed", comment: "")
-        case .speakers:
-            return NSLocalizedString("tab.speakers", comment: "")
+        case .about:
+            return NSLocalizedString("tab.about", comment: "")
+        case .favourites:
+            return NSLocalizedString("tab.favourites", comment: "")
         }
     }
     
     var imageName: String {
         switch self {
-        case .schedule:
-            return "tab.schedule"
         case .feed:
             return "tab.feed"
-        case .speakers:
-            return "tab.speakers"
+        case .about:
+            return "tab.about"
+        case .favourites:
+            return "tab.favourites"
         }
     }
     
@@ -33,6 +33,6 @@ enum TabItem: Int, CaseIterable {
     }
     
     static func current(rawValue: Int) -> TabItem {
-        return TabItem(rawValue: rawValue) ?? .schedule
+        return TabItem(rawValue: rawValue) ?? .feed
     }
 }

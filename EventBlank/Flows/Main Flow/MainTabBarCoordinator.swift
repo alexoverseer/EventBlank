@@ -13,20 +13,10 @@ final class MainTabBarCoordinator: BaseCoordinator, MainTabCoordinatorOutput {
     }
     
     override func start() {
-        mainTabBarView.onScheduleFlowSelect = runScheduleFlow()
-        mainTabBarView.startFlow()
         mainTabBarView.onFeedFlowSelect = runFeedFlow()
-        mainTabBarView.onSpeakersFlowSelect = runSpeakersFlow()
-    }
-    
-    private func runScheduleFlow() -> ((UINavigationController) -> Void) {
-        return { navigationController in
-            if navigationController.viewControllers.isEmpty == true {
-                let scheduleCoordinator = self.coordinatorFactory.makeScheduleCoordinator(navigationController: navigationController)
-                scheduleCoordinator.start()
-                self.addDependency(scheduleCoordinator)
-            }
-        }
+        mainTabBarView.startFlow()
+        mainTabBarView.onAboutFlowSelect = runAboutFlow()
+        mainTabBarView.onFavouritesFlowSelect = runFavouritesFlow()
     }
     
     private func runFeedFlow() -> ((UINavigationController) -> Void) {
@@ -39,12 +29,22 @@ final class MainTabBarCoordinator: BaseCoordinator, MainTabCoordinatorOutput {
         }
     }
     
-    private func runSpeakersFlow() -> ((UINavigationController) -> Void) {
+    private func runAboutFlow() -> ((UINavigationController) -> Void) {
         return { navigationController in
             if navigationController.viewControllers.isEmpty == true {
-                let speakersCoordinator = self.coordinatorFactory.makeSpeakersCoordinator(navigationController: navigationController)
-                speakersCoordinator.start()
-                self.addDependency(speakersCoordinator)
+                let aboutCoordinator = self.coordinatorFactory.makeAboutCoordinator(navigationController: navigationController)
+                aboutCoordinator.start()
+                self.addDependency(aboutCoordinator)
+            }
+        }
+    }
+    
+    private func runFavouritesFlow() -> ((UINavigationController) -> Void) {
+        return { navigationController in
+            if navigationController.viewControllers.isEmpty == true {
+                let favouritesCoordinator = self.coordinatorFactory.makeFavouritesCoordinator(navigationController: navigationController)
+                favouritesCoordinator.start()
+                self.addDependency(favouritesCoordinator)
             }
         }
     }

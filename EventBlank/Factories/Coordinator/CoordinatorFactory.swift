@@ -5,9 +5,9 @@ protocol CoordinatorFactory {
  
     func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?)
     
-    func makeScheduleCoordinator(navigationController: UINavigationController?) -> Coordinator
     func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator
-    func makeSpeakersCoordinator(navigationController: UINavigationController?) -> Coordinator
+    func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator
+    func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator
 }
 
 extension CoordinatorFactory {
