@@ -16,9 +16,9 @@ extension UINavigationController {
         }
     }
     
-    func setLightTitleAttributes() {
+    func setTitleAttributesColor(_ color: UIColor = UIColor.white) {
         
-        let lightAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        let lightAttributes = [NSAttributedString.Key.foregroundColor: color]
         
         if #available(iOS 11.0, *) {
             navigationBar.largeTitleTextAttributes = lightAttributes

@@ -7,15 +7,15 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
         typealias Color = Stylesheet.Color
         
         let controller = MainTabBarController()
-        controller.view.tintColor = Color.appRed
+        controller.view.tintColor = Color.appMagenta
         var controllers: [UINavigationController] = []
         
         for tabItem in TabItem.allCases {
             let tab = UITabBarItem(title: tabItem.title, image: tabItem.image, tag: 0)
             let navigationController = UINavigationController()
             navigationController.enableLargeTitles()
-            navigationController.setLightTitleAttributes()
-            navigationController.navigationBar.barTintColor = Color.appRed
+            navigationController.setTitleAttributesColor()
+            navigationController.navigationBar.barTintColor = Color.appMagenta
             navigationController.navigationBar.isTranslucent = false
             
             navigationController.tabBarItem = tab
