@@ -7,6 +7,7 @@ protocol CoordinatorFactory {
     
     func makeScheduleCoordinator(navigationController: UINavigationController?) -> Coordinator
     func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator
+    func makeSpeakersCoordinator(navigationController: UINavigationController?) -> Coordinator
 }
 
 extension CoordinatorFactory {

@@ -54,6 +54,14 @@
 		BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3AD21A5529800988533 /* DefaultFeedListViewModel.swift */; };
 		BC70A3B121A552BB00988533 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3AF21A552BB00988533 /* FeedListViewController.swift */; };
 		BC70A3B221A552BB00988533 /* FeedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3B021A552BB00988533 /* FeedListViewController.xib */; };
+		BC70A3B421A5560800988533 /* SpeakersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3B321A5560800988533 /* SpeakersCoordinator.swift */; };
+		BC70A3B721A568DE00988533 /* SpeakersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3B621A568DE00988533 /* SpeakersListView.swift */; };
+		BC70A3B921A568F000988533 /* SpeakersListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3B821A568F000988533 /* SpeakersListViewModelOutput.swift */; };
+		BC70A3BB21A5690700988533 /* SpeakersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BA21A5690700988533 /* SpeakersListViewModel.swift */; };
+		BC70A3BD21A5691200988533 /* DefaultSpeakersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BC21A5691200988533 /* DefaultSpeakersListViewModel.swift */; };
+		BC70A3C021A5693900988533 /* SpeakersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */; };
+		BC70A3C121A5693900988533 /* SpeakersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */; };
+		BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +129,14 @@
 		BC70A3AD21A5529800988533 /* DefaultFeedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFeedListViewModel.swift; sourceTree = "<group>"; };
 		BC70A3AF21A552BB00988533 /* FeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
 		BC70A3B021A552BB00988533 /* FeedListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedListViewController.xib; sourceTree = "<group>"; };
+		BC70A3B321A5560800988533 /* SpeakersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersCoordinator.swift; sourceTree = "<group>"; };
+		BC70A3B621A568DE00988533 /* SpeakersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListView.swift; sourceTree = "<group>"; };
+		BC70A3B821A568F000988533 /* SpeakersListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewModelOutput.swift; sourceTree = "<group>"; };
+		BC70A3BA21A5690700988533 /* SpeakersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewModel.swift; sourceTree = "<group>"; };
+		BC70A3BC21A5691200988533 /* DefaultSpeakersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakersListViewModel.swift; sourceTree = "<group>"; };
+		BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewController.swift; sourceTree = "<group>"; };
+		BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakersListViewController.xib; sourceTree = "<group>"; };
+		BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
 		EA1FA9B40F469556048AED71 /* Pods-EventBlank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlank.release.xcconfig"; path = "Target Support Files/Pods-EventBlank/Pods-EventBlank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -326,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				BC366C3A21A46178006111DF /* Application */,
+				BC70A3C221A56C5B00988533 /* Extensions */,
 				BC366C5121A46584006111DF /* Protocols */,
 				BC366C5821A46609006111DF /* Router */,
 				BC366C5D21A4669C006111DF /* Factories */,
@@ -349,6 +366,8 @@
 		BC70A39021A547B900988533 /* Speakers */ = {
 			isa = PBXGroup;
 			children = (
+				BC70A3B321A5560800988533 /* SpeakersCoordinator.swift */,
+				BC70A3B521A5560D00988533 /* SpeakerList */,
 			);
 			path = Speakers;
 			sourceTree = "<group>";
@@ -395,6 +414,27 @@
 				BC70A3B021A552BB00988533 /* FeedListViewController.xib */,
 			);
 			path = FeedList;
+			sourceTree = "<group>";
+		};
+		BC70A3B521A5560D00988533 /* SpeakerList */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3B621A568DE00988533 /* SpeakersListView.swift */,
+				BC70A3B821A568F000988533 /* SpeakersListViewModelOutput.swift */,
+				BC70A3BA21A5690700988533 /* SpeakersListViewModel.swift */,
+				BC70A3BC21A5691200988533 /* DefaultSpeakersListViewModel.swift */,
+				BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */,
+				BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */,
+			);
+			path = SpeakerList;
+			sourceTree = "<group>";
+		};
+		BC70A3C221A56C5B00988533 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +524,7 @@
 			files = (
 				BC70A3A121A5491000988533 /* ScheduleListViewController.xib in Resources */,
 				BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */,
+				BC70A3C121A5693900988533 /* SpeakersListViewController.xib in Resources */,
 				BC70A3B221A552BB00988533 /* FeedListViewController.xib in Resources */,
 				BC43944921A4609500FE2BE1 /* Assets.xcassets in Resources */,
 			);
@@ -595,6 +636,7 @@
 				BC70A3A821A5527A00988533 /* FeedListView.swift in Sources */,
 				BC366C6C21A467FF006111DF /* SpeakersModuleFactory.swift in Sources */,
 				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
+				BC70A3B421A5560800988533 /* SpeakersCoordinator.swift in Sources */,
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
 				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
 				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
@@ -604,12 +646,17 @@
 				BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */,
 				BC70A3AC21A5528D00988533 /* FeedListViewModel.swift in Sources */,
 				BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */,
+				BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */,
 				BC70A3A521A5521C00988533 /* FeedCoordinator.swift in Sources */,
 				BC70A3A021A5491000988533 /* ScheduleListViewController.swift in Sources */,
+				BC70A3BD21A5691200988533 /* DefaultSpeakersListViewModel.swift in Sources */,
 				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
+				BC70A3BB21A5690700988533 /* SpeakersListViewModel.swift in Sources */,
+				BC70A3B921A568F000988533 /* SpeakersListViewModelOutput.swift in Sources */,
 				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
 				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
 				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
+				BC70A3C021A5693900988533 /* SpeakersListViewController.swift in Sources */,
 				BC70A39421A5482A00988533 /* ScheduleCoordinator.swift in Sources */,
 				BC70A39B21A548E200988533 /* ScheduleListViewModel.swift in Sources */,
 				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
@@ -619,6 +666,7 @@
 				BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */,
 				BC70A39D21A548F500988533 /* DefaultScheduleListViewModel.swift in Sources */,
 				BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */,
+				BC70A3B721A568DE00988533 /* SpeakersListView.swift in Sources */,
 				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
 				BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */,
 				BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */,

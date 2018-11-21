@@ -42,7 +42,9 @@ final class MainTabBarCoordinator: BaseCoordinator, MainTabCoordinatorOutput {
     private func runSpeakersFlow() -> ((UINavigationController) -> Void) {
         return { navigationController in
             if navigationController.viewControllers.isEmpty == true {
-                
+                let speakersCoordinator = self.coordinatorFactory.makeSpeakersCoordinator(navigationController: navigationController)
+                speakersCoordinator.start()
+                self.addDependency(speakersCoordinator)
             }
         }
     }

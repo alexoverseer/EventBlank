@@ -12,5 +12,9 @@ class ViewModelAssembly: Assembly {
         container.register(FeedListViewModel.self) { _ in
             return DefaultFeedListViewModel()
         }
+        
+        container.register(SpeakersListViewModel.self) { _ in
+            return DefaultSpeakersListViewModel()
+        }
     }
 }
