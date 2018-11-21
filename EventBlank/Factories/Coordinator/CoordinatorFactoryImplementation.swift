@@ -4,13 +4,20 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
     
     func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?) {
         
+        typealias Color = Stylesheet.Color
+        
         let controller = MainTabBarController()
+        controller.view.tintColor = Color.appRed
         var controllers: [UINavigationController] = []
         
         for tabItem in TabItem.allCases {
             let tab = UITabBarItem(title: tabItem.title, image: tabItem.image, tag: 0)
             let navigationController = UINavigationController()
             navigationController.enableLargeTitles()
+            navigationController.setLightTitleAttributes()
+            navigationController.navigationBar.barTintColor = Color.appRed
+            navigationController.navigationBar.isTranslucent = false
+            
             navigationController.tabBarItem = tab
             controllers.append(navigationController)
         }

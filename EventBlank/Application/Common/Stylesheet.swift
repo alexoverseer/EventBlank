@@ -1,9 +1,9 @@
-//
-//  Stylesheet.swift
-//  EventBlank
-//
-//  Created by Alexandr Pavlov on 11/21/18.
-//  Copyright © 2018 Bananaland. All rights reserved.
-//
+import UIKit
 
-import Foundation
+struct Stylesheet {
+    
+    struct Color {
+        static let appRed = UIColor(red: 237, green: 27, blue: 27)
+        static let appLightGray = UIColor(white: 0, alpha: 0.3)
+    }
+}

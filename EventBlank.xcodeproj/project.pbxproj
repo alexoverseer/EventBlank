@@ -62,6 +62,9 @@
 		BC70A3C021A5693900988533 /* SpeakersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */; };
 		BC70A3C121A5693900988533 /* SpeakersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */; };
 		BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */; };
+		BC70A3C921A5717300988533 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC70A3CB21A5717300988533 /* Localizable.strings */; };
+		BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3CC21A571D000988533 /* Stylesheet.swift */; };
+		BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,9 @@
 		BC70A3BE21A5693900988533 /* SpeakersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListViewController.swift; sourceTree = "<group>"; };
 		BC70A3BF21A5693900988533 /* SpeakersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakersListViewController.xib; sourceTree = "<group>"; };
 		BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		BC70A3CA21A5717300988533 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC70A3CC21A571D000988533 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		EA1FA9B40F469556048AED71 /* Pods-EventBlank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlank.release.xcconfig"; path = "Target Support Files/Pods-EventBlank/Pods-EventBlank.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +202,7 @@
 			children = (
 				BC366C3D21A462BB006111DF /* Alert.swift */,
 				BC366C3C21A462BB006111DF /* TabItem.swift */,
+				BC70A3CC21A571D000988533 /* Stylesheet.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -347,6 +354,7 @@
 				BC366C5821A46609006111DF /* Router */,
 				BC366C5D21A4669C006111DF /* Factories */,
 				BC366C7321A468EE006111DF /* Flows */,
+				BC70A3C521A5713100988533 /* Resources */,
 				BC43944821A4609500FE2BE1 /* Assets.xcassets */,
 				BC43944A21A4609500FE2BE1 /* LaunchScreen.storyboard */,
 				BC43944D21A4609500FE2BE1 /* Info.plist */,
@@ -433,8 +441,25 @@
 			isa = PBXGroup;
 			children = (
 				BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */,
+				BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC70A3C521A5713100988533 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3C621A5713F00988533 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC70A3C621A5713F00988533 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				BC70A3CB21A5717300988533 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC70A3A121A5491000988533 /* ScheduleListViewController.xib in Resources */,
+				BC70A3C921A5717300988533 /* Localizable.strings in Resources */,
 				BC43944C21A4609500FE2BE1 /* LaunchScreen.storyboard in Resources */,
 				BC70A3C121A5693900988533 /* SpeakersListViewController.xib in Resources */,
 				BC70A3B221A552BB00988533 /* FeedListViewController.xib in Resources */,
@@ -638,6 +664,7 @@
 				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
 				BC70A3B421A5560800988533 /* SpeakersCoordinator.swift in Sources */,
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
+				BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */,
 				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
 				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
 				BC366C7221A46839006111DF /* DefaultSpeakersModuleFactory.swift in Sources */,
@@ -668,6 +695,7 @@
 				BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */,
 				BC70A3B721A568DE00988533 /* SpeakersListView.swift in Sources */,
 				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
+				BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */,
 				BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */,
 				BC366C6821A467E9006111DF /* ScheduleModuleFactory.swift in Sources */,
 				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
@@ -708,6 +736,14 @@
 				BC43944B21A4609500FE2BE1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC70A3CB21A5717300988533 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC70A3CA21A5717300988533 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

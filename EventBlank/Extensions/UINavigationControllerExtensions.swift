@@ -15,4 +15,15 @@ extension UINavigationController {
             navigationItem.largeTitleDisplayMode = .never
         }
     }
+    
+    func setLightTitleAttributes() {
+        
+        let lightAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        if #available(iOS 11.0, *) {
+            navigationBar.largeTitleTextAttributes = lightAttributes
+        } else {
+            navigationBar.titleTextAttributes = lightAttributes
+        }
+    }
 }
