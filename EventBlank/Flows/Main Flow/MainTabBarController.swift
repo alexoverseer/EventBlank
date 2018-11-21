@@ -3,9 +3,9 @@ import ESTabBarController_swift
 
 class MainTabBarController: ESTabBarController, MainTabBarView {
     
-    var onScheduleFlowSelect: ((UINavigationController) -> Void)?
     var onFeedFlowSelect: ((UINavigationController) -> Void)?
-    var onSpeakersFlowSelect: ((UINavigationController) -> Void)?
+    var onAboutFlowSelect: ((UINavigationController) -> Void)?
+    var onFavouritesFlowSelect: ((UINavigationController) -> Void)?
     var onViewDidLoad: ((UINavigationController) -> Void)?
     
     override func viewDidLoad() {
@@ -32,12 +32,12 @@ extension MainTabBarController: UITabBarControllerDelegate {
         let selectedFlow = SelectedFlow.current(rawValue: selectedIndex)
         
         switch selectedFlow {
-        case .schedule:
-            onScheduleFlowSelect?(controller)
         case .feed:
             onFeedFlowSelect?(controller)
-        case .speakers:
-            onSpeakersFlowSelect?(controller)
+        case .about:
+            onAboutFlowSelect?(controller)
+        case .favourites:
+            onFavouritesFlowSelect?(controller)
         }
     }
 }
