@@ -20,6 +20,7 @@
                 <outlet property="conferenceTableView" destination="OBC-Ra-1rh" id="Jkc-OK-UH7"/>
                 <outlet property="pageIndicator" destination="HG4-ME-vN7" id="tXX-AM-UyF"/>
                 <outlet property="photosCollectionView" destination="GRf-pa-BlX" id="RPw-RD-X9W"/>
+                <outlet property="tableHeightConstraint" destination="9Ob-xb-bce" id="S2C-dg-YDz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -109,6 +110,9 @@
                                         <segment title="Speakers"/>
                                     </segments>
                                     <color key="tintColor" red="0.96862745100000003" green="0.18823529410000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="didChangeType:" destination="-1" eventType="valueChanged" id="rzT-Lf-bk9"/>
+                                    </connections>
                                 </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

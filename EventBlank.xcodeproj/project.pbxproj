@@ -48,8 +48,9 @@
 		BC01754121A5ED430090DAE2 /* CollectionDelegatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754021A5ED430090DAE2 /* CollectionDelegatable.swift */; };
 		BC01754321A5EE110090DAE2 /* CollectionDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754221A5EE110090DAE2 /* CollectionDisplayManager.swift */; };
 		BC01754521A5F2B80090DAE2 /* TableDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754421A5F2B80090DAE2 /* TableDisplayManager.swift */; };
-		BC01754721A5FBD40090DAE2 /* ConferenceSelectedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754621A5FBD40090DAE2 /* ConferenceSelectedState.swift */; };
+		BC01754721A5FBD40090DAE2 /* SelectedConferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754621A5FBD40090DAE2 /* SelectedConferenceType.swift */; };
 		BC01754A21A60AD30090DAE2 /* CollectionDisplayManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754921A60AD30090DAE2 /* CollectionDisplayManagerDelegate.swift */; };
+		BC01754C21A61ED80090DAE2 /* PhotoBrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01754B21A61ED80090DAE2 /* PhotoBrowserModel.swift */; };
 		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
 		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
 		BC366C4321A46474006111DF /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4221A46474006111DF /* AppAssembler.swift */; };
@@ -166,8 +167,9 @@
 		BC01754021A5ED430090DAE2 /* CollectionDelegatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDelegatable.swift; sourceTree = "<group>"; };
 		BC01754221A5EE110090DAE2 /* CollectionDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayManager.swift; sourceTree = "<group>"; };
 		BC01754421A5F2B80090DAE2 /* TableDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDisplayManager.swift; sourceTree = "<group>"; };
-		BC01754621A5FBD40090DAE2 /* ConferenceSelectedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceSelectedState.swift; sourceTree = "<group>"; };
+		BC01754621A5FBD40090DAE2 /* SelectedConferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedConferenceType.swift; sourceTree = "<group>"; };
 		BC01754921A60AD30090DAE2 /* CollectionDisplayManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayManagerDelegate.swift; sourceTree = "<group>"; };
+		BC01754B21A61ED80090DAE2 /* PhotoBrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserModel.swift; sourceTree = "<group>"; };
 		BC366C3C21A462BB006111DF /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BC366C3D21A462BB006111DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BC366C4221A46474006111DF /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
@@ -409,7 +411,8 @@
 		BC01754821A601CA0090DAE2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BC01754621A5FBD40090DAE2 /* ConferenceSelectedState.swift */,
+				BC01754621A5FBD40090DAE2 /* SelectedConferenceType.swift */,
+				BC01754B21A61ED80090DAE2 /* PhotoBrowserModel.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -950,9 +953,10 @@
 				BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */,
 				BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */,
 				BC01754521A5F2B80090DAE2 /* TableDisplayManager.swift in Sources */,
+				BC01754C21A61ED80090DAE2 /* PhotoBrowserModel.swift in Sources */,
 				BC70A3A521A5521C00988533 /* FeedCoordinator.swift in Sources */,
 				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
-				BC01754721A5FBD40090DAE2 /* ConferenceSelectedState.swift in Sources */,
+				BC01754721A5FBD40090DAE2 /* SelectedConferenceType.swift in Sources */,
 				BC70A3E721A599A400988533 /* FavouritesCoordinator.swift in Sources */,
 				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
 				BC70A3D321A593A000988533 /* AboutCoordinator.swift in Sources */,
@@ -1165,14 +1169,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XY9H4LH9U8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EventBlank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.EventBlank1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.EventBlank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1185,14 +1189,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XY9H4LH9U8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EventBlank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.EventBlank1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bananaland.EventBlank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

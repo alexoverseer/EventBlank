@@ -15,6 +15,8 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
         
         collectionDisplayManager?.updatContent(with: testPhotoList)
         tableDisplayManager?.updatContent(with: testTopicsList)
+        
+        output?.updateTableHeight()
     }
     
     func registerCollection(_ collectionView: UICollectionView) {
@@ -27,6 +29,10 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
         #warning ("Replace String -> ViewModel")
         tableDisplayManager = TableDisplayManager(with: tableView)
     }
+    
+    func changeTableType(selectedType: SelectedConferenceType) {
+        tableDisplayManager?.switchTableType(type: selectedType)
+    }
 }
 
 extension DefaultConferenceViewModel: CollectionDisplayManagerDelegate {
@@ -36,6 +42,7 @@ extension DefaultConferenceViewModel: CollectionDisplayManagerDelegate {
     }
     
     func openPhotoBrowser(originImage: UIImage?, fromCell: UICollectionViewCell) {
-        output?.openPhotoBrowser(originImage: originImage, cell: fromCell)
+        let images = [#imageLiteral(resourceName: "blank.conference.jpg"), #imageLiteral(resourceName: "blank.conference.jpg"), #imageLiteral(resourceName: "blank.conference.jpg")]
+        output?.openPhotoBrowser(originImage: originImage, images: images, cell: fromCell)
     }
 }

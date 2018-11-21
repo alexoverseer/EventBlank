@@ -1,22 +1,29 @@
 import UIKit
-import SKPhotoBrowser
 
 class ConferenceViewController: UIViewController, ConferenceView {
-    
+
     var viewModel: ConferenceViewModel!
     
     var onShowTopic: (() -> Void)?
     var onShowSpeaker: (() -> Void)?
+    var onShowPhotoBrowser: ((PhotoBrowserModel) -> Void)?
 
     @IBOutlet weak var photosCollectionView: UICollectionView!
     @IBOutlet weak var conferenceTableView: UITableView!
     @IBOutlet weak var pageIndicator: UIPageControl!
+    @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
         viewModel.onViewDidLoad(self)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        updateTableHeight()
     }
     
     private func setupUI() {
@@ -28,6 +35,11 @@ class ConferenceViewController: UIViewController, ConferenceView {
         photosCollectionView.register(cellType: PhotoCollectionViewCell.self)
         conferenceTableView.register(cellType: TopicTableViewCell.self)
         conferenceTableView.register(cellType: SpeakerTableViewCell.self)
+    }
+    
+    @IBAction func didChangeType(_ sender: UISegmentedControl) {
+        let selectedConferenceType = SelectedConferenceType.current(rawValue: sender.selectedSegmentIndex)
+        viewModel.changeTableType(selectedType: selectedConferenceType)
     }
 }
 
@@ -41,17 +53,15 @@ extension ConferenceViewController: ConferenceViewModelOutput {
         pageIndicator.currentPage = page
     }
     
-    func openPhotoBrowser(originImage: UIImage?, cell: UICollectionViewCell) {
-        #warning ("Map orignal images")
-        var images = [SKPhoto]()
-        let photo = SKPhoto.photoWithImage(#imageLiteral(resourceName: "blank.conference.jpg"))
-        images.append(photo)
-        images.append(photo)
-        images.append(photo)
-        
-        let browser = SKPhotoBrowser(originImage: originImage ?? UIImage(), photos: images, animatedFromView: cell)
-        
-        browser.initializePageIndex(pageIndicator.currentPage)
-        present(browser, animated: true, completion: {})
+    func openPhotoBrowser(originImage: UIImage?, images: [UIImage], cell: UICollectionViewCell) {
+        let model = PhotoBrowserModel(originImage: originImage,
+                                      images: images,
+                                      sourceView: cell,
+                                      index: pageIndicator.currentPage)
+        onShowPhotoBrowser?(model)
+    }
+    
+    func updateTableHeight() {
+        tableHeightConstraint.constant = conferenceTableView.contentSize.height
     }
 }

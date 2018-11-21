@@ -5,4 +5,5 @@ protocol ConferenceViewModel: class {
     func onViewDidLoad(_ view: ConferenceView)
     func registerTable(_ tableView: UITableView)
     func registerCollection(_ collectionView: UICollectionView)
+    func changeTableType(selectedType: SelectedConferenceType)
 }

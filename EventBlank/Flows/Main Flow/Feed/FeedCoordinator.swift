@@ -1,4 +1,5 @@
 import Foundation
+import SKPhotoBrowser
 
 final class FeedCoordinator: BaseCoordinator {
     
@@ -26,6 +27,15 @@ final class FeedCoordinator: BaseCoordinator {
     
     private func showConferenceDetails() {
         let conferenceOutput = factory.makeConferenceOutput()
+        conferenceOutput.onShowPhotoBrowser = { [weak self] model in
+            self?.showPhotoBrowser(model: model)
+        }
         router.push(conferenceOutput)
+    }
+    
+    private func showPhotoBrowser(model: PhotoBrowserModel) {
+        
+        let photoBrowserOutput = factory.makePhotoBrowserOutput(model: model)
+        router.present(photoBrowserOutput, animated: true)
     }
 }
