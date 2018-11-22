@@ -4,8 +4,8 @@ class ConferenceViewController: UIViewController, ConferenceView {
 
     var viewModel: ConferenceViewModel!
     
-    var onShowTopic: (() -> Void)?
-    var onShowSpeaker: (() -> Void)?
+    var onShowTopic: ((TalkViewModel) -> Void)?
+    var onShowSpeaker: ((SpeakerViewVModel) -> Void)?
     var onShowPhotoBrowser: ((PhotoBrowserModel) -> Void)?
 
     @IBOutlet weak var photosCollectionView: UICollectionView!
@@ -27,8 +27,7 @@ class ConferenceViewController: UIViewController, ConferenceView {
     }
     
     private func setupUI() {
-        #warning ("Replace with conference name!")
-        navigationItem.title = "NSSpain [2018]"
+        navigationItem.title = viewModel.conference.conference.title
         viewModel.registerCollection(photosCollectionView)
         viewModel.registerTable(conferenceTableView)
         
@@ -44,6 +43,14 @@ class ConferenceViewController: UIViewController, ConferenceView {
 }
 
 extension ConferenceViewController: ConferenceViewModelOutput {
+    func openTopic(topic: TalkViewModel) {
+        onShowTopic?(topic)
+    }
+    
+    func openSpeaker(speaker: SpeakerViewVModel) {
+        onShowSpeaker?(speaker)
+    }
+    
     
     func setTotalPhotosPagesNumber(pages: Int) {
         pageIndicator.numberOfPages = pages
@@ -64,13 +71,5 @@ extension ConferenceViewController: ConferenceViewModelOutput {
                                       sourceView: cell,
                                       index: pageIndicator.currentPage)
         onShowPhotoBrowser?(model)
-    }
-    
-    func openTopic() {
-        onShowTopic?()
-    }
-    
-    func openSpeaker() {
-        onShowSpeaker?()
     }
 }

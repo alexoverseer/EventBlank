@@ -92,7 +92,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="dateLabel" destination="0zE-nM-PVb" id="96t-RU-iRJ"/>
+                <outlet property="descLabel" destination="zYy-6D-J4g" id="WYZ-OL-OJq"/>
                 <outlet property="shadowView" destination="OSG-6A-ca0" id="LvL-nW-lnv"/>
+                <outlet property="thumbnail" destination="8EO-Ex-cPK" id="juR-Jm-i8c"/>
+                <outlet property="titleLabel" destination="fva-Mr-YpK" id="DL0-UH-ald"/>
             </connections>
             <point key="canvasLocation" x="129.59999999999999" y="274.81259370314842"/>
         </tableViewCell>

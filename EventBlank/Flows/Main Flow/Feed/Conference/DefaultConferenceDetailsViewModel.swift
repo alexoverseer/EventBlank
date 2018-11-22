@@ -5,6 +5,16 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     var output: ConferenceViewModelOutput?
     var collectionDisplayManager: CollectionDisplayManager?
     var tableDisplayManager: TableDisplayManager?
+    var conference:ConferenceViewVModel!
+    
+    
+    var topics:[TalkViewModel]{
+        return conference.topics
+    }
+    
+    var speakers:[SpeakerViewVModel]{
+        return conference.people
+    }
     
     func onViewDidLoad(_ view: ConferenceView) {
         
@@ -52,11 +62,11 @@ extension DefaultConferenceViewModel: TableDisplayManagerDelegate {
     
     func didSelectTopic(at index: Int) {
         #warning ("Send Topic")
-        output?.openTopic()
+        output?.openTopic(topic:topics[index])
     }
     
     func didSelectSpeaker(at index: Int) {
         #warning ("Send Speaker")
-        output?.openSpeaker()
+        output?.openSpeaker(speaker:speakers[index])
     }
 }

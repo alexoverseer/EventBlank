@@ -1,9 +1,9 @@
 import UIKit
 
 class SpeakerViewController: UIViewController, SpeakerView {
-    
+
     var viewModel: SpeakerViewModel!
-    var onSelectTopic: (() -> Void)?
+    var onSelectTopic: ((TalkViewModel) -> Void)?
     
     @IBOutlet weak var speakerImgeView: UIImageView!
     @IBOutlet weak var speakerNameLabel: UILabel!
@@ -22,6 +22,7 @@ class SpeakerViewController: UIViewController, SpeakerView {
         navigationItem.title = "Details"
         SpeakerImageHelper.setupSpeakerImage(image: speakerImgeView)
         topicsTableView.register(cellType: TopicTableViewCell.self)
+        self.topicsTableView.reloadData()
     }
     
     override func viewDidLayoutSubviews() {

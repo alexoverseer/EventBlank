@@ -2,8 +2,15 @@ import UIKit
 
 class FeedListViewController: UIViewController, FeedListView {
     
+    
+    func reloadList() {
+        self.feedTableView.reloadData()
+    }
+    
+
+    
     var viewModel: FeedListViewModel!
-    var onShowConferenceDetails: (() -> Void)?
+    var onShowConferenceDetails: ((ConferenceViewVModel) -> Void)?
     
     @IBOutlet weak var feedTableView: UITableView!
     
@@ -29,12 +36,12 @@ extension FeedListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return viewModel.datasource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: FeedTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        
+        cell.configure(with: viewModel.datasource[indexPath.row])
         return cell
     }
 }
@@ -42,6 +49,6 @@ extension FeedListViewController: UITableViewDataSource {
 extension FeedListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        onShowConferenceDetails?()
+        onShowConferenceDetails?(viewModel.datasource[indexPath.row])
     }
 }
