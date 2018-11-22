@@ -16,5 +16,17 @@ class ViewModelAssembly: Assembly {
         container.register(FavouritesListViewModel.self) { _ in
             return DefaultFavouritesListViewModel()
         }
+        
+        container.register(ConferenceViewModel.self) { _ in
+            return DefaultConferenceViewModel()
+        }
+        
+        container.register(TopicViewModel.self) { _ in
+            return DefaultTopicViewModel()
+        }
+        
+        container.register(SpeakerViewModel.self) { _ in
+            return DefaultSpeakerViewModel()
+        }
     }
 }

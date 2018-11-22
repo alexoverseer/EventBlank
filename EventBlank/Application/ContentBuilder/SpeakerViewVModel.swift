@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SpeakerViewModel {
+struct SpeakerViewVModel {
     var uid: String
     var name: String
     var title: String

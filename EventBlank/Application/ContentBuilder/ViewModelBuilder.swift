@@ -21,19 +21,19 @@ class ViewModelBuilder: NSObject {
     private let talksRepository = DefaultTalksRepository()
     private let resourcesRepository = DefaultResourceRepository()
 
-    func buildConferenceViewModels() -> [ConferenceViewModel] {
+    func buildConferenceViewModels() -> [ConferenceViewVModel] {
         let conferences = conferenceRepository.getAll()
         let viewModels = conferences.flatMap { buildConferenceViewModel(uid: $0.uid) }
         return viewModels
     }
     
-    func buildConferenceViewModel(uid: String) -> ConferenceViewModel? {
+    func buildConferenceViewModel(uid: String) -> ConferenceViewVModel? {
         guard let conference = conferenceRepository.getBy(uid: uid) else { return nil }
         let talks = talksRepository.getBy(conference: conference.uid).flatMap{ buildTalkViewModel(uid: $0.uid)}
         let peopleIds = talks.map { $0.speaker.uid }
         let people = speakerRepository.getBy(group: peopleIds).flatMap{ buildSpeakerViewModel(uid: $0.uid)}
         let media = resourcesRepository.getBy(group: conference.images)
-        let viewModel = ConferenceViewModel.init(conference: conference, resouces: media, people: people, topics: talks)
+        let viewModel = ConferenceViewVModel.init(conference: conference, resouces: media, people: people, topics: talks)
         return viewModel
     }
     
@@ -49,10 +49,10 @@ class ViewModelBuilder: NSObject {
     
     
     
-    func buildSpeakerViewModel(uid: String) -> SpeakerViewModel? {
+    func buildSpeakerViewModel(uid: String) -> SpeakerViewVModel? {
         guard let speaker = speakerRepository.getBy(uid: uid) else { return nil }
         let talks = talksRepository.getBy(speaker: speaker.uid).flatMap { buildTalkViewModel(uid: $0.uid) }
-        let viewModel = SpeakerViewModel(speaker: speaker, topics: talks)
+        let viewModel = SpeakerViewVModel(speaker: speaker, topics: talks)
         return viewModel
     }
 
@@ -63,18 +63,18 @@ class ViewModelBuilder: NSObject {
 extension ViewModelBuilder{
     
     
-    func buildAllConferenceViewModels() -> [ConferenceViewModel] {
+    func buildAllConferenceViewModels() -> [ConferenceViewVModel] {
         let conferences = conferenceRepository.getAll()
         let viewModels = conferences.flatMap { buildConferenceViewModel(conference: $0) }
         return viewModels
     }
     
-    func buildConferenceViewModel(conference: Conference) -> ConferenceViewModel? {
+    func buildConferenceViewModel(conference: Conference) -> ConferenceViewVModel? {
         let talks = talksRepository.getBy(conference: conference.uid).flatMap{ buildTalkViewModel(talk: $0)}
         let peopleIds = talks.map { $0.speaker.uid }
         let people = speakerRepository.getBy(group: peopleIds).flatMap{ buildSpeakerViewModel(speaker: $0)}
         let media = resourcesRepository.getBy(group: conference.images)
-        let viewModel = ConferenceViewModel(conference: conference, resouces: media, people: people, topics: talks)
+        let viewModel = ConferenceViewVModel(conference: conference, resouces: media, people: people, topics: talks)
         return viewModel
     }
     
@@ -87,9 +87,9 @@ extension ViewModelBuilder{
             return viewModel
         }
 
-        func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewModel? {
+        func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewVModel? {
             let talks = talksRepository.getBy(speaker: speaker.uid).flatMap { buildTalkViewModel(talk: $0) }
-            let viewModel = SpeakerViewModel(speaker: speaker, topics: talks)
+            let viewModel = SpeakerViewVModel(speaker: speaker, topics: talks)
             return viewModel
         }
 }
