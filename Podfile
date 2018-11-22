@@ -8,7 +8,7 @@ target 'EventBlank' do
   pod 'Swinject'
   pod 'ESTabBarController-swift'
   pod 'Reusable'
-  pod 'SKPhotoBrowser', '6.0.0'
+  pod 'SKPhotoBrowser'
 
   target 'EventBlankTests' do
     inherit! :search_paths

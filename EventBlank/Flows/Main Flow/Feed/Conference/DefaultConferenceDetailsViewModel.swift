@@ -9,7 +9,7 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     func onViewDidLoad(_ view: ConferenceView) {
         
         let testPhotoList = ["1", "2", "3"]
-        let testTopicsList = ["1", "2", "3"]
+        let testTopicsList = Array(0...3).map {"\($0)"}
         
         output?.setTotalPhotosPagesNumber(pages: testPhotoList.count)
         
