@@ -33,4 +33,13 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         
         return browser
     }
+    
+    func makeTopicOutput() -> TopicView {
+        let viewModel = resolver.resolve(TopicViewModel.self)!
+        let controller = TopicViewController()
+        controller.viewModel = viewModel
+        viewModel.output = controller
+        
+        return controller
+    }
 }

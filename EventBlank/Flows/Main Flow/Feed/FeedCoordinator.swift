@@ -36,7 +36,7 @@ final class FeedCoordinator: BaseCoordinator {
         conferenceOutput.onShowSpeaker = { [weak self] in
             self?.showSpeakerScreen()
         }
-        router.push(conferenceOutput)
+        router.push(conferenceOutput, animated: true)
     }
     
     private func showPhotoBrowser(model: PhotoBrowserModel) {
@@ -45,7 +45,8 @@ final class FeedCoordinator: BaseCoordinator {
     }
     
     private func showTopicScreen() {
-        
+        let topicOutput = factory.makeTopicOutput()
+        router.push(topicOutput, animated: true)
     }
     
     private func showSpeakerScreen() {

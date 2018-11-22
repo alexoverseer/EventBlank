@@ -20,5 +20,9 @@ class ViewModelAssembly: Assembly {
         container.register(ConferenceViewModel.self) { _ in
             return DefaultConferenceViewModel()
         }
+        
+        container.register(TopicViewModel.self) { _ in
+            return DefaultTopicViewModel()
+        }
     }
 }
