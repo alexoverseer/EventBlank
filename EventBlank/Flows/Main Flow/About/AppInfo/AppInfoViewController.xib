@@ -9,9 +9,15 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppInfoViewController" customModule="EventBlank" customModuleProvider="target">
             <connections>
+                <outlet property="mapImageView" destination="qQI-Np-kgG" id="As0-ZW-aqI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,19 +26,82 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppInfoViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-sc-i1J">
-                    <rect key="frame" x="101.66666666666669" y="395.66666666666669" width="172" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-fc-KdB">
+                    <rect key="frame" x="0.0" y="44" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="3RE-AX-7k0"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="997-fO-WVO">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keY-x8-KFh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="652"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about.location" translatesAutoresizingMaskIntoConstraints="NO" id="qQI-Np-kgG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="IDM-ie-J1C">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                        </constraint>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="TCQ-5b-abj" appends="YES" id="ILD-nu-WFz"/>
+                                    </connections>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-7v-qH1">
+                                    <rect key="frame" x="20" y="320" width="335" height="312"/>
+                                    <mutableString key="text">NSSpain is organized by the “NSSpain Association”, a non­profit, volunteer­driven association to promote iOS/macOS development in Spain, funded by Luis Ascorbe and Borja Reinares.
+
+The members of the association have organized the “BetabeersRIO”, a popular monthly meetup for developers in La Rioja, also, a very popular meetup in Spain (there are the BetabeersMAD for Madrid, BetabeersBCN for Barcelona, etc).</mutableString>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="rCa-7v-qH1" secondAttribute="bottom" constant="20" id="6Xs-qt-WAB"/>
+                                <constraint firstItem="qQI-Np-kgG" firstAttribute="leading" secondItem="keY-x8-KFh" secondAttribute="leading" id="Iin-1D-PqC"/>
+                                <constraint firstAttribute="trailing" secondItem="qQI-Np-kgG" secondAttribute="trailing" id="S42-8U-lPz"/>
+                                <constraint firstAttribute="trailing" secondItem="rCa-7v-qH1" secondAttribute="trailing" constant="20" id="VxF-S7-kaA"/>
+                                <constraint firstItem="qQI-Np-kgG" firstAttribute="top" secondItem="keY-x8-KFh" secondAttribute="top" id="ZR8-2L-tG8"/>
+                                <constraint firstItem="rCa-7v-qH1" firstAttribute="leading" secondItem="keY-x8-KFh" secondAttribute="leading" constant="20" id="fzw-fZ-wd0"/>
+                                <constraint firstItem="rCa-7v-qH1" firstAttribute="top" secondItem="qQI-Np-kgG" secondAttribute="bottom" constant="20" id="h9E-jP-CHW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="keY-x8-KFh" secondAttribute="bottom" id="3by-X7-wSB"/>
+                        <constraint firstItem="keY-x8-KFh" firstAttribute="leading" secondItem="997-fO-WVO" secondAttribute="leading" id="XCi-mb-tU7"/>
+                        <constraint firstItem="keY-x8-KFh" firstAttribute="height" secondItem="997-fO-WVO" secondAttribute="height" priority="250" id="eCc-gi-8lZ"/>
+                        <constraint firstItem="keY-x8-KFh" firstAttribute="width" secondItem="997-fO-WVO" secondAttribute="width" id="f2y-tw-Kvl"/>
+                        <constraint firstAttribute="trailing" secondItem="keY-x8-KFh" secondAttribute="trailing" id="sJl-8M-jdZ"/>
+                        <constraint firstItem="keY-x8-KFh" firstAttribute="top" secondItem="997-fO-WVO" secondAttribute="top" id="zst-9g-AuO"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="6Qq-sc-i1J" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LLc-3a-5oM"/>
-                <constraint firstItem="6Qq-sc-i1J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U3v-CO-hH5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="997-fO-WVO" secondAttribute="bottom" id="4zO-bj-mY0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i6c-fc-KdB" secondAttribute="trailing" id="CW1-kD-LcJ"/>
+                <constraint firstItem="997-fO-WVO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fk4-tw-sd5"/>
+                <constraint firstItem="i6c-fc-KdB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z26-0W-RRH"/>
+                <constraint firstItem="997-fO-WVO" firstAttribute="top" secondItem="i6c-fc-KdB" secondAttribute="bottom" id="bSh-oM-cQP"/>
+                <constraint firstItem="i6c-fc-KdB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f4k-4Q-Moj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="997-fO-WVO" secondAttribute="trailing" id="uSI-xa-jPf"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
+        <tapGestureRecognizer id="TCQ-5b-abj">
+            <connections>
+                <action selector="didTapOnImage" destination="-1" id="wtY-KF-Zym"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
+    <resources>
+        <image name="about.location" width="1059" height="713"/>
+    </resources>
 </document>

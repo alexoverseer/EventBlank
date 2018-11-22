@@ -21,19 +21,6 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makePhotoBrowserOutput(model: PhotoBrowserModel) -> Presentable {
-        
-        let originImage = model.originImage ?? UIImage()
-        let images = model.images.map { SKPhoto.photoWithImage($0) }
-        let browser = SKPhotoBrowser(originImage: originImage,
-                                     photos: images,
-                                     animatedFromView: model.sourceView)
-        
-        browser.initializePageIndex(model.index)
-        
-        return browser
-    }
-    
     func makeTopicOutput() -> TopicView {
         let viewModel = resolver.resolve(TopicViewModel.self)!
         let controller = TopicViewController()

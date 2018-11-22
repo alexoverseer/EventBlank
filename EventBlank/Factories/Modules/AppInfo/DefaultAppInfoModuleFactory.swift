@@ -1,4 +1,5 @@
-import Foundation
+import UIKit
+import SKPhotoBrowser
 
 final class DefaultAppInfoModuleFactory: BaseFactory, AppInfoModuleFactory {
     
@@ -9,5 +10,9 @@ final class DefaultAppInfoModuleFactory: BaseFactory, AppInfoModuleFactory {
         viewModel.output = controller
         
         return controller
+    }
+    
+    func makeImageBrowserOutput(model: PhotoBrowserModel) -> Presentable {
+        return makePhotoBrowserOutput(model: model)
     }
 }
