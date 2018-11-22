@@ -24,5 +24,9 @@ class ViewModelAssembly: Assembly {
         container.register(TopicViewModel.self) { _ in
             return DefaultTopicViewModel()
         }
+        
+        container.register(SpeakerViewModel.self) { _ in
+            return DefaultSpeakerViewModel()
+        }
     }
 }

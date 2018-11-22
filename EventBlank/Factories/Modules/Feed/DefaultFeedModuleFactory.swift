@@ -42,4 +42,13 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         
         return controller
     }
+    
+    func makeSpeakerOutput() -> SpeakerView {
+        let viewModel = resolver.resolve(SpeakerViewModel.self)!
+        let controller = SpeakerViewController()
+        controller.viewModel = viewModel
+        viewModel.output = controller
+        
+        return controller
+    }
 }

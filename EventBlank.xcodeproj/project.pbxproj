@@ -58,6 +58,12 @@
 		BC01755A21A632920090DAE2 /* DefaultTopicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01755921A632920090DAE2 /* DefaultTopicViewModel.swift */; };
 		BC01755D21A632A50090DAE2 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01755B21A632A50090DAE2 /* TopicViewController.swift */; };
 		BC01755E21A632A50090DAE2 /* TopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC01755C21A632A50090DAE2 /* TopicViewController.xib */; };
+		BC01756021A634C80090DAE2 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01755F21A634C80090DAE2 /* SpeakerView.swift */; };
+		BC01756221A634E90090DAE2 /* SpeakerViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01756121A634E90090DAE2 /* SpeakerViewModelOutput.swift */; };
+		BC01756421A634F30090DAE2 /* SpeakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01756321A634F30090DAE2 /* SpeakerViewModel.swift */; };
+		BC01756621A635000090DAE2 /* DefaultSpeakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01756521A635000090DAE2 /* DefaultSpeakerViewModel.swift */; };
+		BC01756921A6350E0090DAE2 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01756721A6350E0090DAE2 /* SpeakerViewController.swift */; };
+		BC01756A21A6350E0090DAE2 /* SpeakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC01756821A6350E0090DAE2 /* SpeakerViewController.xib */; };
 		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
 		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
 		BC366C4321A46474006111DF /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4221A46474006111DF /* AppAssembler.swift */; };
@@ -184,6 +190,12 @@
 		BC01755921A632920090DAE2 /* DefaultTopicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTopicViewModel.swift; sourceTree = "<group>"; };
 		BC01755B21A632A50090DAE2 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		BC01755C21A632A50090DAE2 /* TopicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicViewController.xib; sourceTree = "<group>"; };
+		BC01755F21A634C80090DAE2 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		BC01756121A634E90090DAE2 /* SpeakerViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewModelOutput.swift; sourceTree = "<group>"; };
+		BC01756321A634F30090DAE2 /* SpeakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewModel.swift; sourceTree = "<group>"; };
+		BC01756521A635000090DAE2 /* DefaultSpeakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakerViewModel.swift; sourceTree = "<group>"; };
+		BC01756721A6350E0090DAE2 /* SpeakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
+		BC01756821A6350E0090DAE2 /* SpeakerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakerViewController.xib; sourceTree = "<group>"; };
 		BC366C3C21A462BB006111DF /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BC366C3D21A462BB006111DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BC366C4221A46474006111DF /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
@@ -448,7 +460,7 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
-		BC01755121A6312F0090DAE2 /* Topics */ = {
+		BC01755121A6312F0090DAE2 /* Topic */ = {
 			isa = PBXGroup;
 			children = (
 				BC01755321A632600090DAE2 /* TopicView.swift */,
@@ -458,14 +470,20 @@
 				BC01755B21A632A50090DAE2 /* TopicViewController.swift */,
 				BC01755C21A632A50090DAE2 /* TopicViewController.xib */,
 			);
-			path = Topics;
+			path = Topic;
 			sourceTree = "<group>";
 		};
-		BC01755221A631380090DAE2 /* Speakers */ = {
+		BC01755221A631380090DAE2 /* Speaker */ = {
 			isa = PBXGroup;
 			children = (
+				BC01755F21A634C80090DAE2 /* SpeakerView.swift */,
+				BC01756121A634E90090DAE2 /* SpeakerViewModelOutput.swift */,
+				BC01756321A634F30090DAE2 /* SpeakerViewModel.swift */,
+				BC01756521A635000090DAE2 /* DefaultSpeakerViewModel.swift */,
+				BC01756721A6350E0090DAE2 /* SpeakerViewController.swift */,
+				BC01756821A6350E0090DAE2 /* SpeakerViewController.xib */,
 			);
-			path = Speakers;
+			path = Speaker;
 			sourceTree = "<group>";
 		};
 		BC366C3A21A46178006111DF /* Application */ = {
@@ -646,8 +664,8 @@
 				BC70A3A421A5521C00988533 /* FeedCoordinator.swift */,
 				BC70A3A621A5526800988533 /* FeedList */,
 				BC01751C21A5C0590090DAE2 /* Conference */,
-				BC01755121A6312F0090DAE2 /* Topics */,
-				BC01755221A631380090DAE2 /* Speakers */,
+				BC01755121A6312F0090DAE2 /* Topic */,
+				BC01755221A631380090DAE2 /* Speaker */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -867,6 +885,7 @@
 				BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */,
 				BC01755E21A632A50090DAE2 /* TopicViewController.xib in Resources */,
 				BC7F0DB421A5A4E4003825F2 /* FeedTableViewCell.xib in Resources */,
+				BC01756A21A6350E0090DAE2 /* SpeakerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,6 +1013,7 @@
 				BC70A3FE21A59C3300988533 /* FavouritesListViewController.swift in Sources */,
 				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
 				BC01751E21A5C0780090DAE2 /* ConferenceView.swift in Sources */,
+				BC01756921A6350E0090DAE2 /* SpeakerViewController.swift in Sources */,
 				BC70A3EE21A599F800988533 /* FavouritesListViewModel.swift in Sources */,
 				BC01753721A5CFF50090DAE2 /* TopicTableViewCell.swift in Sources */,
 				BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */,
@@ -1004,8 +1024,10 @@
 				BC70A3EC21A599EC00988533 /* FavouritesListViewModelOutput.swift in Sources */,
 				BC70A3AC21A5528D00988533 /* FeedListViewModel.swift in Sources */,
 				BC01754A21A60AD30090DAE2 /* CollectionDisplayManagerDelegate.swift in Sources */,
+				BC01756021A634C80090DAE2 /* SpeakerView.swift in Sources */,
 				BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */,
 				BC70A3C421A56C7F00988533 /* UINavigationControllerExtensions.swift in Sources */,
+				BC01756421A634F30090DAE2 /* SpeakerViewModel.swift in Sources */,
 				BC01754521A5F2B80090DAE2 /* TableDisplayManager.swift in Sources */,
 				BC01754C21A61ED80090DAE2 /* PhotoBrowserModel.swift in Sources */,
 				BC01755D21A632A50090DAE2 /* TopicViewController.swift in Sources */,
@@ -1024,6 +1046,7 @@
 				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
 				62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */,
 				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
+				BC01756621A635000090DAE2 /* DefaultSpeakerViewModel.swift in Sources */,
 				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,
 				BC01752221A5C09C0090DAE2 /* ConferenceViewModel.swift in Sources */,
 				BC70A3B121A552BB00988533 /* FeedListViewController.swift in Sources */,
@@ -1034,6 +1057,7 @@
 				BC366C4321A46474006111DF /* AppAssembler.swift in Sources */,
 				BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */,
 				BC01753321A5CFD00090DAE2 /* PhotoCollectionViewCell.swift in Sources */,
+				BC01756221A634E90090DAE2 /* SpeakerViewModelOutput.swift in Sources */,
 				BC70A3DA21A5941900988533 /* AppInfoViewModel.swift in Sources */,
 				BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */,
 				BC70A3D621A593FB00988533 /* AppInfoView.swift in Sources */,

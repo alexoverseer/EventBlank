@@ -50,6 +50,7 @@ final class FeedCoordinator: BaseCoordinator {
     }
     
     private func showSpeakerScreen() {
-        
+        let speakerOutput = factory.makeSpeakerOutput()
+        router.push(speakerOutput, animated: true)
     }
 }
