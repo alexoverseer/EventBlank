@@ -13,16 +13,15 @@ struct SpeakerViewVModel {
     var name: String
     var title: String
     var photo: String
-    var page: URL
+    var page: URL?
     
-    let topics: [TalkViewModel]
+    var topics: [TalkViewModel] = []
     
-    init(speaker:Speaker,topics:[TalkViewModel]){
+    init(speaker:Speaker){
         self.uid = speaker.uid
         self.name = speaker.name
         self.title = speaker.title
         self.photo = speaker.photo
         self.page = speaker.page
-        self.topics = topics
     }
 }

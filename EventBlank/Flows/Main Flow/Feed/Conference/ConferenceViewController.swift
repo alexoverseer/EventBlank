@@ -12,6 +12,8 @@ class ConferenceViewController: UIViewController, ConferenceView {
     @IBOutlet weak var conferenceTableView: UITableView!
     @IBOutlet weak var pageIndicator: UIPageControl!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,10 @@ class ConferenceViewController: UIViewController, ConferenceView {
     }
     
     private func setupUI() {
-        navigationItem.title = viewModel.conference.conference.title
+        navigationItem.title = "Details"
+        titleLabel.text = viewModel.conference.conference.title
+        descriptionLabel.text = viewModel.conference.conference.description
+        
         viewModel.registerCollection(photosCollectionView)
         viewModel.registerTable(conferenceTableView)
         
@@ -43,6 +48,7 @@ class ConferenceViewController: UIViewController, ConferenceView {
 }
 
 extension ConferenceViewController: ConferenceViewModelOutput {
+    
     func openTopic(topic: TalkViewModel) {
         onShowTopic?(topic)
     }
@@ -50,7 +56,6 @@ extension ConferenceViewController: ConferenceViewModelOutput {
     func openSpeaker(speaker: SpeakerViewVModel) {
         onShowSpeaker?(speaker)
     }
-    
     
     func setTotalPhotosPagesNumber(pages: Int) {
         pageIndicator.numberOfPages = pages

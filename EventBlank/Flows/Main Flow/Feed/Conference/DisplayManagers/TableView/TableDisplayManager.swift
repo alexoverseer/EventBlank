@@ -3,7 +3,7 @@ import UIKit
 final class TableDisplayManager: NSObject, TableDelegatable {
     
     #warning ("Replace String -> ViewModel")
-    typealias Item = String
+    typealias Item = Any
     
     private var dataSource = [Item]()
     private var tableView: UITableView

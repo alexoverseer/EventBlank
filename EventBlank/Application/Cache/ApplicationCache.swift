@@ -22,7 +22,7 @@ class ApplicationCache: NSObject {
     override init() {
         self.conferences = decoder.transformJSON(fileName: "conferences") ?? []
         self.speakers = decoder.transformJSON(fileName: "speakers") ?? []
-        self.topics = decoder.transformJSON(fileName: "resources") ?? []
+        self.topics = decoder.transformJSON(fileName: "talks") ?? []
         self.resources = decoder.transformJSON(fileName: "resources") ?? []
         
     }

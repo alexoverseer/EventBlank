@@ -1,10 +1,9 @@
 [
     {
-        "uid":"33235423523",
-        "type" :"video"
-        "url":"https://vimeo.com/292786900"
+        "uid":"001",
+        "type" :"video",
+        "url":"https://vimeo.com/292786900",
         "local":"imageName"
     }
-
 ]
 

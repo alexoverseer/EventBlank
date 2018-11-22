@@ -1,14 +1,11 @@
 [
     {
         "uid":"3232323",
-        "conference" :"2342352342",
+        "conference" :"201801",
         "title":"RxSwift by tutorial",
-        "speaker":"325345352",
-        "media":["33235423523"],
+        "speaker":"00011",
+        "media":["001"],
         "startDate":21425125121,
         "endDate":32534234263
-
     }
-
-
 ]

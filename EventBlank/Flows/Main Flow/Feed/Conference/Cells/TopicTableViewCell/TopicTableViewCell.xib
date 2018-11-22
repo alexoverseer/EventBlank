@@ -61,14 +61,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-jd-FTf">
                                 <rect key="frame" x="90" y="10" width="220" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avoiding culture shock. Designing apps for different cultures." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-hH-yqB">
-                                        <rect key="frame" x="0.0" y="0.0" width="220" height="50.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Podcast 🎉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-hH-yqB">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="37"/>
                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Daniel Munoz ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzr-Li-9wK">
-                                        <rect key="frame" x="0.0" y="58.5" width="220" height="21.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ John Sundell ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzr-Li-9wK">
+                                        <rect key="frame" x="0.0" y="45" width="220" height="35"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -102,7 +102,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="endDateLabel" destination="Krx-M5-XUc" id="bsJ-7T-4pD"/>
                 <outlet property="shadowView" destination="4q0-Ce-8hj" id="bHd-QZ-GjE"/>
+                <outlet property="speakerLabel" destination="Dzr-Li-9wK" id="XOX-ft-XL7"/>
+                <outlet property="startDateLabel" destination="soe-Bl-8BH" id="9r1-xA-fNs"/>
+                <outlet property="topicTitleLabel" destination="M8J-hH-yqB" id="OMz-bP-9N8"/>
             </connections>
             <point key="canvasLocation" x="129.59999999999999" y="211.84407796101951"/>
         </tableViewCell>

@@ -51,8 +51,7 @@ class ViewModelBuilder: NSObject {
     
     func buildSpeakerViewModel(uid: String) -> SpeakerViewVModel? {
         guard let speaker = speakerRepository.getBy(uid: uid) else { return nil }
-        let talks = talksRepository.getBy(speaker: speaker.uid).flatMap { buildTalkViewModel(uid: $0.uid) }
-        let viewModel = SpeakerViewVModel(speaker: speaker, topics: talks)
+        let viewModel = SpeakerViewVModel(speaker: speaker)
         return viewModel
     }
 
@@ -78,18 +77,27 @@ extension ViewModelBuilder{
         return viewModel
     }
     
-        func buildTalkViewModel(talk: Topic) -> TalkViewModel? {
+    func buildTalkViewModel(talk: Topic) -> TalkViewModel? {
             guard let speaker = speakerRepository.getBy(uid: talk.speaker),
-                let speakerViewModel = buildSpeakerViewModel(speaker: speaker)
+                var speakerViewModel = buildSpeakerViewModel(speaker: speaker)
                 else { return nil }
             let media = resourcesRepository.getBy(group: talk.media)
+        
+            speakerViewModel.topics = buildTalksViewModel(for: speakerViewModel)
             let viewModel = TalkViewModel.init(talk: talk, speaker: speakerViewModel, resouces: media)
             return viewModel
-        }
+    }
+    
+    func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewModel] {
+        let talks = talksRepository.getBy(speaker: speaker.uid)
+        
+        let viewModel = talks.compactMap{ TalkViewModel.init(talk: $0, speaker: speaker, resouces: resourcesRepository.getBy(group: $0.media))}
+        
+        return viewModel
+    }
 
-        func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewVModel? {
-            let talks = talksRepository.getBy(speaker: speaker.uid).flatMap { buildTalkViewModel(talk: $0) }
-            let viewModel = SpeakerViewVModel(speaker: speaker, topics: talks)
+    func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewVModel? {
+            let viewModel = SpeakerViewVModel(speaker: speaker)
             return viewModel
         }
 }

@@ -40,18 +40,27 @@
                     <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZC-K4-ORV">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="635.66666666666663"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="611.66666666666663"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbA-ve-HsX" userLabel="Vimeo Player">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank.sundell" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-lM-5Ho">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Vz0-lM-5Ho" secondAttribute="bottom" id="2lk-2C-bFq"/>
                                         <constraint firstAttribute="height" constant="300" id="IHK-Vv-Io7">
                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                         </constraint>
+                                        <constraint firstItem="Vz0-lM-5Ho" firstAttribute="leading" secondItem="XbA-ve-HsX" secondAttribute="leading" id="KQK-V0-OeN"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vz0-lM-5Ho" secondAttribute="trailing" id="f6B-AL-WOa"/>
+                                        <constraint firstItem="Vz0-lM-5Ho" firstAttribute="top" secondItem="XbA-ve-HsX" secondAttribute="top" id="zUU-s9-GPV"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="NSSpain [2018]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-23-j17">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Live Podcast 🎉" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-23-j17">
                                     <rect key="frame" x="20" y="320" width="335" height="36"/>
                                     <constraints>
                                         <constraint firstAttribute="height" priority="250" constant="36" id="1cf-jq-QxW"/>
@@ -61,24 +70,25 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1N-Hx-B2e">
-                                    <rect key="frame" x="20" y="376" width="335" height="96"/>
+                                    <rect key="frame" x="20" y="376" width="335" height="72"/>
                                     <constraints>
                                         <constraint firstAttribute="height" priority="250" constant="96" id="Ilx-k2-Wcp"/>
                                     </constraints>
-                                    <string key="text">The biggest iOS/macOS related event in the country carefully crafted for you by the community! Awesome speakers and lots of fun!</string>
+                                    <string key="text">Recorded and produced live by Stefan Völker.
+NSSpain 2018</string>
                                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3t-6x-9ME">
-                                    <rect key="frame" x="20" y="492" width="335" height="1"/>
+                                    <rect key="frame" x="20" y="468" width="335" height="1"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="EtK-0y-zOe"/>
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank.person" translatesAutoresizingMaskIntoConstraints="NO" id="psd-1y-hZv">
-                                    <rect key="frame" x="20" y="513" width="80" height="80"/>
+                                    <rect key="frame" x="20" y="489" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="80" id="PSG-KB-kgS"/>
                                         <constraint firstAttribute="width" constant="80" id="dm9-2x-4dB"/>
@@ -90,7 +100,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Sundell " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfv-DF-KKn">
-                                    <rect key="frame" x="110" y="513" width="255" height="24"/>
+                                    <rect key="frame" x="110" y="489" width="255" height="24"/>
                                     <constraints>
                                         <constraint firstAttribute="height" priority="250" constant="24" id="dTu-4F-4yA"/>
                                     </constraints>
@@ -99,7 +109,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift by Sundell | Stacktrace Podcast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6s-7W-tdz">
-                                    <rect key="frame" x="110" y="547" width="245" height="38.666666666666629"/>
+                                    <rect key="frame" x="110" y="523" width="245" height="38.666666666666629"/>
                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -158,5 +168,6 @@
     </objects>
     <resources>
         <image name="blank.person" width="800" height="799"/>
+        <image name="blank.sundell" width="3360" height="2100"/>
     </resources>
 </document>
