@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouritesListViewController" customModule="EventBlank" customModuleProvider="target">
             <connections>
@@ -20,19 +25,44 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FavouritesListViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-zs-gVr">
-                    <rect key="frame" x="78.666666666666686" y="395.66666666666669" width="218" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U9Z-lt-0uc">
+                    <rect key="frame" x="20" y="64" width="335" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dk8-OQ-XK4"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Topics"/>
+                        <segment title="Speakers"/>
+                    </segments>
+                    <color key="tintColor" red="0.96862745100000003" green="0.18823529410000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7a2-Cu-0Wg">
+                    <rect key="frame" x="0.0" y="124" width="375" height="654"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No favourite topics / speakers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig5-eI-Ew5">
+                    <rect key="frame" x="20" y="439" width="335" height="24"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                    <color key="textColor" red="0.050980392159999999" green="0.87843137250000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="HHh-zs-gVr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GsI-Jp-ZyU"/>
-                <constraint firstItem="HHh-zs-gVr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UCm-WC-5lv"/>
+                <constraint firstItem="7a2-Cu-0Wg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Je-4a-e95"/>
+                <constraint firstItem="U9Z-lt-0uc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Fd6-Ym-eEB"/>
+                <constraint firstItem="U9Z-lt-0uc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Grx-u4-7Pm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7a2-Cu-0Wg" secondAttribute="trailing" id="Q3k-En-eV5"/>
+                <constraint firstItem="ig5-eI-Ew5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QUl-94-4kT"/>
+                <constraint firstItem="ig5-eI-Ew5" firstAttribute="centerY" secondItem="7a2-Cu-0Wg" secondAttribute="centerY" id="Y6L-hg-ENr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7a2-Cu-0Wg" secondAttribute="bottom" id="YaC-WC-KPc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ig5-eI-Ew5" secondAttribute="trailing" constant="20" id="cxM-hD-hOs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U9Z-lt-0uc" secondAttribute="trailing" constant="20" id="mcR-Dg-iyl"/>
+                <constraint firstItem="ig5-eI-Ew5" firstAttribute="centerX" secondItem="7a2-Cu-0Wg" secondAttribute="centerX" id="uIu-YE-DWd"/>
+                <constraint firstItem="7a2-Cu-0Wg" firstAttribute="top" secondItem="U9Z-lt-0uc" secondAttribute="bottom" constant="20" id="zwK-py-sN2"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="39.200000000000003" y="37.684729064039409"/>
         </view>
     </objects>
 </document>
