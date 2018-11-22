@@ -10,7 +10,7 @@ import UIKit
 
 struct TalkViewModel {
     let talk: Topic
-    let speaker: SpeakerViewModel
+    let speaker: SpeakerViewVModel
     let resouces: [Resource]
     
     var video:Resource?{

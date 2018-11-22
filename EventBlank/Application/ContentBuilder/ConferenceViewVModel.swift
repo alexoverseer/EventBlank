@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct ConferenceViewModel {
+struct ConferenceViewVModel {
     let conference: Conference
     let resouces: [Resource]
-    let people: [SpeakerViewModel]
+    let people: [SpeakerViewVModel]
     let topics: [TalkViewModel]
 }
