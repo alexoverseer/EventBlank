@@ -8,7 +8,6 @@ class TopicViewController: UIViewController, TopicView {
     
     @IBOutlet weak var vimeoPlayerBaseView: UIView!
     
-    
     @IBOutlet weak var testWebView: UIWebView!
     
     override func viewDidLoad() {

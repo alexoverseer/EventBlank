@@ -51,6 +51,9 @@ final class FeedCoordinator: BaseCoordinator {
     
     private func showSpeakerScreen() {
         let speakerOutput = factory.makeSpeakerOutput()
+        speakerOutput.onSelectTopic = { [weak self] in
+            self?.showTopicScreen()
+        }
         router.push(speakerOutput, animated: true)
     }
 }

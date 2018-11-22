@@ -10,12 +10,6 @@ class SpeakerTableViewCell: UITableViewCell, NibReusable {
         super.awakeFromNib()
         
         shadowView.addShadow()
-        setupSpeakerImage()
-    }
-    
-    private func setupSpeakerImage() {
-        speakerImageView.layer.borderWidth = 3
-        speakerImageView.layer.borderColor = Stylesheet.Color.appMagenta.cgColor
-        speakerImageView.layer.cornerRadius = speakerImageView.frame.width / 2
+        SpeakerImageHelper.setupSpeakerImage(image: speakerImageView)
     }
 }

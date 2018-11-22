@@ -68,6 +68,8 @@
 		BC01757221A6932F0090DAE2 /* CMTime+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01756E21A6932F0090DAE2 /* CMTime+Utilities.swift */; };
 		BC01757321A6932F0090DAE2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01756F21A6932F0090DAE2 /* Player.swift */; };
 		BC01757421A6932F0090DAE2 /* AVPlayer+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01757021A6932F0090DAE2 /* AVPlayer+Utilities.swift */; };
+		BC01757621A6ACB60090DAE2 /* SpeakerImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01757521A6ACB60090DAE2 /* SpeakerImageHelper.swift */; };
+		BC01757821A6ADE60090DAE2 /* SpeakerViewController+TableDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01757721A6ADE60090DAE2 /* SpeakerViewController+TableDelegates.swift */; };
 		BC366C3E21A462BB006111DF /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3C21A462BB006111DF /* TabItem.swift */; };
 		BC366C3F21A462BB006111DF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C3D21A462BB006111DF /* Alert.swift */; };
 		BC366C4321A46474006111DF /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4221A46474006111DF /* AppAssembler.swift */; };
@@ -204,6 +206,8 @@
 		BC01756E21A6932F0090DAE2 /* CMTime+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMTime+Utilities.swift"; sourceTree = "<group>"; };
 		BC01756F21A6932F0090DAE2 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		BC01757021A6932F0090DAE2 /* AVPlayer+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Utilities.swift"; sourceTree = "<group>"; };
+		BC01757521A6ACB60090DAE2 /* SpeakerImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerImageHelper.swift; sourceTree = "<group>"; };
+		BC01757721A6ADE60090DAE2 /* SpeakerViewController+TableDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpeakerViewController+TableDelegates.swift"; sourceTree = "<group>"; };
 		BC366C3C21A462BB006111DF /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BC366C3D21A462BB006111DF /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BC366C4221A46474006111DF /* AppAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
@@ -444,6 +448,7 @@
 			children = (
 				BC01754621A5FBD40090DAE2 /* SelectedConferenceType.swift */,
 				BC01754B21A61ED80090DAE2 /* PhotoBrowserModel.swift */,
+				BC01757521A6ACB60090DAE2 /* SpeakerImageHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				BC01756321A634F30090DAE2 /* SpeakerViewModel.swift */,
 				BC01756521A635000090DAE2 /* DefaultSpeakerViewModel.swift */,
 				BC01756721A6350E0090DAE2 /* SpeakerViewController.swift */,
+				BC01757721A6ADE60090DAE2 /* SpeakerViewController+TableDelegates.swift */,
 				BC01756821A6350E0090DAE2 /* SpeakerViewController.xib */,
 			);
 			path = Speaker;
@@ -1029,6 +1035,7 @@
 				62DE44B621A5B98F00C3AC14 /* ResourceRepository.swift in Sources */,
 				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
+				BC01757621A6ACB60090DAE2 /* SpeakerImageHelper.swift in Sources */,
 				BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */,
 				62DE44BD21A5BBBA00C3AC14 /* TalkViewModel.swift in Sources */,
 				62DE44B321A5B8E600C3AC14 /* SpeakerRepository.swift in Sources */,
@@ -1085,6 +1092,7 @@
 				BC01752B21A5C1BD0090DAE2 /* ConferenceViewController.swift in Sources */,
 				BC7F0DB321A5A4E4003825F2 /* FeedTableViewCell.swift in Sources */,
 				BC01752421A5C0B10090DAE2 /* DefaultConferenceDetailsViewModel.swift in Sources */,
+				BC01757821A6ADE60090DAE2 /* SpeakerViewController+TableDelegates.swift in Sources */,
 				BC366C4321A46474006111DF /* AppAssembler.swift in Sources */,
 				BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */,
 				BC01753321A5CFD00090DAE2 /* PhotoCollectionViewCell.swift in Sources */,
