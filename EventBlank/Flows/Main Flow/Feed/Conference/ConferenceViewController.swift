@@ -53,6 +53,11 @@ extension ConferenceViewController: ConferenceViewModelOutput {
         pageIndicator.currentPage = page
     }
     
+    func updateTableHeight() {
+        tableHeightConstraint.constant = conferenceTableView.contentSize.height
+        self.view.layoutIfNeeded()
+    }
+    
     func openPhotoBrowser(originImage: UIImage?, images: [UIImage], cell: UICollectionViewCell) {
         let model = PhotoBrowserModel(originImage: originImage,
                                       images: images,
@@ -61,7 +66,11 @@ extension ConferenceViewController: ConferenceViewModelOutput {
         onShowPhotoBrowser?(model)
     }
     
-    func updateTableHeight() {
-        tableHeightConstraint.constant = conferenceTableView.contentSize.height
+    func openTopic() {
+        onShowTopic?()
+    }
+    
+    func openSpeaker() {
+        onShowSpeaker?()
     }
 }

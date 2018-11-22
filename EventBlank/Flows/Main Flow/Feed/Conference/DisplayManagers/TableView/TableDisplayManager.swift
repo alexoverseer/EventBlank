@@ -9,6 +9,8 @@ final class TableDisplayManager: NSObject, TableDelegatable {
     private var tableView: UITableView
     private var cellType = SelectedConferenceType.topics
     
+    weak var delegate: TableDisplayManagerDelegate?
+    
     init(with tableView: UITableView) {
         self.tableView = tableView
         super.init()
@@ -63,6 +65,11 @@ final class TableDisplayManager: NSObject, TableDelegatable {
     // MARK: - UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        switch cellType {
+        case .topics:
+            delegate?.didSelectTopic(at: indexPath.row)
+        case .speakers:
+            delegate?.didSelectSpeaker(at: indexPath.row)
+        }
     }
 }
