@@ -19,7 +19,7 @@
 }, {
     "uid": "00004",
     "name": "Sommer Panage",
-    "title": "",
+    "title": "Mobile dev at Chorus",
     "photo": "https://pbs.twimg.com/profile_images/854048921785556996/Ih8pVA7s_400x400.jpg",
     "page": "https://twitter.com/sommer"
 }, {
@@ -48,7 +48,7 @@
 }, {
     "uid": "00009",
     "name": "Fabio Pelosin",
-    "title": "",
+    "title": "Independent",
     "photo": "https://pbs.twimg.com/profile_images/764045743250432000/NHBqeQEr_400x400.jpg",
     "page": "https://twitter.com/fabiopelosin"
 }, {
@@ -125,12 +125,273 @@
 }, {
     "uid": "00022",
     "name": "Krzysztof Zabłocki",
-    "title": "",
+    "title": "Dev, Speaker, Creator, The New York Times",
     "photo": "https://pbs.twimg.com/profile_images/1036876946448232449/yqhZsnBS_400x400.jpg",
     "page": "https://twitter.com/merowing_"
+}, {
+    "uid": "00023",
+    "name": "Mattt",
+    "title": "",
+    "photo": "http://2018.nsspain.com/images/speakers/mattt.jpeg",
+    "page": "https://twitter.com/mattt"
+}, {
+    "uid": "00024",
+    "name": "Guilherme Rambo",
+    "title": "iOS developer",
+    "photo": "http://2018.nsspain.com/images/speakers/gui.jpeg",
+    "page": ""
+}, {
+    "uid": "000025",
+    "name": "Daniel Steinberg",
+    "title": "",
+    "photo": "http://2018.nsspain.com/images/speakers/daniel.jpeg",
+    "page": "https://twitter.com/dimsumthinking"
+}, {
+    "uid": "00026",
+    "name": "Ellen Shapiro",
+    "title": "",
+    "photo": "http://2018.nsspain.com/images/speakers/ellen.jpeg",
+    "page": "https://twitter.com/designatednerd"
+}, {
+    "uid": "00027",
+    "name": "Paul Hudson",
+    "title": "Creator of Hacking with Swift, author of books about iOS, macOS, watchOS, and tvOS.",
+    "photo": "http://2018.nsspain.com/images/speakers/paul.jpeg",
+    "page": "https://twitter.com/twostraws"
+}, {
+    "uid": "00028",
+    "name": "Benedikt Terhechte",
+    "title": "Senior iOS Developer",
+    "photo": "http://2018.nsspain.com/images/speakers/benedikt.jpeg",
+    "page": ""
+}, {
+    "uid": "00029",
+    "name": "Marcus Wermuth",
+    "title": "",
+    "photo": "http://2018.nsspain.com/images/speakers/marcus.jpeg",
+    "page": "https://twitter.com/mwermuth"
+}, {
+    "uid": "00030",
+    "name": "Isabel Barrera",
+    "title": "iOS engineer",
+    "photo": "http://2018.nsspain.com/images/speakers/isabel.jpeg",
+    "page": "https://twitter.com/ifbarrera"
+}, {
+    "uid": "00031",
+    "name": "Pavel Mazurin",
+    "title": "iOS engineer at Uber",
+    "photo": "http://2018.nsspain.com/images/speakers/pavel.jpeg",
+    "page": "https://twitter.com/pmazurin"
+}, {
+    "uid": "00032",
+    "name": "Daniel Munoz",
+    "title": "iOS Software Engineer at LOVOO GmbH",
+    "photo": "http://2018.nsspain.com/images/speakers/dan.jpeg",
+    "page": "https://twitter.com/Makias"
+}, {
+    "uid": "00033",
+    "name": "Stephen Celis",
+    "title": "",
+    "photo": "http://2018.nsspain.com/images/speakers/stephen.jpeg",
+    "page": "https://twitter.com/stephencelis"
+}, {
+    "uid": "00034",
+    "name": "Kristina Fox",
+    "title": "iOS Software Engineer",
+    "photo": "http://2018.nsspain.com/images/speakers/kristina.jpeg",
+    "page": "https://twitter.com/krstnfx"
+}, {
+    "uid": "00035",
+    "name": "John Sundell",
+    "title": "Software Developer, Hyper",
+    "photo": "http://2018.nsspain.com/images/speakers/john.jpeg",
+    "page": "https://twitter.com/johnsundell"
+}, {
+    "uid": "00036",
+    "name": "Dave DeLong",
+    "title": "iOS Architect",
+    "photo": "http://2018.nsspain.com/images/speakers/dave.jpeg",
+    "page": "https://twitter.com/davedelong"
+}, {
+    "uid": "00037",
+    "name": "Hector Matos",
+    "title": "",
+    "photo": "http://2018.nsspain.com/images/speakers/hector.jpeg",
+    "page": "https://twitter.com/allonsykraken"
+}, {
+    "uid": "00038",
+    "name": "Nelida Velazquez",
+    "title": "iOS developer",
+    "photo": "http://2018.nsspain.com/images/speakers/nelida.jpeg",
+    "page": "https://twitter.com/tolkiana"
+}, {
+    "uid": "00039",
+    "name": "Warren Burton",
+    "title": "iOS and MacOS Development & Consulting",
+    "photo": "http://2018.nsspain.com/images/speakers/warren.jpeg",
+    "page": "https://twitter.com/TroutDev"
+}, {
+    "uid": "00040",
+    "name": "Bart den Hollander",
+    "title": "Senior Consultant",
+    "photo": "http://2018.nsspain.com/images/speakers/bart.jpeg",
+    "page": "https://twitter.com/hollanderbart"
+}, {
+    "uid": "00041",
+    "name": "Adam Bell",
+    "title": "iOS Engineer",
+    "photo": "http://2018.nsspain.com/images/speakers/adam.jpeg",
+    "page": "https://twitter.com/b3ll"
+}, {
+    "uid": "00042",
+    "name": "Victor Pena",
+    "title": "Software Engineer from Galicia, iOS Engineer at Uber",
+    "photo": "http://2018.nsspain.com/images/speakers/victor.jpeg",
+    "page": "https://twitter.com/vicpenap"
+}, {
+    "uid": "00043",
+    "name": "Vladislav Alexeev",
+    "title": "Software Engineer",
+    "photo": "http://2018.nsspain.com/images/speakers/vlad.jpeg",
+    "page": "https://twitter.com/beefon"
+}, {
+    "uid": "00044",
+    "name": "Peter Steinberger",
+    "title": "Founder and CEO, PSPDFKit",
+    "photo": "https://pbs.twimg.com/profile_images/792759342927843328/onx286KO_400x400.jpg",
+    "page": "https://twitter.com/steipete"
+}, {
+    "uid": "00045",
+    "name": "Esteban Torres",
+    "title": "iOS Developer, SoundCloud",
+    "photo": "",
+    "page": "https://twitter.com/esttorhe"
+}, {
+    "uid": "00046",
+    "name": "Marin Usalj",
+    "title": "Señor engineer at Lyft. Speaker. OSS contributor.",
+    "photo": "https://pbs.twimg.com/profile_images/515541292705529856/h3-14jxA_400x400.jpeg",
+    "page": "https://twitter.com/_supermarin"
+}, {
+    "uid": "00047",
+    "name": "Sally Shepard",
+    "title": "iOS developer",
+    "photo": "https://pbs.twimg.com/profile_images/933407342661701633/v0ELZaCb_400x400.jpg",
+    "page": "https://twitter.com/mostgood"
+}, {
+    "uid": "00048",
+    "name": "Roy Marmelstein",
+    "title": "Software Engineer, Spotify",
+    "photo": "https://pbs.twimg.com/profile_images/628330860387897344/1XhdMJMt_400x400.jpg",
+    "page": "https://twitter.com/marmelroy"
+}, {
+    "uid": "00049",
+    "name": "Abizer Nasir",
+    "title": "Contractor  platforms",
+    "photo": "",
+    "page": "https://twitter.com/abizern"
+}, {
+    "uid": "00050",
+    "name": "Felix Krause",
+    "title": "Professional iOS Code Signing Issue Resolver",
+    "photo": "https://pbs.twimg.com/profile_images/890668765922439170/UsBXn6HD_400x400.jpg",
+    "page": "https://twitter.com/krauseFx"
+}, {
+    "uid": "00051",
+    "name": "Luis Solano",
+    "title": "Full Stack Developer, Independen",
+    "photo": "https://pbs.twimg.com/profile_images/527622047665356800/VNHK_Ulx_400x400.jpeg",
+    "page": "https://twitter.com/luisobo"
+}, {
+    "uid": "00052",
+    "name": "Alexsander Akers",
+    "title": " iOS & Mac Developer, Microsoft To-Do",
+    "photo": "https://pbs.twimg.com/profile_images/987685823800889344/y4pYXZfH_400x400.jpg",
+    "page": "https://twitter.com/a2"
+}, {
+    "uid": "00053",
+    "name": "Kathy Tafel",
+    "title": "Director I Mobile Engineering, meetup",
+    "photo": "https://pbs.twimg.com/profile_images/875505885925093376/Cpfh9IKn_400x400.jpg",
+    "page": "https://twitter.com/kathytafel"
+}, {
+    "uid": "00054",
+    "name": "Ignacio Nieto",
+    "title": "Senior freelance developer, Independent",
+    "photo": "https://pbs.twimg.com/profile_images/913153926110879744/iHaTjaQ__400x400.jpg",
+    "page": "https://twitter.com/digitalleaves"
+}, {
+    "uid": "00055",
+    "name": "Mark Villacampa",
+    "title": "Chauffeur herder, Cabify & RubyMotion",
+    "photo": "https://pbs.twimg.com/profile_images/1038776010999848960/DJIT42pE_400x400.jpg",
+    "page": "https://twitter.com/MarkVillacampa"
+}, {
+    "uid": "00056",
+    "name": "Tobias Due Munk",
+    "title": "Design + Dev of apps, FindZebra + Storytel + ECCOshoes",
+    "photo": "https://pbs.twimg.com/profile_images/909879634933796865/csQX109V_400x400.jpg",
+    "page": "https://twitter.com/tobiasdm"
+}, {
+    "uid": "00057",
+    "name": "Dave Schukin 🤘",
+    "title": "",
+    "photo": "https://pbs.twimg.com/profile_images/859660042982703104/vD8V8WV1_400x400.jpg",
+    "page": "https://twitter.com/schukin"
+}, {
+    "uid": "00058",
+    "name": "Sash Zats",
+    "title": "Software Engineer",
+    "photo": "https://pbs.twimg.com/profile_images/736016275965497346/XAXL8l8N_400x400.jpg",
+    "page": "https://twitter.com/zats"
+}, {
+    "uid": "00059",
+    "name": "Dennis Pilarinos",
+    "title": "Founder & CEO",
+    "photo": "https://pbs.twimg.com/profile_images/652216062801350656/w4bppZeQ_400x400.jpg",
+    "page": "https://twitter.com/dennispilarinos"
+}, {
+    "uid": "00060",
+    "name": "Aleksandar Vacić",
+    "title": "Software Developer,",
+    "photo": "https://pbs.twimg.com/profile_images/987698192006381568/d0mzuBL5_400x400.jpg",
+    "page": "https://twitter.com/radiantav"
+}, {
+    "uid": "00061",
+    "name": "Jorge Ortiz",
+    "title": "Founder & Mobile Dev Instructor, PoWWaU",
+    "photo": "",
+    "page": "https://twitter.com/jdortiz"
+}, {
+    "uid": "00062",
+    "name": "Jorge Para Molina",
+    "title": "Mobility Architect,",
+    "photo": "https://pbs.twimg.com/profile_images/578325958291226624/aMfDNeW8_400x400.jpeg",
+    "page": "https://twitter.com/jparamolina"
+}, {
+    "uid": "00063",
+    "name": "George Karavias",
+    "title": "Mobility Architect",
+    "photo": "",
+    "page": "https://twitter.com/cognizant"
+}, {
+    "uid": "00064",
+    "name": "Marcos Cobeña-Morián",
+    "title": "Senior Mobile Developer, DEVSDNA",
+    "photo": "https://pbs.twimg.com/profile_images/941240900566638592/jW51vZJj_400x400.jpg",
+    "page": "https://twitter.com/1Marcos2Cobena"
+}, {
+    "uid": "00065",
+    "name": "Oriol Noya Giner",
+    "title": "Web & Mobile Developer, DEVSDNA",
+    "photo": "https://pbs.twimg.com/profile_images/978601143340355584/pS6i46Ik_400x400.jpg",
+    "page": "https://twitter.com/oriolnoya"
 }, {
     "uid": "000",
     "name": "",
     "title": "",
-    "photo": ""
-}]
+    "photo": "",
+    "page": ""
+}
+
+]
