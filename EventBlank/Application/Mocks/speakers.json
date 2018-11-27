@@ -48,7 +48,7 @@
 }, {
     "uid": "00009",
     "name": "Fabio Pelosin",
-    "title": "Independent",
+    "title": "",
     "photo": "https://pbs.twimg.com/profile_images/764045743250432000/NHBqeQEr_400x400.jpg",
     "page": "https://twitter.com/fabiopelosin"
 }, {
@@ -387,11 +387,446 @@
     "photo": "https://pbs.twimg.com/profile_images/978601143340355584/pS6i46Ik_400x400.jpg",
     "page": "https://twitter.com/oriolnoya"
 }, {
+    "uid": "00066",
+    "name": "Javier Soto",
+    "title": "Swift Engineer, Fabric",
+    "photo": "https://pbs.twimg.com/profile_images/1022493805121957889/1ykvkA33_400x400.jpg",
+    "page": "https://twitter.com/javi"
+}, {
+    "uid": "00067",
+    "name": "Anastasiia Voitova",
+    "title": "Software Engineer, Stanfy",
+    "photo": "",
+    "page": "https://twitter.com/vixentael"
+}, {
+    "uid": "00068",
+    "name": "Boris Bügling",
+    "title": "Software Engineer, Contentful",
+    "photo": "",
+    "page": "https://twitter.com/neonacho"
+}, {
+    "uid": "00069",
+    "name": "Natasha Nazari",
+    "title": "iOS Developer, Kanji Circle & Russian Q&A",
+    "photo": ""
+}, {
+    "uid": "00070",
+    "name": "Daniel Martin",
+    "title": "iOS Engineer",
+    "photo": "https://pbs.twimg.com/profile_images/703254503970217985/w3WeZxcD_400x400.jpg",
+    "page": "https://twitter.com/dmartincy"
+}, {
+    "uid": "00071",
+    "name": "Tripta Gupta",
+    "title": "iOS Developer",
+    "photo": "",
+    "page": "https://twitter.com/triptagupta"
+}, {
+    "uid": "00072",
+    "name": "Samuel Giddins",
+    "title": "Software Engineer, CocoaPods",
+    "photo": "https://pbs.twimg.com/profile_images/856925382393638913/HjRakN3D_400x400.jpg",
+    "page": "https://twitter.com/segiddins"
+}, {
+    "uid": "00073",
+    "name": "Agnes Vasarhelyi",
+    "title": "iOS Developer, Ustream",
+    "photo": "",
+    "page": "https://twitter.com/vasarhelyia"
+}, {
+    "uid": "00074",
+    "name": "Alberto Gragera",
+    "title": "Technical Director, Karumi",
+    "photo": ""
+}, {
+    "uid": "00075",
+    "name": "Chris Stott",
+    "title": "Co-founder / Engineer,",
+    "photo": "https://pbs.twimg.com/profile_images/674104818076487680/WlYOnpIg_400x400.jpg",
+    "page": "https://twitter.com/chrisYVR"
+}, {
+    "uid": "00076",
+    "name": "Pedro Piñera",
+    "title": "iOS Developer and Maker, SoundCloud & GitDo",
+    "photo": "",
+    "page": "https://twitter.com/pepibumur"
+}, {
+    "uid": "00077",
+    "name": "Anton Shchukin",
+    "title": "iOS Developer, Badoo",
+    "photo": "https://pbs.twimg.com/profile_images/344513261565643362/080c2434c4d2bb4927ef094015fd2eee_400x400.jpeg",
+    "page": "https://twitter.com/AntonPalich"
+}, {
+    "uid": "00078",
+    "name": "Guillermo Gonzalez",
+    "title": "iOS Technical Lead, Telefonica Innovation",
+    "photo": "",
+    "page": "https://twitter.com/gonzalezreal"
+}, {
+    "uid": "00079",
+    "name": "Alberto Calvo",
+    "title": "Designer, Sketch",
+    "photo": "https://pbs.twimg.com/profile_images/651321209590706176/HAzdcUl-_400x400.jpg",
+    "page": "https://twitter.com/pumpkin"
+}, {
+    "uid": "00080",
+    "name": "Meghan Kane",
+    "title": "Software Engineer, SoundCloud & AutoreleasePool Conf",
+    "photo": "",
+    "page": "https://twitter.com/meghafon"
+}, {
+    "uid": "00081",
+    "name": "Olivier Halligon",
+    "title": "iOS architect & Swift lover, Niji",
+    "photo": "https://pbs.twimg.com/profile_images/720638857062952960/qSoOKShr_400x400.jpg",
+    "page": "https://twitter.com/aligatr"
+}, {
+    "uid": "00082",
+    "name": "Radek Pietruszewski",
+    "title": "Software Writer, Nozbe",
+    "photo": "",
+    "page": "https://twitter.com/radexp"
+}, {
+    "uid": "00083",
+    "name": "Thompson Usiyan",
+    "title": "Teacher",
+    "photo": "",
+    "page": "https://twitter.com/griotspeak"
+}, {
+    "uid": "00084",
+    "name": "Benedikt Terhechte",
+    "title": "Software Engineer, Indie",
+    "photo": "https://pbs.twimg.com/profile_images/1016338328235532293/5Nwff3FT_400x400.jpg",
+    "page": "https://twitter.com/terhechte"
+}, {
+    "uid": "00085",
+    "name": "Jorge Ortiz",
+    "title": "Mobile Developer & Instructor, PoWWaU",
+    "photo": "",
+    "page": "https://twitter.com/jdortiz"
+}, {
+    "uid": "00086",
+    "name": "Hector Zarate",
+    "title": "Software Engineer, Spotify",
+    "photo": "https://pbs.twimg.com/profile_images/840447303949389824/SIng-omZ_400x400.jpg",
+    "page": "https://twitter.com/ChocoChipset"
+}, {
+    "uid": "00087",
+    "name": "Matej Balantič",
+    "title": "Mobile Engineer @SoundCloud, SoundCloud",
+    "photo": "",
+    "page": "https://twitter.com/skavt"
+}, {
+    "uid": "00088",
+    "name": "Borja Reinares",
+    "title": "Organizer, NSSpain & Masscomm",
+    "photo": "https://pbs.twimg.com/profile_images/607930537848602625/qfaocmyA_400x400.jpg",
+    "page": "https://twitter.com/borjareinares"
+}, {
+    "uid": "00089",
+    "name": "Luis Ascorbe",
+    "title": "Organizer, NSSpain & Wallapop",
+    "photo": "https://pbs.twimg.com/profile_images/1043168106816970753/rwjIiNmW_400x400.jpg",
+    "page": "https://twitter.com/lascorbe"
+}, {
+    "uid": "00090",
+    "name": "Andy Matuschak",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/andy-b19e421a5783d6cfa38ccaff4495db13.png",
+    "page": "https://twitter.com/andy_matuschak"
+}, {
+    "uid": "00091",
+    "name": "Josh Abernathy",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/josh-9ad13b20787f45e899eae10670074c73.jpeg",
+    "page": "https://twitter.com/joshaber"
+}, {
+    "uid": "00092",
+    "name": "Marin Todorov",
+    "title": "iOS consultant and publisher",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/06/marin-cc576a875f06233d97312deb1f86a1eb.png",
+    "page": "http://www.twitter.com/icanzilb"
+}, {
+    "uid": "00093",
+    "name": "Fernando Rodriguez",
+    "title": "Chief Learning Officer & Co-Founder. Mobile & Blockchain.",
+    "photo": "https://pbs.twimg.com/profile_images/1042829565473828864/q24pRil9_400x400.jpg",
+    "page": "http://www.twitter.com/frr149"
+}, {
+    "uid": "00094",
+    "name": "Ben Sykes",
+    "title": "Mentor, UX Product|Behavior Design.",
+    "photo": "https://pbs.twimg.com/profile_images/1003377157400190976/-RMbXupC_400x400.jpg",
+    "page": "https://twitter.com/bensykes"
+}, {
+    "uid": "00095",
+    "name": "Ayaka Nonaka",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/ayaka-e1de1796ac563c11fb688634939d3e8a.jpg",
+    "page": "http://www.twitter.com/ayanonagon"
+}, {
+    "uid": "00096",
+    "name": "Scott Goodson",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/scott-96bd00b8c574e95a68ac3ee405df94af.jpg",
+    "page": "http://www.twitter.com/ScottGoodson"
+}, {
+    "uid": "00097",
+    "name": "Hermes Pique",
+    "title": "Software Engineer at Facebook",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/hermes-f95df771ea910e566e524427a178ada6.jpeg",
+    "page": "http://www.twitter.com/hpique"
+}, {
+    "uid": "00098",
+    "name": "Miguel Quiñones",
+    "title": "Control engineer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/migue-ced76a5274c0456855dee9ef3ba8a070.jpeg",
+    "page": "http://www.twitter.com/miguelquinon"
+}, {
+    "uid": "00099",
+    "name": "Natasha Murashev",
+    "title": "Senior iOS Engineer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/05/natasha-89dff0cdd829062a8014880e5f86e454.jpeg",
+    "page": "http://natashatherobot.com/"
+}, {
+    "uid": "00100",
+    "name": "Airplane Mode",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/06/davejoe-9316efed3f1fdfe58bd8863e9dea18ae.jpg",
+    "page": "http://airplanemo.de/"
+}, {
+    "uid": "00101",
+    "name": "Grant Paul",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/06/grant-906e930ed5139638214ac1e68d0fffda.jpg",
+    "page": "http://www.twitter.com/chpwn"
+}, {
+    "uid": "00102",
+    "name": "Ashley Nelson-Hornstein",
+    "title": "iOS developer at Dropbox",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/ashley-d0b70b2fc8a7e0bb8998c491a446391a.png",
+    "page": "http://blog.ashleynh.me/"
+}, {
+    "uid": "00103",
+    "name": "Taylan Pince",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/taylan-3f7defc1b6e929757819e00c21947353.jpg",
+    "page": "https://twitter.com/taylanpince"
+}, {
+    "uid": "00104",
+    "name": "Vincent Garrigues",
+    "title": "Director of Engineering, Media Streaming @SoundCloud (former iOS Platform Lead)",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/vincent-3932990c425dda7409fdfea138b79787.png",
+    "page": "http://www.twitter.com/garriguv"
+}, {
+    "uid": "00105",
+    "name": "Daniel Haight",
+    "title": "iOS Developer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/daniel_haight-1ed9d31d3d7fb91e6c5158b43a1c53b1.jpeg",
+    "page": "http://www.twitter.com/Daniel1of1"
+}, {
+    "uid": "00106",
+    "name": "Piet Brauer",
+    "title": "iOS developer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/piet1-3547d95254fbc47065c3fd05c6ec8aad.jpg",
+    "page": "http://www.twitter.com/pietbrauer"
+}, {
+    "uid": "00107",
+    "name": "Michael May",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/michael-8e1d20a292ff7170b333f6554ecd771c.jpg",
+    "page": "https://twitter.com/CoderMay"
+}, {
+    "uid": "00108",
+    "name": "Boris Bügling",
+    "title": "Cocoa developer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/boris1-88a86c4cc9bdb6308b9334c9dddd289a.jpeg",
+    "page": ""
+}, {
+    "uid": "00109",
+    "name": "Daniel Eggert",
+    "title": "",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/daniel-ac1cac6955eb107f594a162df03f19d2.jpg",
+    "page": "http://www.objc.io/"
+}, {
+    "uid": "00110",
+    "name": "Soroush Khanlou",
+    "title": "iOS developer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/soroush1-1d1def40724df8f136da61331c2e60b7.png",
+    "page": "http://khanlou.com/"
+}, {
+    "uid": "00111",
+    "name": "Adam Bell",
+    "title": "iOS Engineer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/adam-a2f17300e2fc5ee1c67d413a931ca15b.jpg",
+    "page": "http://www.twitter.com/b3ll"
+}, {
+    "uid": "00112",
+    "name": "Ana Márquez Velázquez",
+    "title": "Senior Software Engineer. Swift & Scala.",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/ana-9f51677bf29e78de4d65a56ed468e284.jpg",
+    "page": "http://www.twitter.com/anamariamarvel"
+}, {
+    "uid": "00113",
+    "name": "Javier de Silóniz Sandino",
+    "title": "Computer Software Engineer",
+    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/javi-c3234f5f8a6fc28ac75cbdb4103e84b4.jpg",
+    "page": "https://twitter.com/JaviTaiyou"
+}, {
+    "uid": "00114",
+    "name": "Philippe Casgrain",
+    "title": "Mac and Cocoa developer",
+    "photo": "https://pbs.twimg.com/profile_images/818395940616667136/JVsQRjsQ_400x400.jpg",
+    "page": "https://twitter.com/philippec"
+}, {
+    "uid": "00115",
+    "name": "Mike Ash",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/02/mike_ash-c6ec628209c182d7e1a3227c21a3abd5.jpg",
+    "page": "http://www.twitter.com/mikeash"
+}, {
+    "uid": "00116",
+    "name": "Sam Soffes",
+    "title": "Developer & designer",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/02/sam-1d8c3588cb71df8316768b880037f742.jpg",
+    "page": "http://soff.es/"
+}, {
+    "uid": "00117",
+    "name": "Graham Lee",
+    "title": "Software Engineer at Facebook",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/02/graham-297a082720d72a9d4d5743afc6fd1ead.jpeg",
+    "page": ""
+}, {
+    "uid": "00118",
+    "name": "Ash Furrow",
+    "title": "iOS developer",
+    "photo": "http://2014.nsspain.com/wp-content/uploads/2014/02/ashfurrow_square.jpg",
+    "page": "http://ashfurrow.com/"
+}, {
+    "uid": "00119",
+    "name": "Dave Verwer",
+    "title": "iOS and Mac developer, trainer and consultant",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/02/Dave-Verwer-24c665ed566e4e9c734f4f227baed818.jpg",
+    "page": "http://shinydevelopment.com/"
+}, {
+    "uid": "00120",
+    "name": "Jon Reid",
+    "title": "Software Engineer at Facebook",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/jon-f1b7b046f84c0989e882cb1015d510c5.jpg",
+    "page": "http://qualitycoding.org/"
+}, {
+    "uid": "00121",
+    "name": "Simone Civetta",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/simone-42535308e705cf139f8823510d24a6f7.png",
+    "page": ""
+}, {
+    "uid": "00122",
+    "name": "Eloy Durán",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/07/Eloy-d7c158096c68697d32a5097a2a1d1d0a.png",
+    "page": ""
+}, {
+    "uid": "00123",
+    "name": "Maxim Cramer",
+    "title": "iOS developer and UX designer, currently at SwiftKey London",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/8eHhHvPz-8ddf8bea13e62ab5bcd374feea01ec5b.jpeg",
+    "page": ""
+}, {
+    "uid": "00124",
+    "name": "Andrew Yates",
+    "title": "iOS Developer at Buffer",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/andy-yates-34c825660e98248fbf1eb0e44b55d15a.jpg",
+    "page": ""
+}, {
+    "uid": "00125",
+    "name": "Jordi Pellat",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/IMG_1278-s-cfd267da4eaf293718b6868f337eb697.png",
+    "page": ""
+}, {
+    "uid": "00126",
+    "name": "David Rönnqvist",
+    "title": "iOS developer from Sweden",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/david-ronnqvist-1db2d00315f9ef8de07ef1db1ee56f49.jpeg",
+    "page": ""
+}, {
+    "uid": "00127",
+    "name": "Sam Davies",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/sam-ff7f15962d47dfcdd9cb038746b00408.jpeg",
+    "page": ""
+}, {
+    "uid": "00128",
+    "name": "Andrew Tarvin",
+    "title": "Computer Science Engineer",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/andrew-tarvin-thumb-63e90b5df4f8b481231069e7c097aaee.jpg",
+    "page": ""
+}, {
+    "uid": "00129",
+    "name": "Krzysztof Kucharewicz",
+    "title": "Android, iOS and Windows Phone Developer",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/avatar-big-269b6ab2dcd12b6373b6566b900c560b.jpg",
+    "page": ""
+}, {
+    "uid": "00130",
+    "name": "Michele Titolo",
+    "title": "Software engineer at reddit",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/MicheleTitoloHeadshot-6bfa8d2dd47ccb32c4d5b727dcafee82.png",
+    "page": ""
+}, {
+    "uid": "00131",
+    "name": "Jean-Pierre Simard",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/headshot-f09e862e389d42f58b96b560e4f5513b.jpg",
+    "page": ""
+}, {
+    "uid": "00132",
+    "name": "Cyril Lashkevich",
+    "title": "Software engineer. Architect of Viber",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/cyril-9f28926eb01f367ad27a59dc21d26e9e.jpeg",
+    "page": ""
+}, {
+    "uid": "00133",
+    "name": "Kyle Fuller",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/07/kyle-41a7f23097a6476b958e852425f018e3.png",
+    "page": ""
+}, {
+    "uid": "00134",
+    "name": "Erik Erice",
+    "title": "Designer & Developer",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/07/erikerice-843b59cb487229576a1e10cc59459285.jpg",
+    "page": ""
+}, {
+    "uid": "00135",
+    "name": "Kenneth Geisshirt",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/06/kneth-7157bbb579ec1ef5cdef7b1da00e75bf.jpg",
+    "page": ""
+}, {
+    "uid": "00136",
+    "name": "Matt Galloway",
+    "title": "iOS developer at Facebook",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/09/mattjgalloway-7309d2187e315821e9fb6ff54e3379ca.jpg",
+    "page": ""
+}, {
+    "uid": "00137",
+    "name": "Alberto López",
+    "title": "",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/09/alberto-9bf65dea39964250750a9f99f6cdeaef.png",
+    "page": ""
+}, {
+    "uid": "00138",
+    "name": "Ariel Shimoni",
+    "title": "Director of Publisher Relations at StartApp",
+    "photo": "http://2014.nsspain.com/wp-content/uploads//2014/09/ariel-488f2ce2ea6f0bbe07c651591ea7d297.jpg",
+    "page": ""
+}, {
     "uid": "000",
     "name": "",
     "title": "",
     "photo": "",
     "page": ""
 }
-
 ]
