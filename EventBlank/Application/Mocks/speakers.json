@@ -82,11 +82,6 @@
     "photo": "https://pbs.twimg.com/profile_images/496291231690137600/TmQRrofs_400x400.jpeg",
     "page": "https://twitter.com/chriseidhof"
 }, {
-    "uid": "00015",
-    "name": "Marin Usalj",
-    "title": "",
-    "photo": ""
-}, {
     "uid": "00016",
     "name": "Florian Kugler",
     "title": "",
@@ -110,12 +105,6 @@
     "title": "",
     "photo": "https://pbs.twimg.com/profile_images/695316203280195584/_YRFIyQi_400x400.png",
     "page": "https://twitter.com/jsanchezsierra"
-}, {
-    "uid": "00020",
-    "name": "Luis Solano",
-    "title": "Full Stack Developer",
-    "photo": "https://pbs.twimg.com/profile_images/527622047665356800/VNHK_Ulx_400x400.jpeg",
-    "page": "https://twitter.com/luisobo"
 }, {
     "uid": "00021",
     "name": "Alberto Gimeno",
@@ -163,7 +152,7 @@
     "name": "Benedikt Terhechte",
     "title": "Senior iOS Developer",
     "photo": "http://2018.nsspain.com/images/speakers/benedikt.jpeg",
-    "page": ""
+    "page": "https://twitter.com/terhechte"
 }, {
     "uid": "00029",
     "name": "Marcus Wermuth",
@@ -254,12 +243,6 @@
     "title": "Software Engineer",
     "photo": "http://2018.nsspain.com/images/speakers/vlad.jpeg",
     "page": "https://twitter.com/beefon"
-}, {
-    "uid": "00044",
-    "name": "Peter Steinberger",
-    "title": "Founder and CEO, PSPDFKit",
-    "photo": "https://pbs.twimg.com/profile_images/792759342927843328/onx286KO_400x400.jpg",
-    "page": "https://twitter.com/steipete"
 }, {
     "uid": "00045",
     "name": "Esteban Torres",
@@ -493,12 +476,6 @@
     "photo": "",
     "page": "https://twitter.com/griotspeak"
 }, {
-    "uid": "00084",
-    "name": "Benedikt Terhechte",
-    "title": "Software Engineer, Indie",
-    "photo": "https://pbs.twimg.com/profile_images/1016338328235532293/5Nwff3FT_400x400.jpg",
-    "page": "https://twitter.com/terhechte"
-}, {
     "uid": "00085",
     "name": "Jorge Ortiz",
     "title": "Mobile Developer & Instructor, PoWWaU",
@@ -654,12 +631,6 @@
     "title": "iOS developer",
     "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/soroush1-1d1def40724df8f136da61331c2e60b7.png",
     "page": "http://khanlou.com/"
-}, {
-    "uid": "00111",
-    "name": "Adam Bell",
-    "title": "iOS Engineer",
-    "photo": "http://2015.nsspain.com/wp-content/uploads//2015/07/adam-a2f17300e2fc5ee1c67d413a931ca15b.jpg",
-    "page": "http://www.twitter.com/b3ll"
 }, {
     "uid": "00112",
     "name": "Ana Márquez Velázquez",
