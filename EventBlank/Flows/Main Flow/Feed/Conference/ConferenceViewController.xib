@@ -18,9 +18,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConferenceViewController" customModule="EventBlank" customModuleProvider="target">
             <connections>
                 <outlet property="conferenceTableView" destination="OBC-Ra-1rh" id="Jkc-OK-UH7"/>
+                <outlet property="descriptionLabel" destination="GD4-M0-UWR" id="eDV-Mg-Fpq"/>
                 <outlet property="pageIndicator" destination="HG4-ME-vN7" id="tXX-AM-UyF"/>
                 <outlet property="photosCollectionView" destination="GRf-pa-BlX" id="RPw-RD-X9W"/>
                 <outlet property="tableHeightConstraint" destination="9Ob-xb-bce" id="S2C-dg-YDz"/>
+                <outlet property="titleLabel" destination="g54-o3-mRC" id="A7q-yO-Y1T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

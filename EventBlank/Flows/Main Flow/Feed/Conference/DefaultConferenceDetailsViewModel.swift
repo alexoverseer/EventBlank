@@ -5,34 +5,47 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     var output: ConferenceViewModelOutput?
     var collectionDisplayManager: CollectionDisplayManager?
     var tableDisplayManager: TableDisplayManager?
+    var conference: ConferenceViewVModel!
+    
+    var topics: [TalkViewModel] {
+        return conference.topics
+    }
+    
+    var speakers: [SpeakerViewVModel] {
+        return conference.people
+    }
     
     func onViewDidLoad(_ view: ConferenceView) {
         
         let testPhotoList = ["1", "2", "3"]
-        let testTopicsList = Array(0...3).map {"\($0)"}
         
         output?.setTotalPhotosPagesNumber(pages: testPhotoList.count)
         
         collectionDisplayManager?.updatContent(with: testPhotoList)
-        tableDisplayManager?.updatContent(with: testTopicsList)
+        tableDisplayManager?.updatContent(with: topics)
         
         output?.updateTableHeight()
     }
     
     func registerCollection(_ collectionView: UICollectionView) {
-        #warning ("Replace String -> ViewModel")
         collectionDisplayManager = CollectionDisplayManager(with: collectionView)
         collectionDisplayManager?.delegate = self
     }
     
     func registerTable(_ tableView: UITableView) {
-        #warning ("Replace String -> ViewModel")
         tableDisplayManager = TableDisplayManager(with: tableView)
         tableDisplayManager?.delegate = self
     }
     
     func changeTableType(selectedType: SelectedConferenceType) {
         tableDisplayManager?.switchTableType(type: selectedType)
+        
+        switch selectedType {
+        case .topics:
+            tableDisplayManager?.updatContent(with: topics)
+        case .speakers:
+            tableDisplayManager?.updatContent(with: speakers)
+        }
     }
 }
 
@@ -51,12 +64,10 @@ extension DefaultConferenceViewModel: CollectionDisplayManagerDelegate {
 extension DefaultConferenceViewModel: TableDisplayManagerDelegate {
     
     func didSelectTopic(at index: Int) {
-        #warning ("Send Topic")
-        output?.openTopic()
+        output?.openTopic(topic: topics[index])
     }
     
     func didSelectSpeaker(at index: Int) {
-        #warning ("Send Speaker")
-        output?.openSpeaker()
+        output?.openSpeaker(speaker: speakers[index])
     }
 }

@@ -13,4 +13,5 @@ struct Speaker: Codable {
     var name: String
     var title: String
     var photo: String
+    var page: URL? 
 }

@@ -12,8 +12,8 @@ struct Conference: Codable {
 
     var uid: String
     var title: String
-    var description: String
+    var description: String?
     var images: [String] // ids for MediaItem object [1,2,3,4,5]
-    var location: Location
+    var location: Location?
 
 }

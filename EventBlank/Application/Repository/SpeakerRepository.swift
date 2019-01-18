@@ -9,17 +9,17 @@
 import Foundation
 
 protocol SpeakerRepository: Repository {
-    func getBy(group: [String]) -> [T]
+    func getBy(group: [String]) -> [Element]
 }
 
 class DefaultSpeakerRepository: NSObject, SpeakerRepository {
+    
+    let appCache = ApplicationCache.inappCache
     
     func getBy(group: [String]) -> [Speaker] {
         let all = getAll()
         return all.filter { group.contains($0.uid)}
     }
-    
-    let appCache = ApplicationCache.inappCache
     
     func getAll() -> [Speaker] {
         return appCache.speakers
@@ -29,5 +29,4 @@ class DefaultSpeakerRepository: NSObject, SpeakerRepository {
         let all = getAll()
         return all.first(where: { $0.uid == uid })
     }
-    
 }

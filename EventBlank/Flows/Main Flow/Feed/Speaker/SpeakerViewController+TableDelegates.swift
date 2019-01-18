@@ -3,7 +3,7 @@ import UIKit
 extension SpeakerViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.talks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -17,6 +17,7 @@ extension SpeakerViewController: UITableViewDataSource {
 extension SpeakerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        onSelectTopic?()
+      
+        onSelectTopic?( viewModel.talks[indexPath.row])
     }
 }

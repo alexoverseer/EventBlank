@@ -6,4 +6,6 @@ protocol ConferenceViewModel: class {
     func registerTable(_ tableView: UITableView)
     func registerCollection(_ collectionView: UICollectionView)
     func changeTableType(selectedType: SelectedConferenceType)
+    
+    var conference: ConferenceViewVModel! { get set }
 }

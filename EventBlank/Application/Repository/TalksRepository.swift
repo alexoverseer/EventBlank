@@ -21,7 +21,6 @@ class DefaultTalksRepository: NSObject, TalksRepository {
         return all.filter {$0.conference == conference }
     }
     
- 
     func getAll() -> [Topic] {
         return appCache.topics
     }
@@ -33,7 +32,6 @@ class DefaultTalksRepository: NSObject, TalksRepository {
     
     func getBy(speaker: String) -> [Topic] {
         let all = getAll()
-        return all.filter{ $0.speaker == speaker }
+        return all.filter { $0.speaker == speaker }
     }
-    
 }
