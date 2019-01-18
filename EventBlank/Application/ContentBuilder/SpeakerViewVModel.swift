@@ -17,7 +17,7 @@ struct SpeakerViewVModel {
     
     var topics: [TalkViewModel] = []
     
-    init(speaker:Speaker){
+    init(speaker: Speaker) {
         self.uid = speaker.uid
         self.name = speaker.name
         self.title = speaker.title

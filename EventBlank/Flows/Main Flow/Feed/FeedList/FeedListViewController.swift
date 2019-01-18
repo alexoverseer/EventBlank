@@ -2,12 +2,9 @@ import UIKit
 
 class FeedListViewController: UIViewController, FeedListView {
     
-    
     func reloadList() {
         self.feedTableView.reloadData()
     }
-    
-
     
     var viewModel: FeedListViewModel!
     var onShowConferenceDetails: ((ConferenceViewVModel) -> Void)?
@@ -16,7 +13,7 @@ class FeedListViewController: UIViewController, FeedListView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         viewModel.onViewDidLoad(self)
         setupUI()
     }

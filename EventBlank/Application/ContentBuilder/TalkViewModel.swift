@@ -13,11 +13,11 @@ struct TalkViewModel {
     let speaker: SpeakerViewVModel
     let resouces: [Resource]
     
-    var video:Resource?{
+    var video: Resource? {
         return resouces.first(where: {$0.mediaType == .video })
     }
     
-    var images:[Resource]{
-       return resouces.filter{$0.mediaType == .image }
+    var images: [Resource] {
+        return resouces.filter {$0.mediaType == .image }
     }
 }

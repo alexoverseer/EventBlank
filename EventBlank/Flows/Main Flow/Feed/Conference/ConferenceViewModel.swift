@@ -7,5 +7,5 @@ protocol ConferenceViewModel: class {
     func registerCollection(_ collectionView: UICollectionView)
     func changeTableType(selectedType: SelectedConferenceType)
     
-    var conference:ConferenceViewVModel! { get set }
+    var conference: ConferenceViewVModel! { get set }
 }

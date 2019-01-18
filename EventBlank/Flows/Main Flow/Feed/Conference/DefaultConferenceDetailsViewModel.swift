@@ -5,7 +5,7 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     var output: ConferenceViewModelOutput?
     var collectionDisplayManager: CollectionDisplayManager?
     var tableDisplayManager: TableDisplayManager?
-    var conference:ConferenceViewVModel!
+    var conference: ConferenceViewVModel!
     
     var topics: [TalkViewModel] {
         return conference.topics

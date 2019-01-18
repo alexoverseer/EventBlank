@@ -29,6 +29,7 @@
 		62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */; };
 		62DE44C121A5CE2100C3AC14 /* SpeakerViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */; };
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
+		8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
 		BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */; };
 		BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */; };
 		BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */; };
@@ -76,7 +77,6 @@
 		BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4421A46487006111DF /* DefaultAppAssembler.swift */; };
 		BC366C4921A464AD006111DF /* FactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4621A464AD006111DF /* FactoryAssembly.swift */; };
 		BC366C4A21A464AD006111DF /* NetworkServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */; };
-		BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
 		BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4D21A46516006111DF /* ApplicationCoordinator.swift */; };
 		BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4E21A46516006111DF /* BaseCoordinator.swift */; };
 		BC366C5521A465A4006111DF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C5221A465A4006111DF /* BaseView.swift */; };
@@ -524,10 +524,10 @@
 				62DE44AB21A5B58700C3AC14 /* Repository */,
 				62DE44A021A5A81E00C3AC14 /* Mocks */,
 				62DE449521A5959E00C3AC14 /* Models */,
-				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
 				BC366C3B21A4625C006111DF /* Common */,
 				BC366C4121A46462006111DF /* Assemblies */,
 				BC366C4C21A464FC006111DF /* Coordinator */,
+				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -1070,11 +1070,10 @@
 				BC01754721A5FBD40090DAE2 /* SelectedConferenceType.swift in Sources */,
 				BC70A3E721A599A400988533 /* FavouritesCoordinator.swift in Sources */,
 				BC01755021A62E2B0090DAE2 /* TableDisplayManagerDelegate.swift in Sources */,
-				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
+				8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */,
 				BC01757421A6932F0090DAE2 /* AVPlayer+Utilities.swift in Sources */,
 				BC70A3D321A593A000988533 /* AboutCoordinator.swift in Sources */,
 				62DE449B21A595E100C3AC14 /* Topic.swift in Sources */,
-				BC366C4B21A464AD006111DF /* ViewModelAssembly.swift in Sources */,
 				62DE449D21A5966100C3AC14 /* Resource.swift in Sources */,
 				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
 				BC01755821A632830090DAE2 /* TopicViewModel.swift in Sources */,

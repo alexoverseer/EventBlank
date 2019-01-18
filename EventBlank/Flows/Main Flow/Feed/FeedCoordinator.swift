@@ -20,12 +20,12 @@ final class FeedCoordinator: BaseCoordinator {
     private func showFeedList() {
         let feedOutput = factory.makeFeedListOutput()
         feedOutput.onShowConferenceDetails = { [weak self] conference  in
-            self?.showConferenceDetails(conference:conference)
+            self?.showConferenceDetails(conference: conference)
         }
         router.setRootModule(feedOutput)
     }
     
-    private func showConferenceDetails(conference:ConferenceViewVModel) {
+    private func showConferenceDetails(conference: ConferenceViewVModel) {
         let conferenceOutput = factory.makeConferenceOutput(conference: conference)
         conferenceOutput.onShowPhotoBrowser = { [weak self] model in
             self?.showPhotoBrowser(model: model)
@@ -34,7 +34,7 @@ final class FeedCoordinator: BaseCoordinator {
             self?.showTopicScreen(topic: topic)
         }
         conferenceOutput.onShowSpeaker = { [weak self] speaker in
-            self?.showSpeakerScreen(speaker:speaker)
+            self?.showSpeakerScreen(speaker: speaker)
         }
         router.push(conferenceOutput, animated: true)
     }
@@ -44,12 +44,12 @@ final class FeedCoordinator: BaseCoordinator {
         router.present(photoBrowserOutput, animated: true)
     }
     
-    private func showTopicScreen(topic:TalkViewModel) {
-        let topicOutput = factory.makeTopicOutput(topic:topic)
+    private func showTopicScreen(topic: TalkViewModel) {
+        let topicOutput = factory.makeTopicOutput(topic: topic)
         router.push(topicOutput, animated: true)
     }
     
-    private func showSpeakerScreen(speaker:SpeakerViewVModel) {
+    private func showSpeakerScreen(speaker: SpeakerViewVModel) {
         let speakerOutput = factory.makeSpeakerOutput(speaker: speaker)
         speakerOutput.onSelectTopic = { [weak self] topic in
             self?.showTopicScreen(topic: topic)
