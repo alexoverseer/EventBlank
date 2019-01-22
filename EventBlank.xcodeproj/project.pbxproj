@@ -17,7 +17,7 @@
 		62DE44A421A5A84700C3AC14 /* speakers.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A321A5A84700C3AC14 /* speakers.json */; };
 		62DE44A621A5A85F00C3AC14 /* resources.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A521A5A85F00C3AC14 /* resources.json */; };
 		62DE44A821A5A86F00C3AC14 /* talks.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A721A5A86F00C3AC14 /* talks.json */; };
-		62DE44AA21A5B4CB00C3AC14 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44A921A5B4CB00C3AC14 /* Decoder.swift */; };
+		62DE44AA21A5B4CB00C3AC14 /* FileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */; };
 		62DE44AD21A5B59D00C3AC14 /* ConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AC21A5B59D00C3AC14 /* ConferenceRepository.swift */; };
 		62DE44AF21A5B6E800C3AC14 /* ApplicationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */; };
 		62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B021A5B8C300C3AC14 /* Repository.swift */; };
@@ -155,7 +155,7 @@
 		62DE44A321A5A84700C3AC14 /* speakers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = speakers.json; sourceTree = "<group>"; };
 		62DE44A521A5A85F00C3AC14 /* resources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resources.json; sourceTree = "<group>"; };
 		62DE44A721A5A86F00C3AC14 /* talks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = talks.json; sourceTree = "<group>"; };
-		62DE44A921A5B4CB00C3AC14 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDecoder.swift; sourceTree = "<group>"; };
 		62DE44AC21A5B59D00C3AC14 /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
 		62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCache.swift; sourceTree = "<group>"; };
 		62DE44B021A5B8C300C3AC14 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		62DE44B421A5B95600C3AC14 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				62DE44A921A5B4CB00C3AC14 /* Decoder.swift */,
+				62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */,
 				62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */,
 			);
 			path = Cache;
@@ -984,6 +984,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EventBlank/Pods-EventBlank-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
@@ -993,6 +994,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
@@ -1109,7 +1111,7 @@
 				BC01754321A5EE110090DAE2 /* CollectionDisplayManager.swift in Sources */,
 				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
 				BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */,
-				62DE44AA21A5B4CB00C3AC14 /* Decoder.swift in Sources */,
+				62DE44AA21A5B4CB00C3AC14 /* FileDecoder.swift in Sources */,
 				62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */,
 				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
 				BC01757321A6932F0090DAE2 /* Player.swift in Sources */,

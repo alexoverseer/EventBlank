@@ -121,7 +121,7 @@
 }, {
     "uid": "00023",
     "name": "Mattt",
-    "title": "",
+    "title": "Flight School | NSHipster",
     "photo": "http://2018.nsspain.com/images/speakers/mattt.jpeg",
     "page": "https://twitter.com/mattt"
 }, {
@@ -133,13 +133,13 @@
 }, {
     "uid": "000025",
     "name": "Daniel Steinberg",
-    "title": "",
+    "title": "Dim Sum Thinking",
     "photo": "http://2018.nsspain.com/images/speakers/daniel.jpeg",
     "page": "https://twitter.com/dimsumthinking"
 }, {
     "uid": "00026",
     "name": "Ellen Shapiro",
-    "title": "",
+    "title": "Bakken & Bæck's",
     "photo": "http://2018.nsspain.com/images/speakers/ellen.jpeg",
     "page": "https://twitter.com/designatednerd"
 }, {
@@ -157,7 +157,7 @@
 }, {
     "uid": "00029",
     "name": "Marcus Wermuth",
-    "title": "",
+    "title": "Buffer",
     "photo": "http://2018.nsspain.com/images/speakers/marcus.jpeg",
     "page": "https://twitter.com/mwermuth"
 }, {
@@ -181,7 +181,7 @@
 }, {
     "uid": "00033",
     "name": "Stephen Celis",
-    "title": "",
+    "title": "Point-Free",
     "photo": "http://2018.nsspain.com/images/speakers/stephen.jpeg",
     "page": "https://twitter.com/stephencelis"
 }, {
@@ -205,7 +205,7 @@
 }, {
     "uid": "00037",
     "name": "Hector Matos",
-    "title": "",
+    "title": "Twitter",
     "photo": "http://2018.nsspain.com/images/speakers/hector.jpeg",
     "page": "https://twitter.com/allonsykraken"
 }, {
@@ -270,4 +270,3 @@
     "page": "https://twitter.com/marmelroy"
 }
 ]
-

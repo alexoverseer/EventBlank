@@ -18,7 +18,6 @@ import UIKit
     var mediaType: ResourceType {
         return ResourceType.init(rawValue: type) ?? .none
     }
-    
 }
 
 public enum ResourceType: String {

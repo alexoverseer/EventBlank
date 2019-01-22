@@ -1,8 +1,7 @@
 import UIKit
 
 final class TableDisplayManager: NSObject, TableDelegatable {
-    
-    #warning ("Replace String -> ViewModel")
+
     typealias Item = Any
     
     private var dataSource = [Item]()
@@ -53,11 +52,19 @@ final class TableDisplayManager: NSObject, TableDelegatable {
     private func topicCell(for indexPath: IndexPath) -> UITableViewCell {
         let topicCell: TopicTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         
+        if let model = self.dataSource[indexPath.row] as? TalkViewModel {
+            topicCell.configure(with: model)
+        }
+        
         return topicCell
     }
     
     private func speakerCell(for indexPath: IndexPath) -> UITableViewCell {
         let speakerCell: SpeakerTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+
+        if let model = self.dataSource[indexPath.row] as? SpeakerViewVModel {
+            speakerCell.configure(with: model)
+        }
         
         return speakerCell
     }

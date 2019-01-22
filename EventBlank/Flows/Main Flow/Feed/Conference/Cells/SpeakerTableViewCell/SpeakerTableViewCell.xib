@@ -81,8 +81,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="nameLabel" destination="OBF-9o-tki" id="6Aj-73-blq"/>
                 <outlet property="shadowView" destination="0eD-Sx-AX5" id="bMQ-PE-lhn"/>
                 <outlet property="speakerImageView" destination="Cmz-We-8eD" id="qWp-jZ-M8u"/>
+                <outlet property="titleLabel" destination="1BT-99-vgl" id="Igm-QR-6Qu"/>
             </connections>
             <point key="canvasLocation" x="40" y="46.776611694152926"/>
         </tableViewCell>

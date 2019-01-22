@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Decoder: NSObject {
+class FileDecoder: NSObject {
 
-    static let `default` = Decoder()
+    static let `default` = FileDecoder()
 
     func transformJSON<T: Codable>(fileName: String) -> T? {
         
@@ -24,7 +24,7 @@ class Decoder: NSObject {
                 print("error:\(error)")
             }
         }
+        
         return nil
     }
-
 }

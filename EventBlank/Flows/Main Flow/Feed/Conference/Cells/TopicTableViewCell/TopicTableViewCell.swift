@@ -16,9 +16,11 @@ class TopicTableViewCell: UITableViewCell, NibReusable {
         shadowView.addShadow()
     }
     
-    func configure(with model: Topic) {
-        topicTitleLabel.text = model.title
-        speakerLabel.text = model.speaker
-        print(model.startDate)
+    func configure(with model: TalkViewModel) {
+        topicTitleLabel.text = model.talk.title
+        speakerLabel.text = model.speaker.name
+        
+        print(model.talk.dateStart)
+        print(model.talk.dateEnd)
     }
 }

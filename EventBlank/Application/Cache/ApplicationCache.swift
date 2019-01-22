@@ -17,13 +17,12 @@ class ApplicationCache: NSObject {
     public let topics: [Topic]
     public let resources: [Resource]
     
-    private let decoder = Decoder.default
+    private let decoder = FileDecoder.default
     
     override init() {
         self.conferences = decoder.transformJSON(fileName: "conferences") ?? []
         self.speakers = decoder.transformJSON(fileName: "speakers") ?? []
         self.topics = decoder.transformJSON(fileName: "talks") ?? []
         self.resources = decoder.transformJSON(fileName: "resources") ?? []
-        
     }
 }
