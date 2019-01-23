@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol ConferenceRepository: Repository {
-
-}
-
 class DefaultConferenceRepository: NSObject, ConferenceRepository {
 
     let appCache = ApplicationCache.inappCache
@@ -24,5 +20,4 @@ class DefaultConferenceRepository: NSObject, ConferenceRepository {
         let all = getAll()
         return all.first(where: { $0.uid == uid })
     }
-
 }

@@ -20,6 +20,13 @@ import UIKit
     }
 }
 
+extension Resource: Equatable {
+    
+    static public func == (lhs: Resource, rhs: Resource) -> Bool {
+        return lhs.uid == rhs.uid
+    }
+}
+
 public enum ResourceType: String {
     case image
     case video

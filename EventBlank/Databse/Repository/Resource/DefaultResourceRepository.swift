@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol ResourceRepository: Repository {
-    func getBy(group: [String]) -> [Resource]
-}
-
 class DefaultResourceRepository: NSObject, ResourceRepository {
     
     let appCache = ApplicationCache.inappCache
@@ -29,5 +25,4 @@ class DefaultResourceRepository: NSObject, ResourceRepository {
         let all = getAll()
         return all.filter { group.contains($0.uid) }
     }
-    
 }

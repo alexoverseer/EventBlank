@@ -17,11 +17,11 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     
     func onViewDidLoad(_ view: ConferenceView) {
         
-        let testPhotoList = ["1", "2", "3"]
+        let photoList = conference.resouces.compactMap { $0.local }
         
-        output?.setTotalPhotosPagesNumber(pages: testPhotoList.count)
+        output?.setTotalPhotosPagesNumber(pages: photoList.count)
         
-        collectionDisplayManager?.updatContent(with: testPhotoList)
+        collectionDisplayManager?.updatContent(with: photoList)
         tableDisplayManager?.updatContent(with: topics)
         
         output?.updateTableHeight()
@@ -56,8 +56,11 @@ extension DefaultConferenceViewModel: CollectionDisplayManagerDelegate {
     }
     
     func openPhotoBrowser(originImage: UIImage?, fromCell: UICollectionViewCell) {
-        let images = [#imageLiteral(resourceName: "blank.conference.jpg"), #imageLiteral(resourceName: "blank.conference.jpg"), #imageLiteral(resourceName: "blank.conference.jpg")]
-        output?.openPhotoBrowser(originImage: originImage, images: images, cell: fromCell)
+        
+        let originalPhotos = conference.resouces.compactMap { $0.local }
+                                                .compactMap { UIImage(named: $0) }
+        
+        output?.openPhotoBrowser(originImage: originImage, images: originalPhotos, cell: fromCell)
     }
 }
 

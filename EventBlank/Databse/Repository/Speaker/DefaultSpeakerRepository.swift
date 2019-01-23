@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol SpeakerRepository: Repository {
-    func getBy(group: [String]) -> [Element]
-}
-
 class DefaultSpeakerRepository: NSObject, SpeakerRepository {
     
     let appCache = ApplicationCache.inappCache

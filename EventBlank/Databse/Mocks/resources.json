@@ -1,0 +1,26 @@
+[{
+    "uid": "0001",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_01"
+},{
+    "uid": "0002",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_02"
+},{
+    "uid": "0003",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_03"
+},{
+    "uid": "0004",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_04"
+},{
+    "uid": "001",
+    "type": "video",
+    "url": "https://vimeo.com/292786900",
+    "local": "imageName"
+}]

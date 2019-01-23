@@ -2,14 +2,11 @@ import UIKit
 
 class FeedListViewController: UIViewController, FeedListView {
     
-    func reloadList() {
-        self.feedTableView.reloadData()
-    }
+    @IBOutlet weak var feedTableView: UITableView!
     
     var viewModel: FeedListViewModel!
     var onShowConferenceDetails: ((ConferenceViewVModel) -> Void)?
-    
-    @IBOutlet weak var feedTableView: UITableView!
+    let cellComposer = DataCellComposer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +19,10 @@ class FeedListViewController: UIViewController, FeedListView {
         navigationItem.title = "Feed"
         feedTableView.register(cellType: FeedTableViewCell.self)
         feedTableView.tableFooterView = UIView()
+    }
+    
+    func reloadList() {
+        self.feedTableView.reloadData()
     }
 }
 
@@ -38,8 +39,16 @@ extension FeedListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: FeedTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(with: viewModel.datasource[indexPath.row])
+//        cell.configure(with: viewModel.datasource[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let cell = cell as? FeedTableViewCell else { fatalError("Expected to display a `FeedTableViewCell`.") }
+        let item = viewModel.datasource[indexPath.row]
+        
+        cellComposer.compose(cell, withDataItem: item)
     }
 }
 

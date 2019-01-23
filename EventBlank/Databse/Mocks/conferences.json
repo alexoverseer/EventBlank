@@ -30,8 +30,8 @@
 },
 {
     "uid": "201801",
-    "title": "NSSpain 2018",
+    "title": "NSSpain [2018]",
     "description": "CocoaTouch, Swift, MVC, Objective-C, Taming animations... technical and inspirational talks mix together during 2 days of pure joy. ",
-    "images": []
+    "images": ["0001", "0002", "0003", "0004"]
 }
 ]

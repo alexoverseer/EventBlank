@@ -8,11 +8,6 @@
 
 import Foundation
 
-protocol TalksRepository: Repository {
-    func getBy(conference: String) -> [Topic]
-    func getBy(speaker: String) -> [Topic] 
-}
-
 class DefaultTalksRepository: NSObject, TalksRepository {
     let appCache = ApplicationCache.inappCache
     

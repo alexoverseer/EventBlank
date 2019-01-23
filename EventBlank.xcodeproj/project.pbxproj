@@ -12,24 +12,28 @@
 		62DE449921A595D100C3AC14 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449821A595D100C3AC14 /* Speaker.swift */; };
 		62DE449B21A595E100C3AC14 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449A21A595E100C3AC14 /* Topic.swift */; };
 		62DE449D21A5966100C3AC14 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449C21A5966100C3AC14 /* Resource.swift */; };
-		62DE449F21A5970500C3AC14 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449E21A5970500C3AC14 /* Location.swift */; };
 		62DE44A221A5A83400C3AC14 /* conferences.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A121A5A83400C3AC14 /* conferences.json */; };
 		62DE44A421A5A84700C3AC14 /* speakers.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A321A5A84700C3AC14 /* speakers.json */; };
 		62DE44A621A5A85F00C3AC14 /* resources.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A521A5A85F00C3AC14 /* resources.json */; };
 		62DE44A821A5A86F00C3AC14 /* talks.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A721A5A86F00C3AC14 /* talks.json */; };
 		62DE44AA21A5B4CB00C3AC14 /* FileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */; };
-		62DE44AD21A5B59D00C3AC14 /* ConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AC21A5B59D00C3AC14 /* ConferenceRepository.swift */; };
+		62DE44AD21A5B59D00C3AC14 /* DefaultConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AC21A5B59D00C3AC14 /* DefaultConferenceRepository.swift */; };
 		62DE44AF21A5B6E800C3AC14 /* ApplicationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */; };
 		62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B021A5B8C300C3AC14 /* Repository.swift */; };
-		62DE44B321A5B8E600C3AC14 /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B221A5B8E600C3AC14 /* SpeakerRepository.swift */; };
-		62DE44B621A5B98F00C3AC14 /* ResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B521A5B98F00C3AC14 /* ResourceRepository.swift */; };
-		62DE44B821A5B9CB00C3AC14 /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B721A5B9CB00C3AC14 /* TalksRepository.swift */; };
+		62DE44B321A5B8E600C3AC14 /* DefaultSpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B221A5B8E600C3AC14 /* DefaultSpeakerRepository.swift */; };
+		62DE44B621A5B98F00C3AC14 /* DefaultResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B521A5B98F00C3AC14 /* DefaultResourceRepository.swift */; };
+		62DE44B821A5B9CB00C3AC14 /* DefaultTalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */; };
 		62DE44BB21A5BB7A00C3AC14 /* ConferenceViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */; };
 		62DE44BD21A5BBBA00C3AC14 /* TalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */; };
 		62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */; };
 		62DE44C121A5CE2100C3AC14 /* SpeakerViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */; };
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
 		8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
+		8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336921F85B3A00933AAF /* ConferenceRepository.swift */; };
+		8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* TalksRepository.swift */; };
+		8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* SpeakerRepository.swift */; };
+		8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336F21F85BDC00933AAF /* ResourceRepository.swift */; };
+		8261337321F8633400933AAF /* DataCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261337221F8633400933AAF /* DataCellComposer.swift */; };
 		BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */; };
 		BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */; };
 		BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */; };
@@ -150,23 +154,27 @@
 		62DE449821A595D100C3AC14 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		62DE449A21A595E100C3AC14 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		62DE449C21A5966100C3AC14 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		62DE449E21A5970500C3AC14 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		62DE44A121A5A83400C3AC14 /* conferences.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = conferences.json; sourceTree = "<group>"; };
 		62DE44A321A5A84700C3AC14 /* speakers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = speakers.json; sourceTree = "<group>"; };
 		62DE44A521A5A85F00C3AC14 /* resources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resources.json; sourceTree = "<group>"; };
 		62DE44A721A5A86F00C3AC14 /* talks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = talks.json; sourceTree = "<group>"; };
 		62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDecoder.swift; sourceTree = "<group>"; };
-		62DE44AC21A5B59D00C3AC14 /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
+		62DE44AC21A5B59D00C3AC14 /* DefaultConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConferenceRepository.swift; sourceTree = "<group>"; };
 		62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCache.swift; sourceTree = "<group>"; };
 		62DE44B021A5B8C300C3AC14 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		62DE44B221A5B8E600C3AC14 /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
-		62DE44B521A5B98F00C3AC14 /* ResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRepository.swift; sourceTree = "<group>"; };
-		62DE44B721A5B9CB00C3AC14 /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
+		62DE44B221A5B8E600C3AC14 /* DefaultSpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakerRepository.swift; sourceTree = "<group>"; };
+		62DE44B521A5B98F00C3AC14 /* DefaultResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResourceRepository.swift; sourceTree = "<group>"; };
+		62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTalksRepository.swift; sourceTree = "<group>"; };
 		62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewVModel.swift; sourceTree = "<group>"; };
 		62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewModel.swift; sourceTree = "<group>"; };
 		62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBuilder.swift; sourceTree = "<group>"; };
 		62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewVModel.swift; sourceTree = "<group>"; };
 		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8261336921F85B3A00933AAF /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
+		8261336B21F85B7D00933AAF /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
+		8261336D21F85BA200933AAF /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
+		8261336F21F85BDC00933AAF /* ResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRepository.swift; sourceTree = "<group>"; };
+		8261337221F8633400933AAF /* DataCellComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCellComposer.swift; sourceTree = "<group>"; };
 		BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -300,7 +308,6 @@
 				62DE449821A595D100C3AC14 /* Speaker.swift */,
 				62DE449A21A595E100C3AC14 /* Topic.swift */,
 				62DE449C21A5966100C3AC14 /* Resource.swift */,
-				62DE449E21A5970500C3AC14 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,9 +316,9 @@
 			isa = PBXGroup;
 			children = (
 				62DE44A121A5A83400C3AC14 /* conferences.json */,
+				62DE44A721A5A86F00C3AC14 /* talks.json */,
 				62DE44A321A5A84700C3AC14 /* speakers.json */,
 				62DE44A521A5A85F00C3AC14 /* resources.json */,
-				62DE44A721A5A86F00C3AC14 /* talks.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -320,10 +327,10 @@
 			isa = PBXGroup;
 			children = (
 				62DE44B021A5B8C300C3AC14 /* Repository.swift */,
-				62DE44AC21A5B59D00C3AC14 /* ConferenceRepository.swift */,
-				62DE44B221A5B8E600C3AC14 /* SpeakerRepository.swift */,
-				62DE44B521A5B98F00C3AC14 /* ResourceRepository.swift */,
-				62DE44B721A5B9CB00C3AC14 /* TalksRepository.swift */,
+				8261336521F85AE700933AAF /* Conference */,
+				8261336821F85AFA00933AAF /* Talks */,
+				8261336621F85AF000933AAF /* Speaker */,
+				8261336721F85AF400933AAF /* Resource */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -355,6 +362,62 @@
 				4D23B5C2A76CC3F724F73BE2 /* Pods_EventBlankTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8261336421F85A0200933AAF /* Databse */ = {
+			isa = PBXGroup;
+			children = (
+				62DE44B421A5B95600C3AC14 /* Cache */,
+				62DE44B921A5BB5900C3AC14 /* ContentBuilder */,
+				62DE44A021A5A81E00C3AC14 /* Mocks */,
+				62DE449521A5959E00C3AC14 /* Models */,
+				62DE44AB21A5B58700C3AC14 /* Repository */,
+			);
+			path = Databse;
+			sourceTree = "<group>";
+		};
+		8261336521F85AE700933AAF /* Conference */ = {
+			isa = PBXGroup;
+			children = (
+				8261336921F85B3A00933AAF /* ConferenceRepository.swift */,
+				62DE44AC21A5B59D00C3AC14 /* DefaultConferenceRepository.swift */,
+			);
+			path = Conference;
+			sourceTree = "<group>";
+		};
+		8261336621F85AF000933AAF /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				8261336D21F85BA200933AAF /* SpeakerRepository.swift */,
+				62DE44B221A5B8E600C3AC14 /* DefaultSpeakerRepository.swift */,
+			);
+			path = Speaker;
+			sourceTree = "<group>";
+		};
+		8261336721F85AF400933AAF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8261336F21F85BDC00933AAF /* ResourceRepository.swift */,
+				62DE44B521A5B98F00C3AC14 /* DefaultResourceRepository.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8261336821F85AFA00933AAF /* Talks */ = {
+			isa = PBXGroup;
+			children = (
+				8261336B21F85B7D00933AAF /* TalksRepository.swift */,
+				62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */,
+			);
+			path = Talks;
+			sourceTree = "<group>";
+		};
+		8261337121F8632900933AAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8261337221F8633400933AAF /* DataCellComposer.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		95409B95AAF8E58D1E16B6E5 /* Pods */ = {
@@ -519,15 +582,10 @@
 		BC366C3A21A46178006111DF /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				62DE44B921A5BB5900C3AC14 /* ContentBuilder */,
-				62DE44B421A5B95600C3AC14 /* Cache */,
-				62DE44AB21A5B58700C3AC14 /* Repository */,
-				62DE44A021A5A81E00C3AC14 /* Mocks */,
-				62DE449521A5959E00C3AC14 /* Models */,
+				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
 				BC366C3B21A4625C006111DF /* Common */,
 				BC366C4121A46462006111DF /* Assemblies */,
 				BC366C4C21A464FC006111DF /* Coordinator */,
-				BC43944121A4609400FE2BE1 /* AppDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -669,6 +727,7 @@
 				BC70A3C221A56C5B00988533 /* Extensions */,
 				BC366C5121A46584006111DF /* Protocols */,
 				BC366C5821A46609006111DF /* Router */,
+				8261336421F85A0200933AAF /* Databse */,
 				BC366C5D21A4669C006111DF /* Factories */,
 				BC366C7321A468EE006111DF /* Flows */,
 				BC01756B21A692DD0090DAE2 /* Third Party */,
@@ -704,6 +763,7 @@
 		BC70A3A621A5526800988533 /* FeedList */ = {
 			isa = PBXGroup;
 			children = (
+				8261337121F8632900933AAF /* Helpers */,
 				BC7F0DB021A5A4BC003825F2 /* Cells */,
 				BC70A3A721A5527A00988533 /* FeedListView.swift */,
 				BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */,
@@ -1031,23 +1091,26 @@
 			files = (
 				62DE449921A595D100C3AC14 /* Speaker.swift in Sources */,
 				BC70A3A821A5527A00988533 /* FeedListView.swift in Sources */,
-				62DE44B621A5B98F00C3AC14 /* ResourceRepository.swift in Sources */,
+				62DE44B621A5B98F00C3AC14 /* DefaultResourceRepository.swift in Sources */,
 				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
 				BC01757621A6ACB60090DAE2 /* SpeakerImageHelper.swift in Sources */,
 				BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */,
 				62DE44BD21A5BBBA00C3AC14 /* TalkViewModel.swift in Sources */,
-				62DE44B321A5B8E600C3AC14 /* SpeakerRepository.swift in Sources */,
+				62DE44B321A5B8E600C3AC14 /* DefaultSpeakerRepository.swift in Sources */,
 				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
 				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
+				8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */,
 				BC70A3E321A5953B00988533 /* AppInfoModuleFactory.swift in Sources */,
-				62DE44AD21A5B59D00C3AC14 /* ConferenceRepository.swift in Sources */,
+				8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */,
+				62DE44AD21A5B59D00C3AC14 /* DefaultConferenceRepository.swift in Sources */,
 				BC70A3E521A5954B00988533 /* DefaultAppInfoModuleFactory.swift in Sources */,
 				BC70A3D821A5940800988533 /* AppInfoViewModelOutput.swift in Sources */,
 				BC70A3FE21A59C3300988533 /* FavouritesListViewController.swift in Sources */,
 				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
 				BC01751E21A5C0780090DAE2 /* ConferenceView.swift in Sources */,
 				BC01756921A6350E0090DAE2 /* SpeakerViewController.swift in Sources */,
+				8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */,
 				BC70A3EE21A599F800988533 /* FavouritesListViewModel.swift in Sources */,
 				BC01753721A5CFF50090DAE2 /* TopicTableViewCell.swift in Sources */,
 				BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */,
@@ -1071,11 +1134,13 @@
 				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
 				BC01754721A5FBD40090DAE2 /* SelectedConferenceType.swift in Sources */,
 				BC70A3E721A599A400988533 /* FavouritesCoordinator.swift in Sources */,
+				8261337321F8633400933AAF /* DataCellComposer.swift in Sources */,
 				BC01755021A62E2B0090DAE2 /* TableDisplayManagerDelegate.swift in Sources */,
 				8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */,
 				BC01757421A6932F0090DAE2 /* AVPlayer+Utilities.swift in Sources */,
 				BC70A3D321A593A000988533 /* AboutCoordinator.swift in Sources */,
 				62DE449B21A595E100C3AC14 /* Topic.swift in Sources */,
+				8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */,
 				62DE449D21A5966100C3AC14 /* Resource.swift in Sources */,
 				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
 				BC01755821A632830090DAE2 /* TopicViewModel.swift in Sources */,
@@ -1100,12 +1165,11 @@
 				BC70A3D621A593FB00988533 /* AppInfoView.swift in Sources */,
 				BC70A3DC21A5942600988533 /* DefaultAppInfoViewModel.swift in Sources */,
 				62DE44AF21A5B6E800C3AC14 /* ApplicationCache.swift in Sources */,
-				62DE44B821A5B9CB00C3AC14 /* TalksRepository.swift in Sources */,
+				62DE44B821A5B9CB00C3AC14 /* DefaultTalksRepository.swift in Sources */,
 				BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */,
 				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
 				BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */,
 				62DE44BB21A5BB7A00C3AC14 /* ConferenceViewVModel.swift in Sources */,
-				62DE449F21A5970500C3AC14 /* Location.swift in Sources */,
 				BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */,
 				BC70A3EA21A599CF00988533 /* FavouritesListView.swift in Sources */,
 				BC01754321A5EE110090DAE2 /* CollectionDisplayManager.swift in Sources */,
