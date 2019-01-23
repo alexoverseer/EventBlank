@@ -9,16 +9,26 @@ class FeedTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     
-    var representedDataItem: Resource!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         shadowView.addShadow()
     }
     
-//    func configure(with viewModel: ConferenceViewVModel) {
-//        titleLabel.text = viewModel.conference.title
-//        descLabel.text = viewModel.conference.description
-//    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        thumbnail.image = nil
+    }
+    
+    func configure(with viewModel: ConferenceViewVModel) {
+        titleLabel.text = viewModel.conference.title
+        descLabel.text = viewModel.conference.description
+        loadImage(resource: viewModel.resouces.first)
+    }
+    
+    private func loadImage(resource: Resource?) {
+        guard let imageName = resource?.local else { return }
+        thumbnail.image = UIImage(named: imageName)
+    }
 }

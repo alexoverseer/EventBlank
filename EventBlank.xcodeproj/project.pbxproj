@@ -33,7 +33,6 @@
 		8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* TalksRepository.swift */; };
 		8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* SpeakerRepository.swift */; };
 		8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336F21F85BDC00933AAF /* ResourceRepository.swift */; };
-		8261337321F8633400933AAF /* DataCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261337221F8633400933AAF /* DataCellComposer.swift */; };
 		BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */; };
 		BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */; };
 		BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */; };
@@ -174,7 +173,6 @@
 		8261336B21F85B7D00933AAF /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
 		8261336D21F85BA200933AAF /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
 		8261336F21F85BDC00933AAF /* ResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRepository.swift; sourceTree = "<group>"; };
-		8261337221F8633400933AAF /* DataCellComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCellComposer.swift; sourceTree = "<group>"; };
 		BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -410,14 +408,6 @@
 				62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */,
 			);
 			path = Talks;
-			sourceTree = "<group>";
-		};
-		8261337121F8632900933AAF /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				8261337221F8633400933AAF /* DataCellComposer.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		95409B95AAF8E58D1E16B6E5 /* Pods */ = {
@@ -763,7 +753,6 @@
 		BC70A3A621A5526800988533 /* FeedList */ = {
 			isa = PBXGroup;
 			children = (
-				8261337121F8632900933AAF /* Helpers */,
 				BC7F0DB021A5A4BC003825F2 /* Cells */,
 				BC70A3A721A5527A00988533 /* FeedListView.swift */,
 				BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */,
@@ -1134,7 +1123,6 @@
 				BC366C5521A465A4006111DF /* BaseView.swift in Sources */,
 				BC01754721A5FBD40090DAE2 /* SelectedConferenceType.swift in Sources */,
 				BC70A3E721A599A400988533 /* FavouritesCoordinator.swift in Sources */,
-				8261337321F8633400933AAF /* DataCellComposer.swift in Sources */,
 				BC01755021A62E2B0090DAE2 /* TableDisplayManagerDelegate.swift in Sources */,
 				8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */,
 				BC01757421A6932F0090DAE2 /* AVPlayer+Utilities.swift in Sources */,

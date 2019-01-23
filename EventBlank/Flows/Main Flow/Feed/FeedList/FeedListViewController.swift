@@ -6,7 +6,6 @@ class FeedListViewController: UIViewController, FeedListView {
     
     var viewModel: FeedListViewModel!
     var onShowConferenceDetails: ((ConferenceViewVModel) -> Void)?
-    let cellComposer = DataCellComposer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,16 +38,9 @@ extension FeedListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: FeedTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-//        cell.configure(with: viewModel.datasource[indexPath.row])
+        cell.configure(with: viewModel.datasource[indexPath.row])
+        
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
-        guard let cell = cell as? FeedTableViewCell else { fatalError("Expected to display a `FeedTableViewCell`.") }
-        let item = viewModel.datasource[indexPath.row]
-        
-        cellComposer.compose(cell, withDataItem: item)
     }
 }
 
