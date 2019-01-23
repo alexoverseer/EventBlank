@@ -2,6 +2,7 @@ disabled_rules:
 - trailing_whitespace
 - nesting
 - sorted_imports
+- large_tuple
 
 opt_in_rules:
 - empty_count

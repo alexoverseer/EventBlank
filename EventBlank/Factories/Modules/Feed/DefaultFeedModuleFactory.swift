@@ -27,6 +27,7 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         let controller = TopicViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
+        viewModel.topic = topic
         
         return controller
     }

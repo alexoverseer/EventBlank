@@ -9,11 +9,12 @@
 import Foundation
 
 class DefaultTalksRepository: NSObject, TalksRepository {
+    
     let appCache = ApplicationCache.inappCache
     
     func getBy(conference: String) -> [Topic] {
         let all = getAll()
-        return all.filter {$0.conference == conference }
+        return all.filter { $0.conference == conference }
     }
     
     func getAll() -> [Topic] {

@@ -14,10 +14,10 @@ struct TalkViewModel {
     let resouces: [Resource]
     
     var video: Resource? {
-        return resouces.first(where: {$0.mediaType == .video })
+        return resouces.first(where: { $0.mediaType == .video })
     }
     
     var images: [Resource] {
-        return resouces.filter {$0.mediaType == .image }
+        return resouces.filter { $0.mediaType == .image }
     }
 }

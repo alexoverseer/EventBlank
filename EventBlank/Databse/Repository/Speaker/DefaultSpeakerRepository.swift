@@ -14,7 +14,7 @@ class DefaultSpeakerRepository: NSObject, SpeakerRepository {
     
     func getBy(group: [String]) -> [Speaker] {
         let all = getAll()
-        return all.filter { group.contains($0.uid)}
+        return all.filter { group.contains($0.uid) }
     }
     
     func getAll() -> [Speaker] {

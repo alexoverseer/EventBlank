@@ -11,7 +11,7 @@ import Foundation
 struct Topic: Codable {
     var uid: String
     var conference: String?
-    var title: String?
+    var title: String
     var speaker: String
     var media: [String] // ids for MediaItem object
     
@@ -41,7 +41,7 @@ extension Topic {
         
         uid = try values.decode(String.self, forKey: .uid)
         conference = try values.decode(String?.self, forKey: .conference)
-        title = try values.decode(String?.self, forKey: .title)
+        title = try values.decode(String.self, forKey: .title)
         speaker = try values.decode(String.self, forKey: .speaker)
         media = try values.decode([String].self, forKey: .media)
         startDateTimeInterval = try values.decode(TimeInterval.self, forKey: .startDateTimeInterval)

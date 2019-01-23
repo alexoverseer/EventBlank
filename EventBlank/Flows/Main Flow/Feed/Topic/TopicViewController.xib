@@ -20,8 +20,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopicViewController" customModule="EventBlank" customModuleProvider="target">
             <connections>
+                <outlet property="speakerImageView" destination="psd-1y-hZv" id="g87-pU-vvo"/>
+                <outlet property="speakerNameLabel" destination="Pfv-DF-KKn" id="G8t-tJ-aDC"/>
+                <outlet property="speakerTitleLabel" destination="x6s-7W-tdz" id="PuO-ds-nJT"/>
+                <outlet property="topicNameLabel" destination="Gwj-23-j17" id="HSQ-4u-xLl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="vimeoPlayerBaseView" destination="XbA-ve-HsX" id="AAu-L8-sLO"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -40,24 +43,25 @@
                     <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZC-K4-ORV">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="611.66666666666663"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="517.66666666666663"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbA-ve-HsX" userLabel="Vimeo Player">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank.sundell" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-lM-5Ho">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODO: Add Vimeo Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZ8-WX-qO3">
+                                            <rect key="frame" x="84.333333333333329" y="139.66666666666666" width="206.33333333333337" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="Vz0-lM-5Ho" secondAttribute="bottom" id="2lk-2C-bFq"/>
                                         <constraint firstAttribute="height" constant="300" id="IHK-Vv-Io7">
                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                         </constraint>
-                                        <constraint firstItem="Vz0-lM-5Ho" firstAttribute="leading" secondItem="XbA-ve-HsX" secondAttribute="leading" id="KQK-V0-OeN"/>
-                                        <constraint firstAttribute="trailing" secondItem="Vz0-lM-5Ho" secondAttribute="trailing" id="f6B-AL-WOa"/>
-                                        <constraint firstItem="Vz0-lM-5Ho" firstAttribute="top" secondItem="XbA-ve-HsX" secondAttribute="top" id="zUU-s9-GPV"/>
+                                        <constraint firstItem="SZ8-WX-qO3" firstAttribute="centerY" secondItem="XbA-ve-HsX" secondAttribute="centerY" id="MRG-Pd-1d1"/>
+                                        <constraint firstItem="SZ8-WX-qO3" firstAttribute="centerX" secondItem="XbA-ve-HsX" secondAttribute="centerX" id="QU6-bY-fPU"/>
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Live Podcast 🎉" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-23-j17">
@@ -69,26 +73,15 @@
                                     <color key="textColor" red="0.96862745100000003" green="0.18823529410000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1N-Hx-B2e">
-                                    <rect key="frame" x="20" y="376" width="335" height="72"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" priority="250" constant="96" id="Ilx-k2-Wcp"/>
-                                    </constraints>
-                                    <string key="text">Recorded and produced live by Stefan Völker.
-NSSpain 2018</string>
-                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
-                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3t-6x-9ME">
-                                    <rect key="frame" x="20" y="468" width="335" height="1"/>
+                                    <rect key="frame" x="20" y="376" width="335" height="1"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="EtK-0y-zOe"/>
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank.person" translatesAutoresizingMaskIntoConstraints="NO" id="psd-1y-hZv">
-                                    <rect key="frame" x="20" y="489" width="80" height="80"/>
+                                    <rect key="frame" x="20" y="397" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="80" id="PSG-KB-kgS"/>
                                         <constraint firstAttribute="width" constant="80" id="dm9-2x-4dB"/>
@@ -100,7 +93,7 @@ NSSpain 2018</string>
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Sundell " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfv-DF-KKn">
-                                    <rect key="frame" x="110" y="489" width="255" height="24"/>
+                                    <rect key="frame" x="110" y="397" width="255" height="23.333333333333314"/>
                                     <constraints>
                                         <constraint firstAttribute="height" priority="250" constant="24" id="dTu-4F-4yA"/>
                                     </constraints>
@@ -109,7 +102,7 @@ NSSpain 2018</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift by Sundell | Stacktrace Podcast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6s-7W-tdz">
-                                    <rect key="frame" x="110" y="523" width="245" height="38.666666666666629"/>
+                                    <rect key="frame" x="110" y="430.33333333333331" width="245" height="37.333333333333314"/>
                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -122,16 +115,13 @@ NSSpain 2018</string>
                                 <constraint firstAttribute="trailing" secondItem="Pfv-DF-KKn" secondAttribute="trailing" constant="10" id="6Fz-Sz-7YO"/>
                                 <constraint firstItem="psd-1y-hZv" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" constant="20" id="D6g-vp-ued"/>
                                 <constraint firstAttribute="bottom" secondItem="x6s-7W-tdz" secondAttribute="bottom" constant="50" id="Hp7-tg-4Rd"/>
-                                <constraint firstItem="c3t-6x-9ME" firstAttribute="top" secondItem="r1N-Hx-B2e" secondAttribute="bottom" constant="20" id="ODs-kC-3Mw"/>
                                 <constraint firstAttribute="trailing" secondItem="Gwj-23-j17" secondAttribute="trailing" constant="20" id="R8e-Qh-eVL"/>
-                                <constraint firstItem="r1N-Hx-B2e" firstAttribute="top" secondItem="Gwj-23-j17" secondAttribute="bottom" constant="20" id="Shc-Ea-C8j"/>
                                 <constraint firstItem="x6s-7W-tdz" firstAttribute="top" secondItem="Pfv-DF-KKn" secondAttribute="bottom" constant="10" id="WgF-1S-b2Z"/>
-                                <constraint firstItem="r1N-Hx-B2e" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" constant="20" id="Y3v-C1-qEJ"/>
                                 <constraint firstItem="Pfv-DF-KKn" firstAttribute="leading" secondItem="psd-1y-hZv" secondAttribute="trailing" constant="10" id="Yac-Vr-l4J"/>
                                 <constraint firstAttribute="trailing" secondItem="XbA-ve-HsX" secondAttribute="trailing" id="bhd-JR-IGu"/>
-                                <constraint firstAttribute="trailing" secondItem="r1N-Hx-B2e" secondAttribute="trailing" constant="20" id="eYw-LC-JtV"/>
                                 <constraint firstItem="Pfv-DF-KKn" firstAttribute="top" secondItem="c3t-6x-9ME" secondAttribute="bottom" constant="20" id="eqo-2A-25L"/>
                                 <constraint firstItem="XbA-ve-HsX" firstAttribute="top" secondItem="SZC-K4-ORV" secondAttribute="top" id="f2e-lg-Q9b"/>
+                                <constraint firstItem="c3t-6x-9ME" firstAttribute="top" secondItem="Gwj-23-j17" secondAttribute="bottom" constant="20" id="h2a-IG-3CN"/>
                                 <constraint firstItem="x6s-7W-tdz" firstAttribute="leading" secondItem="psd-1y-hZv" secondAttribute="trailing" constant="10" id="hCp-B5-LU2"/>
                                 <constraint firstItem="psd-1y-hZv" firstAttribute="top" secondItem="c3t-6x-9ME" secondAttribute="bottom" constant="20" id="hSe-1C-UqA"/>
                                 <constraint firstAttribute="trailing" secondItem="c3t-6x-9ME" secondAttribute="trailing" constant="20" id="k4C-Z9-geY"/>
@@ -168,6 +158,5 @@ NSSpain 2018</string>
     </objects>
     <resources>
         <image name="blank.person" width="800" height="799"/>
-        <image name="blank.sundell" width="3360" height="2100"/>
     </resources>
 </document>
