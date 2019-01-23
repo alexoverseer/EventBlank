@@ -5,7 +5,6 @@ protocol TopicViewModel: class {
     var topic: TalkViewModel! { get set }
     
     func onViewDidLoad(_ view: TopicView)
-    func conferenceName() -> String
     func topicName() -> String
     func speakerDetails() -> (name: String, title: String, imageURL: URL?)
 }

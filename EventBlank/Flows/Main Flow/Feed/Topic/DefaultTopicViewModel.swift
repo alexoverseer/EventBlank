@@ -9,10 +9,6 @@ final class DefaultTopicViewModel: TopicViewModel {
         
     }
     
-    func conferenceName() -> String {
-        return "bla"
-    }
-    
     func topicName() -> String {
         return topic.talk.title
     }

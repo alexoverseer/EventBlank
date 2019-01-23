@@ -30,8 +30,10 @@ class ConferenceViewController: UIViewController, ConferenceView {
     
     private func setupUI() {
         navigationItem.title = "Details"
-        titleLabel.text = viewModel.conference.conference.title
-        descriptionLabel.text = viewModel.conference.conference.description
+        
+        let conferenceDetails = viewModel.conferenceDetails()
+        titleLabel.text = conferenceDetails.title
+        descriptionLabel.text = conferenceDetails.description
         
         viewModel.registerCollection(photosCollectionView)
         viewModel.registerTable(conferenceTableView)

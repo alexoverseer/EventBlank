@@ -15,6 +15,13 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
         return conference.people
     }
     
+    func conferenceDetails() -> (title: String, description: String?) {
+        let title = conference.conference.title
+        let description = conference.conference.description
+        
+        return (title, description)
+    }
+    
     func onViewDidLoad(_ view: ConferenceView) {
         
         let photoList = conference.resouces.compactMap { $0.local }
