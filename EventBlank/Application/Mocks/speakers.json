@@ -1,272 +1,147 @@
 [{
     "uid": "00001",
-    "name": "Diego Freniche",
-    "title": "iOS/Android developer",
-    "photo": "https://pbs.twimg.com/profile_images/600326381671690240/caZU9AsZ_400x400.jpg",
-    "page": "http://www.twitter.com/dfreniche"
-}, {
-    "uid": "00002",
-    "name": "Fernando Rodriguez",
-    "title": "Chief Learning Officer & Co-Founder at @KeepCoding_ Mobile & Blockchain nerd.",
-    "photo": "https://pbs.twimg.com/profile_images/1042829565473828864/q24pRil9_400x400.jpg",
-    "page": "https://twitter.com/frr149"
-}, {
-    "uid": "00003",
-    "name": "Aral Balkan",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/873476708497838080/rdwukUAR_400x400.jpg",
-    "page": "https://twitter.com/aral"
-}, {
-    "uid": "00004",
-    "name": "Sommer Panage",
-    "title": "Mobile dev at Chorus",
-    "photo": "https://pbs.twimg.com/profile_images/854048921785556996/Ih8pVA7s_400x400.jpg",
-    "page": "https://twitter.com/sommer"
-}, {
-    "uid": "00005",
-    "name": "William Sackfield",
-    "title": "",
-    "photo": "",
-    "page": null
-}, {
-    "uid": "00006",
-    "name": "Nacho Soto",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/888820890917588992/UHo8-kEo_400x400.jpg",
-    "page": "https://twitter.com/NachoSoto"
-}, {
-    "uid": "00007",
-    "name": "Boris Bügling",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/839830093686050816/c1WsoCk8_400x400.jpg",
-    "page": "https://twitter.com/NeoNacho"
-}, {
-    "uid": "00008",
-    "name": "Orta Therox",
-    "title": "Front-end",
-    "photo": "https://pbs.twimg.com/profile_images/879777800311451648/5HSjNITG_400x400.jpg",
-    "page": "https://twitter.com/orta"
-}, {
-    "uid": "00009",
-    "name": "Fabio Pelosin",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/764045743250432000/NHBqeQEr_400x400.jpg",
-    "page": "https://twitter.com/fabiopelosin"
-}, {
-    "uid": "00010",
-    "name": "Alfonso Alba García",
-    "title": "RoR/PHP Backend Developer",
-    "photo": "https://pbs.twimg.com/profile_images/3435437917/62edba6effa752fdc1dd46872ea662a1_400x400.jpeg",
-    "page": "https://twitter.com/aalbagarcia"
-}, {
-    "uid": "00011",
-    "name": "Daniel Eggert",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/1380982800/IMG_3309_400x400.jpg",
-    "page": "https://twitter.com/danielboedewadt"
-}, {
-    "uid": "00012",
-    "name": "Delisa Mason",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/872867748954611712/jQkBQXy4_400x400.jpg",
-    "page": "https://twitter.com/kattrali"
-}, {
-    "uid": "00013",
-    "name": "Peter Steinberger",
-    "title": "Founder/CEO",
-    "photo": "https://pbs.twimg.com/profile_images/792759342927843328/onx286KO_400x400.jpg",
-    "page": "https://twitter.com/steipete"
-}, {
-    "uid": "00014",
-    "name": "Chris Eidhof",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/496291231690137600/TmQRrofs_400x400.jpeg",
-    "page": "https://twitter.com/chriseidhof"
-}, {
-    "uid": "00016",
-    "name": "Florian Kugler",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/742074750281887744/_DNy2mAN_400x400.jpg",
-    "page": "https://twitter.com/floriankugler"
-}, {
-    "uid": "00017",
-    "name": "Robert Bönkhe",
-    "title": "",
-    "photo": "",
-    "page": "https://twitter.com/ceterum_censeo"
-}, {
-    "uid": "00018",
-    "name": "Tim Brückmann",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/658964281199861761/W_ccsiDa_400x400.jpg",
-    "page": "https://twitter.com/tibr"
-}, {
-    "uid": "00019",
-    "name": "Javier Sanchez",
-    "title": "",
-    "photo": "https://pbs.twimg.com/profile_images/695316203280195584/_YRFIyQi_400x400.png",
-    "page": "https://twitter.com/jsanchezsierra"
-}, {
-    "uid": "00021",
-    "name": "Alberto Gimeno",
-    "title": "Ecosystems engineer at github",
-    "photo": "https://pbs.twimg.com/profile_images/3038751292/27acfc434e4c840a87a23863df1a4208_400x400.jpeg",
-    "page": "https://twitter.com/gimenete"
-}, {
-    "uid": "00022",
-    "name": "Krzysztof Zabłocki",
-    "title": "Dev, Speaker, Creator, The New York Times",
-    "photo": "https://pbs.twimg.com/profile_images/1036876946448232449/yqhZsnBS_400x400.jpg",
-    "page": "https://twitter.com/merowing_"
-}, {
-    "uid": "00023",
     "name": "Mattt",
     "title": "Flight School | NSHipster",
-    "photo": "http://2018.nsspain.com/images/speakers/mattt.jpeg",
+    "photo": "https://2018.nsspain.com/images/speakers/mattt.jpeg",
     "page": "https://twitter.com/mattt"
-}, {
-    "uid": "00024",
+},
+{
+    "uid": "00002",
+    "name": "Kristina Fox",
+    "title": "Intuit",
+    "photo": "https://2018.nsspain.com/images/speakers/kristina.jpeg",
+    "page": "https://twitter.com/krstnfx"
+},
+{
+    "uid": "00003",
     "name": "Guilherme Rambo",
-    "title": "iOS developer",
-    "photo": "http://2018.nsspain.com/images/speakers/gui.jpeg",
-    "page": null
-}, {
-    "uid": "000025",
+    "title": "Groupon Latin America | 9to5mac | Stacktrace Podcast",
+    "photo": "https://2018.nsspain.com/images/speakers/gui.jpeg",
+    "page": "https://twitter.com/_inside"
+},
+{
+    "uid": "00004",
+    "name": "John Sundell",
+    "title": "Swift by Sundell | Stacktrace Podcast",
+    "photo": "https://2018.nsspain.com/images/speakers/john.jpeg",
+    "page": "https://twitter.com/johnsundell"
+},
+{
+    "uid": "00005",
     "name": "Daniel Steinberg",
     "title": "Dim Sum Thinking",
-    "photo": "http://2018.nsspain.com/images/speakers/daniel.jpeg",
+    "photo": "https://2018.nsspain.com/images/speakers/daniel.jpeg",
     "page": "https://twitter.com/dimsumthinking"
-}, {
-    "uid": "00026",
+},
+{
+    "uid": "00006",
+    "name": "Dave DeLong",
+    "title": "Snap, Inc",
+    "photo": "https://2018.nsspain.com/images/speakers/dave.jpeg",
+    "page": "https://twitter.com/davedelong"
+},
+{
+    "uid": "00007",
     "name": "Ellen Shapiro",
     "title": "Bakken & Bæck's",
-    "photo": "http://2018.nsspain.com/images/speakers/ellen.jpeg",
+    "photo": "https://2018.nsspain.com/images/speakers/ellen.jpeg",
     "page": "https://twitter.com/designatednerd"
-}, {
-    "uid": "00027",
-    "name": "Paul Hudson",
-    "title": "Creator of Hacking with Swift, author of books about iOS, macOS, watchOS, and tvOS.",
-    "photo": "http://2018.nsspain.com/images/speakers/paul.jpeg",
-    "page": "https://twitter.com/twostraws"
-}, {
-    "uid": "00028",
-    "name": "Benedikt Terhechte",
-    "title": "Senior iOS Developer",
-    "photo": "http://2018.nsspain.com/images/speakers/benedikt.jpeg",
-    "page": "https://twitter.com/terhechte"
-}, {
-    "uid": "00029",
-    "name": "Marcus Wermuth",
-    "title": "Buffer",
-    "photo": "http://2018.nsspain.com/images/speakers/marcus.jpeg",
-    "page": "https://twitter.com/mwermuth"
-}, {
-    "uid": "00030",
-    "name": "Isabel Barrera",
-    "title": "iOS engineer",
-    "photo": "http://2018.nsspain.com/images/speakers/isabel.jpeg",
-    "page": "https://twitter.com/ifbarrera"
-}, {
-    "uid": "00031",
-    "name": "Pavel Mazurin",
-    "title": "iOS engineer at Uber",
-    "photo": "http://2018.nsspain.com/images/speakers/pavel.jpeg",
-    "page": "https://twitter.com/pmazurin"
-}, {
-    "uid": "00032",
-    "name": "Daniel Munoz",
-    "title": "iOS Software Engineer at LOVOO GmbH",
-    "photo": "http://2018.nsspain.com/images/speakers/dan.jpeg",
-    "page": "https://twitter.com/Makias"
-}, {
-    "uid": "00033",
-    "name": "Stephen Celis",
-    "title": "Point-Free",
-    "photo": "http://2018.nsspain.com/images/speakers/stephen.jpeg",
-    "page": "https://twitter.com/stephencelis"
-}, {
-    "uid": "00034",
-    "name": "Kristina Fox",
-    "title": "iOS Software Engineer",
-    "photo": "http://2018.nsspain.com/images/speakers/kristina.jpeg",
-    "page": "https://twitter.com/krstnfx"
-}, {
-    "uid": "00035",
-    "name": "John Sundell",
-    "title": "Software Developer, Hyper",
-    "photo": "http://2018.nsspain.com/images/speakers/john.jpeg",
-    "page": "https://twitter.com/johnsundell"
-}, {
-    "uid": "00036",
-    "name": "Dave DeLong",
-    "title": "iOS Architect",
-    "photo": "http://2018.nsspain.com/images/speakers/dave.jpeg",
-    "page": "https://twitter.com/davedelong"
-}, {
-    "uid": "00037",
+},
+{
+    "uid": "00008",
     "name": "Hector Matos",
     "title": "Twitter",
-    "photo": "http://2018.nsspain.com/images/speakers/hector.jpeg",
+    "photo": "https://2018.nsspain.com/images/speakers/hector.jpeg",
     "page": "https://twitter.com/allonsykraken"
-}, {
-    "uid": "00038",
+},
+{
+    "uid": "00009",
+    "name": "Paul Hudson",
+    "title": "Hacking with Swift",
+    "photo": "https://2018.nsspain.com/images/speakers/paul.jpeg",
+    "page": "https://twitter.com/twostraws"
+},
+{
+    "uid": "00010",
     "name": "Nelida Velazquez",
-    "title": "iOS developer",
-    "photo": "http://2018.nsspain.com/images/speakers/nelida.jpeg",
+    "title": "Detroit Labs",
+    "photo": "https://2018.nsspain.com/images/speakers/nelida.jpeg",
     "page": "https://twitter.com/tolkiana"
-}, {
-    "uid": "00039",
+},
+{
+    "uid": "00011",
+    "name": "Benedikt Terhechte",
+    "title": "XING",
+    "photo": "https://2018.nsspain.com/images/speakers/benedikt.jpeg",
+    "page": "https://twitter.com/terhechte"
+},
+{
+    "uid": "00012",
     "name": "Warren Burton",
-    "title": "iOS and MacOS Development & Consulting",
-    "photo": "http://2018.nsspain.com/images/speakers/warren.jpeg",
+    "title": "Indie Developer",
+    "photo": "https://2018.nsspain.com/images/speakers/warren.jpeg",
     "page": "https://twitter.com/TroutDev"
-}, {
-    "uid": "00040",
+},
+{
+    "uid": "00013",
+    "name": "Marcus Wermuth",
+    "title": "Buffer",
+    "photo": "https://2018.nsspain.com/images/speakers/marcus.jpeg",
+    "page": "https://twitter.com/mwermuth"
+},
+{
+    "uid": "00014",
     "name": "Bart den Hollander",
-    "title": "Senior Consultant",
-    "photo": "http://2018.nsspain.com/images/speakers/bart.jpeg",
+    "title": "Xebia",
+    "photo": "https://2018.nsspain.com/images/speakers/bart.jpeg",
     "page": "https://twitter.com/hollanderbart"
-}, {
-    "uid": "00041",
+},
+{
+    "uid": "00015",
+    "name": "Isabel Barrera",
+    "title": "Kickstarter",
+    "photo": "https://2018.nsspain.com/images/speakers/isabel.jpeg",
+    "page": "https://twitter.com/ifbarrera"
+},
+{
+    "uid": "00016",
     "name": "Adam Bell",
-    "title": "iOS Engineer",
-    "photo": "http://2018.nsspain.com/images/speakers/adam.jpeg",
+    "title": "Facebook",
+    "photo": "https://2018.nsspain.com/images/speakers/adam.jpeg",
     "page": "https://twitter.com/b3ll"
-}, {
-    "uid": "00042",
+},
+{
+    "uid": "00017",
+    "name": "Pavel Mazurin",
+    "title": "Uber",
+    "photo": "https://2018.nsspain.com/images/speakers/pavel.jpeg",
+    "page": "https://twitter.com/pmazurin"
+},
+{
+    "uid": "00018",
     "name": "Victor Pena",
-    "title": "Software Engineer from Galicia, iOS Engineer at Uber",
-    "photo": "http://2018.nsspain.com/images/speakers/victor.jpeg",
+    "title": "Uber",
+    "photo": "https://2018.nsspain.com/images/speakers/victor.jpeg",
     "page": "https://twitter.com/vicpenap"
-}, {
-    "uid": "00043",
+},
+{
+    "uid": "00019",
+    "name": "Daniel Munoz",
+    "title": "LOVOO",
+    "photo": "https://2018.nsspain.com/images/speakers/dan.jpeg",
+    "page": "https://twitter.com/Makias"
+},
+{
+    "uid": "00020",
     "name": "Vladislav Alexeev",
-    "title": "Software Engineer",
-    "photo": "http://2018.nsspain.com/images/speakers/vlad.jpeg",
+    "title": "Avito",
+    "photo": "https://2018.nsspain.com/images/speakers/vlad.jpeg",
     "page": "https://twitter.com/beefon"
-}, {
-    "uid": "00045",
-    "name": "Esteban Torres",
-    "title": "iOS Developer, SoundCloud",
-    "photo": "",
-    "page": "https://twitter.com/esttorhe"
-}, {
-    "uid": "00046",
-    "name": "Marin Usalj",
-    "title": "Señor engineer at Lyft. Speaker. OSS contributor.",
-    "photo": "https://pbs.twimg.com/profile_images/515541292705529856/h3-14jxA_400x400.jpeg",
-    "page": "https://twitter.com/_supermarin"
-}, {
-    "uid": "00047",
-    "name": "Sally Shepard",
-    "title": "iOS developer",
-    "photo": "https://pbs.twimg.com/profile_images/933407342661701633/v0ELZaCb_400x400.jpg",
-    "page": "https://twitter.com/mostgood"
-}, {
-    "uid": "00048",
-    "name": "Roy Marmelstein",
-    "title": "Software Engineer, Spotify",
-    "photo": "https://pbs.twimg.com/profile_images/628330860387897344/1XhdMJMt_400x400.jpg",
-    "page": "https://twitter.com/marmelroy"
-}
-]
+},
+{
+    "uid": "00021",
+    "name": "Stephen Celis",
+    "title": "Point-Free",
+    "photo": "https://2018.nsspain.com/images/speakers/stephen.jpeg",
+    "page": "https://twitter.com/stephencelis"
+}]
