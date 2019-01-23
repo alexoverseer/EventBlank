@@ -19,8 +19,7 @@ class TopicTableViewCell: UITableViewCell, NibReusable {
     func configure(with model: TalkViewModel) {
         topicTitleLabel.text = model.talk.title
         speakerLabel.text = model.speaker.name
-        
-        print(model.talk.dateStart)
-        print(model.talk.dateEnd)
+        startDateLabel.text = model.talk.dateStart
+        endDateLabel.text = model.talk.dateEnd
     }
 }

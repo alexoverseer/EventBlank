@@ -13,7 +13,6 @@ struct Topic: Codable {
     var conference: String?
     var title: String?
     var speaker: String
-    var description: String?
     var media: [String] // ids for MediaItem object
     
     var dateStart: String
@@ -27,11 +26,9 @@ struct Topic: Codable {
         case conference
         case title
         case speaker
-        case description
         case media
         case dateStart
         case dateEnd
-        
         case startDateTimeInterval = "startDate"
         case endDateTimeTimeInterval = "endDate"
     }
@@ -46,13 +43,19 @@ extension Topic {
         conference = try values.decode(String?.self, forKey: .conference)
         title = try values.decode(String?.self, forKey: .title)
         speaker = try values.decode(String.self, forKey: .speaker)
-        description = try values.decode(String?.self, forKey: .description)
         media = try values.decode([String].self, forKey: .media)
-        
         startDateTimeInterval = try values.decode(TimeInterval.self, forKey: .startDateTimeInterval)
         endDateTimeTimeInterval = try values.decode(TimeInterval.self, forKey: .endDateTimeTimeInterval)
         
-        dateStart = ""
-        dateEnd = ""
+        dateStart = formatDate(from: startDateTimeInterval)
+        dateEnd = formatDate(from: endDateTimeTimeInterval)
     }
+}
+
+private func formatDate(from timeInterval: TimeInterval) -> String {
+    let date = Date(timeIntervalSince1970: timeInterval)
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "[ HH:mm ]"
+    
+    return dateFormatter.string(from: date)
 }
