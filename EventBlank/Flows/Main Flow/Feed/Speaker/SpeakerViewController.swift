@@ -39,7 +39,7 @@ class SpeakerViewController: UIViewController, SpeakerView {
     }
     
     @IBAction func openTwitterProfile() {
-        
+        viewModel.openSpeakerTwitterPage()
     }
 }
 

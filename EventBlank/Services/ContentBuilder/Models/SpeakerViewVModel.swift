@@ -14,8 +14,12 @@ struct SpeakerViewVModel {
     var title: String
     var photo: String
     var page: URL?
-    
     var topics: [TalkViewModel] = []
+    
+    var twitterName: URL? {
+        let name = page?.pathComponents.last
+        return URL(string: "twitter://user?screen_name=\(String(describing: name))")
+    }
     
     init(speaker: Speaker) {
         self.uid = speaker.uid

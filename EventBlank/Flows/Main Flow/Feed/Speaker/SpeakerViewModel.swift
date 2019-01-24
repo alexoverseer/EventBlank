@@ -8,4 +8,5 @@ protocol SpeakerViewModel: class {
     
     func onViewDidLoad(_ view: SpeakerView)
     func speakerDetails() -> (name: String, title: String, imageURL: URL?)
+    func openSpeakerTwitterPage()
 }

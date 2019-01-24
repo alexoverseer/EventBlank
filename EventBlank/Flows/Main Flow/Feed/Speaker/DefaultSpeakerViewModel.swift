@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 final class DefaultSpeakerViewModel: SpeakerViewModel {
     
@@ -26,5 +27,15 @@ final class DefaultSpeakerViewModel: SpeakerViewModel {
         let imageURL = URL(string: profile.photo)
         
         return (name, title, imageURL)
+    }
+    
+    func openSpeakerTwitterPage() {
+        let twitter = profile.twitterName
+        let url = profile.page
+        let application = UIApplication.shared
+        
+        if application.canOpenURL() {
+            
+        }
     }
 }
