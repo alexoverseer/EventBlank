@@ -3,10 +3,11 @@ import Foundation
 final class DefaultFeedListViewModel: FeedListViewModel {
     
     var output: FeedListViewModelOutput?
-    let builder = ViewModelBuilder()
+    let builder = ViewModelBuilder.default
+    
     var datasource: [ConferenceViewVModel] = [] {
         didSet {
-            
+            output?.reloadList()
         }
     }
     

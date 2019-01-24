@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class SpeakerViewController: UIViewController, SpeakerView {
 
@@ -22,13 +23,17 @@ class SpeakerViewController: UIViewController, SpeakerView {
         navigationItem.title = "Details"
         SpeakerImageHelper.setupSpeakerImage(image: speakerImgeView)
         topicsTableView.register(cellType: TopicTableViewCell.self)
-        self.topicsTableView.reloadData()
+        
+        let speakerDetails = viewModel.speakerDetails()
+        speakerNameLabel.text = speakerDetails.name
+        speakerTitleLabel.text = speakerDetails.title
+        speakerImgeView.kf.setImage(with: speakerDetails.imageURL)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+        DispatchQueue.main.async {
             self.tableHeightConstraint.constant = self.topicsTableView.contentSize.height
         }
     }
@@ -36,4 +41,7 @@ class SpeakerViewController: UIViewController, SpeakerView {
 
 extension SpeakerViewController: SpeakerViewModelOutput {
     
+    func reloadData() {
+        topicsTableView.reloadData()
+    }
 }

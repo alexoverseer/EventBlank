@@ -339,8 +339,8 @@
 			children = (
 				62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */,
 				62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */,
-				62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */,
 				62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */,
+				62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */,
 			);
 			path = ContentBuilder;
 			sourceTree = "<group>";

@@ -37,6 +37,7 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         let controller = SpeakerViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
+        viewModel.profile = speaker
         
         return controller
     }
