@@ -10,10 +10,14 @@ final class DefaultSpeakerViewModel: SpeakerViewModel {
     }
     
     var profile: SpeakerViewVModel!
+    var builder: ViewModelBuilder
+    
+    init(builder: ViewModelBuilder) {
+        self.builder = builder
+    }
     
     func onViewDidLoad(_ view: SpeakerView) {
-        #warning("replace with DI")
-        talks = ViewModelBuilder.default.buildTalksViewModel(for: profile)
+        talks = builder.buildTalksViewModel(for: profile)
     }
     
     func speakerDetails() -> (name: String, title: String, imageURL: URL?) {

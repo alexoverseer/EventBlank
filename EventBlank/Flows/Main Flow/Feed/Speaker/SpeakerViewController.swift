@@ -37,6 +37,10 @@ class SpeakerViewController: UIViewController, SpeakerView {
             self.tableHeightConstraint.constant = self.topicsTableView.contentSize.height
         }
     }
+    
+    @IBAction func openTwitterProfile() {
+        
+    }
 }
 
 extension SpeakerViewController: SpeakerViewModelOutput {

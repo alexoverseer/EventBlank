@@ -16,8 +16,9 @@ class DefaultAppAssembler: AppAssembler {
         let viewModelAssembly = ViewModelAssembly()
         let factoryAssembly = FactoryAssembly()
         let networkServicesAssembly = NetworkAssembly()
+        let builderAssembly = BuilderAssembly()
         
-        assembler.apply(assemblies: [viewModelAssembly, factoryAssembly, networkServicesAssembly])
+        assembler.apply(assemblies: [builderAssembly, viewModelAssembly, factoryAssembly, networkServicesAssembly])
     }
     
     var resolver: Resolver {

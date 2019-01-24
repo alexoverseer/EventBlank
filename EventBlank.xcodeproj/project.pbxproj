@@ -25,7 +25,7 @@
 		62DE44B821A5B9CB00C3AC14 /* DefaultTalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */; };
 		62DE44BB21A5BB7A00C3AC14 /* ConferenceViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */; };
 		62DE44BD21A5BBBA00C3AC14 /* TalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */; };
-		62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */; };
+		62DE44BF21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift */; };
 		62DE44C121A5CE2100C3AC14 /* SpeakerViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */; };
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
 		8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
@@ -33,6 +33,8 @@
 		8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* TalksRepository.swift */; };
 		8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* SpeakerRepository.swift */; };
 		8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336F21F85BDC00933AAF /* ResourceRepository.swift */; };
+		82E9CEDE21F9CB34009D7F66 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */; };
+		82E9CEE021F9CD9E009D7F66 /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CEDF21F9CD9E009D7F66 /* BuilderAssembly.swift */; };
 		BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */; };
 		BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */; };
 		BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */; };
@@ -162,13 +164,15 @@
 		62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTalksRepository.swift; sourceTree = "<group>"; };
 		62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewVModel.swift; sourceTree = "<group>"; };
 		62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewModel.swift; sourceTree = "<group>"; };
-		62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBuilder.swift; sourceTree = "<group>"; };
+		62DE44BE21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewModelBuilder.swift; sourceTree = "<group>"; };
 		62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewVModel.swift; sourceTree = "<group>"; };
 		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8261336921F85B3A00933AAF /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
 		8261336B21F85B7D00933AAF /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
 		8261336D21F85BA200933AAF /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
 		8261336F21F85BDC00933AAF /* ResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRepository.swift; sourceTree = "<group>"; };
+		82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBuilder.swift; sourceTree = "<group>"; };
+		82E9CEDF21F9CD9E009D7F66 /* BuilderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
 		BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -337,10 +341,9 @@
 		62DE44B921A5BB5900C3AC14 /* ContentBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */,
-				62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */,
-				62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */,
-				62DE44BE21A5BBFA00C3AC14 /* ViewModelBuilder.swift */,
+				82E9CEDC21F9CAFE009D7F66 /* Models */,
+				82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */,
+				62DE44BE21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift */,
 			);
 			path = ContentBuilder;
 			sourceTree = "<group>";
@@ -358,7 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				62DE44B421A5B95600C3AC14 /* Cache */,
-				62DE44B921A5BB5900C3AC14 /* ContentBuilder */,
 				62DE44A021A5A81E00C3AC14 /* Mocks */,
 				62DE449521A5959E00C3AC14 /* Models */,
 				62DE44AB21A5B58700C3AC14 /* Repository */,
@@ -400,6 +402,24 @@
 				62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */,
 			);
 			path = Talks;
+			sourceTree = "<group>";
+		};
+		82E9CEDB21F9CA58009D7F66 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62DE44B921A5BB5900C3AC14 /* ContentBuilder */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82E9CEDC21F9CAFE009D7F66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */,
+				62DE44BC21A5BBBA00C3AC14 /* TalkViewModel.swift */,
+				62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		95409B95AAF8E58D1E16B6E5 /* Pods */ = {
@@ -542,13 +562,6 @@
 			path = Speaker;
 			sourceTree = "<group>";
 		};
-		BC01756B21A692DD0090DAE2 /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Third Party";
-			sourceTree = "<group>";
-		};
 		BC366C3A21A46178006111DF /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +589,7 @@
 				BC366C4221A46474006111DF /* AppAssembler.swift */,
 				BC366C4421A46487006111DF /* DefaultAppAssembler.swift */,
 				BC366C4621A464AD006111DF /* FactoryAssembly.swift */,
+				82E9CEDF21F9CD9E009D7F66 /* BuilderAssembly.swift */,
 				BC366C4821A464AD006111DF /* ViewModelAssembly.swift */,
 				BC366C4721A464AD006111DF /* NetworkServiceAssembly.swift */,
 			);
@@ -698,9 +712,9 @@
 				BC366C5121A46584006111DF /* Protocols */,
 				BC366C5821A46609006111DF /* Router */,
 				8261336421F85A0200933AAF /* Databse */,
+				82E9CEDB21F9CA58009D7F66 /* Services */,
 				BC366C5D21A4669C006111DF /* Factories */,
 				BC366C7321A468EE006111DF /* Flows */,
-				BC01756B21A692DD0090DAE2 /* Third Party */,
 				BC70A3C521A5713100988533 /* Resources */,
 				BC43944821A4609500FE2BE1 /* Assets.xcassets */,
 				BC43944A21A4609500FE2BE1 /* LaunchScreen.storyboard */,
@@ -1065,6 +1079,7 @@
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
 				BC01757621A6ACB60090DAE2 /* SpeakerImageHelper.swift in Sources */,
 				BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */,
+				82E9CEE021F9CD9E009D7F66 /* BuilderAssembly.swift in Sources */,
 				62DE44BD21A5BBBA00C3AC14 /* TalkViewModel.swift in Sources */,
 				62DE44B321A5B8E600C3AC14 /* DefaultSpeakerRepository.swift in Sources */,
 				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
@@ -1106,6 +1121,7 @@
 				BC70A3D321A593A000988533 /* AboutCoordinator.swift in Sources */,
 				62DE449B21A595E100C3AC14 /* Topic.swift in Sources */,
 				8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */,
+				82E9CEDE21F9CB34009D7F66 /* ViewModelBuilder.swift in Sources */,
 				62DE449D21A5966100C3AC14 /* Resource.swift in Sources */,
 				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
 				BC01755821A632830090DAE2 /* TopicViewModel.swift in Sources */,
@@ -1141,7 +1157,7 @@
 				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
 				BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */,
 				62DE44AA21A5B4CB00C3AC14 /* FileDecoder.swift in Sources */,
-				62DE44BF21A5BBFA00C3AC14 /* ViewModelBuilder.swift in Sources */,
+				62DE44BF21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift in Sources */,
 				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
 				BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */,
 				62DE44C121A5CE2100C3AC14 /* SpeakerViewVModel.swift in Sources */,

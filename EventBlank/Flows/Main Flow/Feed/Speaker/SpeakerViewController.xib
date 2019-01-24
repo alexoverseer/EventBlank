@@ -109,10 +109,29 @@
                         <constraint firstItem="eZW-9H-9bF" firstAttribute="height" secondItem="1TC-gH-HIB" secondAttribute="height" priority="250" id="nGe-oS-jcA"/>
                     </constraints>
                 </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfG-TG-Mu1">
+                    <rect key="frame" x="305" y="877" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.87843137250000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="I4a-Ql-2rJ"/>
+                        <constraint firstAttribute="height" constant="50" id="gT9-zh-YEA"/>
+                    </constraints>
+                    <state key="normal" image="other.twitter-logo"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="openTwitterProfile" destination="-1" eventType="touchUpInside" id="RTq-Rl-Te1"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LfG-TG-Mu1" secondAttribute="bottom" constant="20" id="Dvf-dN-cyr"/>
                 <constraint firstAttribute="trailing" secondItem="1TC-gH-HIB" secondAttribute="trailing" id="Fna-kb-Zse"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LfG-TG-Mu1" secondAttribute="trailing" constant="20" id="NHC-WI-eaq"/>
                 <constraint firstItem="1TC-gH-HIB" firstAttribute="top" secondItem="MIU-YU-HpH" secondAttribute="bottom" id="Nh5-82-ulf"/>
                 <constraint firstItem="1TC-gH-HIB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OYn-8S-Mj4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MIU-YU-HpH" secondAttribute="trailing" id="dyv-AU-on5"/>
@@ -127,5 +146,6 @@
     </objects>
     <resources>
         <image name="blank.person" width="800" height="799"/>
+        <image name="other.twitter-logo" width="37.305698394775391" height="37.305698394775391"/>
     </resources>
 </document>

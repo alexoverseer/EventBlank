@@ -5,8 +5,8 @@ class ViewModelAssembly: Assembly {
     
     func assemble(container: Container) {
         
-        container.register(FeedListViewModel.self) { _ in
-            return DefaultFeedListViewModel()
+        container.register(FeedListViewModel.self) { resolver in
+            return DefaultFeedListViewModel(builder: resolver.resolve(ViewModelBuilder.self)!)
         }
         
         container.register(AppInfoViewModel.self) { _ in
@@ -25,8 +25,8 @@ class ViewModelAssembly: Assembly {
             return DefaultTopicViewModel()
         }
         
-        container.register(SpeakerViewModel.self) { _ in
-            return DefaultSpeakerViewModel()
+        container.register(SpeakerViewModel.self) { resolver in
+            return DefaultSpeakerViewModel(builder: resolver.resolve(ViewModelBuilder.self)!)
         }
     }
 }
