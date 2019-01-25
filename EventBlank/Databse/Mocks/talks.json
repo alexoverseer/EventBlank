@@ -3,7 +3,7 @@
     "conference": "201801",
     "title": "Strings Seven Ways",
     "speaker": "00001",
-    "media": [],
+    "media": ["0005"],
     "startDate": 1536822000,
     "endDate": 1536823800
 },{
@@ -11,7 +11,7 @@
     "conference": "201801",
     "title": "The Art of Spelunking",
     "speaker": "00003",
-    "media": [],
+    "media": ["0018"],
     "startDate": 1536826500,
     "endDate": 1536828300
 },{
@@ -19,7 +19,7 @@
     "conference": "201801",
     "title": "Combinators",
     "speaker": "uid",
-    "media": [],
+    "media": ["0022"],
     "startDate": 1536828600,
     "endDate": 1536830400
 },{
@@ -27,7 +27,7 @@
     "conference": "201801",
     "title": "Embracing Change",
     "speaker": "uid",
-    "media": [],
+    "media": ["0020"],
     "startDate": 1536830700,
     "endDate": 1536832500
 },{
@@ -35,7 +35,7 @@
     "conference": "201801",
     "title": "Siri Shortcuts",
     "speaker": "00007",
-    "media": [],
+    "media": ["0021"],
     "startDate": 1536838200,
     "endDate": 1536840000
 },{
@@ -43,7 +43,7 @@
     "conference": "201801",
     "title": "Avoiding culture shock. Designing apps for different cultures.",
     "speaker": "00019",
-    "media": [],
+    "media": ["0019"],
     "startDate": 1536840300,
     "endDate": 1536842100
 },{
@@ -51,7 +51,7 @@
     "conference": "201801",
     "title": "From Engineer to Manager - A personal journey",
     "speaker": "00013",
-    "media": [],
+    "media": ["0008"],
     "startDate": 1536842400,
     "endDate": 1536844200
 },{
@@ -59,7 +59,7 @@
     "conference": "201801",
     "title": "How To Control The World",
     "speaker": "00021",
-    "media": [],
+    "media": ["0016"],
     "startDate": 1536846300,
     "endDate": 1536848100
 },{
@@ -67,7 +67,7 @@
     "conference": "201801",
     "title": "Live Podcast 🎉",
     "speaker": "00004",
-    "media": [],
+    "media": ["0017"],
     "startDate": 1536848400,
     "endDate": 1536855900
 },{
@@ -75,7 +75,7 @@
     "conference": "201801",
     "title": "Building apps at scale",
     "speaker": "00018",
-    "media": [],
+    "media": ["0006"],
     "startDate": 1536908400,
     "endDate": 1536910200
 },{
@@ -83,7 +83,7 @@
     "conference": "201801",
     "title": "Embrace your Legacy...Code",
     "speaker": "00010",
-    "media": [],
+    "media": ["0011"],
     "startDate": 1536912900,
     "endDate": 1536914700
 },{
@@ -91,7 +91,7 @@
     "conference": "201801",
     "title": "Synthesizing Synths in Swift",
     "speaker": "00016",
-    "media": [],
+    "media": ["0013"],
     "startDate": 1536915000,
     "endDate": 1536916800
 },{
@@ -99,7 +99,7 @@
     "conference": "201801",
     "title": "UI Testing Infrastructure in Avito",
     "speaker": "00020",
-    "media": [],
+    "media": ["0007"],
     "startDate": 1536924600,
     "endDate": 1536926400
 },{
@@ -107,7 +107,7 @@
     "conference": "201801",
     "title": "React Native Unfiltered – Insights from Introducing React Native to a Production Application",
     "speaker": "00015",
-    "media": [],
+    "media": ["0010"],
     "startDate": 1536926700,
     "endDate": 1536928500
 },{
@@ -115,7 +115,7 @@
     "conference": "201801",
     "title": "Teaching Swift at Scale",
     "speaker": "00009",
-    "media": [],
+    "media": ["0015"],
     "startDate": 1536928800,
     "endDate": 1536930600
 },{
@@ -123,7 +123,7 @@
     "conference": "201801",
     "title": "Going Deep With Animations in iOS",
     "speaker": "00008",
-    "media": [],
+    "media": ["0014"],
     "startDate": 1536932700,
     "endDate": 1536934500
 },{
@@ -131,7 +131,7 @@
     "conference": "201801",
     "title": "Scaling up mobile at ING",
     "speaker": "00014",
-    "media": [],
+    "media": ["0009"],
     "startDate": 1536934800,
     "endDate": 1536936600
 },{
@@ -139,7 +139,7 @@
     "conference": "201801",
     "title": "A Better MVC",
     "speaker": "00006",
-    "media": [],
+    "media": ["0012"],
     "startDate": 1536936900,
     "endDate": 1536938700
 }]
