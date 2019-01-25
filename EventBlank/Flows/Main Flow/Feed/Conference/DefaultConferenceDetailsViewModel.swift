@@ -7,7 +7,7 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     var tableDisplayManager: TableDisplayManager?
     var conference: ConferenceViewVModel!
     
-    var topics: [TalkViewModel] {
+    var topics: [TalkViewVModel] {
         return conference.topics
     }
     
@@ -15,13 +15,20 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
         return conference.people
     }
     
+    func conferenceDetails() -> (title: String, description: String?) {
+        let title = conference.conference.title
+        let description = conference.conference.description
+        
+        return (title, description)
+    }
+    
     func onViewDidLoad(_ view: ConferenceView) {
         
-        let testPhotoList = ["1", "2", "3"]
+        let photoList = conference.resources.compactMap { $0.local }
         
-        output?.setTotalPhotosPagesNumber(pages: testPhotoList.count)
+        output?.setTotalPhotosPagesNumber(pages: photoList.count)
         
-        collectionDisplayManager?.updatContent(with: testPhotoList)
+        collectionDisplayManager?.updatContent(with: photoList)
         tableDisplayManager?.updatContent(with: topics)
         
         output?.updateTableHeight()
@@ -56,8 +63,17 @@ extension DefaultConferenceViewModel: CollectionDisplayManagerDelegate {
     }
     
     func openPhotoBrowser(originImage: UIImage?, fromCell: UICollectionViewCell) {
-        let images = [#imageLiteral(resourceName: "blank.conference.jpg"), #imageLiteral(resourceName: "blank.conference.jpg"), #imageLiteral(resourceName: "blank.conference.jpg")]
-        output?.openPhotoBrowser(originImage: originImage, images: images, cell: fromCell)
+        
+        let originalPhotos = getPhotos(from: conference.resources)
+        
+        output?.openPhotoBrowser(originImage: originImage,
+                                 images: originalPhotos,
+                                 cell: fromCell)
+    }
+    
+    func getPhotos(from resources: [Resource]) -> [UIImage] {
+        return resources.compactMap { $0.local }
+            .compactMap { UIImage(named: $0) }
     }
 }
 

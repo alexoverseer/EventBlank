@@ -6,6 +6,6 @@ protocol ConferenceViewModelOutput {
     func updateTableHeight()
     
     func openPhotoBrowser(originImage: UIImage?, images: [UIImage], cell: UICollectionViewCell)
-    func openTopic(topic: TalkViewModel)
+    func openTopic(topic: TalkViewVModel)
     func openSpeaker(speaker: SpeakerViewVModel)
 }

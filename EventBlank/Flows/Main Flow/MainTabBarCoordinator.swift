@@ -6,7 +6,9 @@ final class MainTabBarCoordinator: BaseCoordinator, MainTabCoordinatorOutput {
     private let coordinatorFactory: CoordinatorFactory
     private let router: Router
     
-    init(mainTabBarView: MainTabBarView, coordinatorFactory: CoordinatorFactory, router: Router) {
+    init(mainTabBarView: MainTabBarView,
+         coordinatorFactory: CoordinatorFactory,
+         router: Router) {
         self.mainTabBarView = mainTabBarView
         self.coordinatorFactory = coordinatorFactory
         self.router = router

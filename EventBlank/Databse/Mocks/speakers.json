@@ -1,0 +1,147 @@
+[{
+    "uid": "00001",
+    "name": "Mattt",
+    "title": "Flight School | NSHipster",
+    "photo": "https://2018.nsspain.com/images/speakers/mattt.jpeg",
+    "page": "https://twitter.com/mattt"
+},
+{
+    "uid": "00002",
+    "name": "Kristina Fox",
+    "title": "Intuit",
+    "photo": "https://2018.nsspain.com/images/speakers/kristina.jpeg",
+    "page": "https://twitter.com/krstnfx"
+},
+{
+    "uid": "00003",
+    "name": "Guilherme Rambo",
+    "title": "Groupon Latin America | 9to5mac | Stacktrace Podcast",
+    "photo": "https://2018.nsspain.com/images/speakers/gui.jpeg",
+    "page": "https://twitter.com/_inside"
+},
+{
+    "uid": "00004",
+    "name": "John Sundell",
+    "title": "Swift by Sundell | Stacktrace Podcast",
+    "photo": "https://2018.nsspain.com/images/speakers/john.jpeg",
+    "page": "https://twitter.com/johnsundell"
+},
+{
+    "uid": "00005",
+    "name": "Daniel Steinberg",
+    "title": "Dim Sum Thinking",
+    "photo": "https://2018.nsspain.com/images/speakers/daniel.jpeg",
+    "page": "https://twitter.com/dimsumthinking"
+},
+{
+    "uid": "00006",
+    "name": "Dave DeLong",
+    "title": "Snap, Inc",
+    "photo": "https://2018.nsspain.com/images/speakers/dave.jpeg",
+    "page": "https://twitter.com/davedelong"
+},
+{
+    "uid": "00007",
+    "name": "Ellen Shapiro",
+    "title": "Bakken & Bæck's",
+    "photo": "https://2018.nsspain.com/images/speakers/ellen.jpeg",
+    "page": "https://twitter.com/designatednerd"
+},
+{
+    "uid": "00008",
+    "name": "Hector Matos",
+    "title": "Twitter",
+    "photo": "https://2018.nsspain.com/images/speakers/hector.jpeg",
+    "page": "https://twitter.com/allonsykraken"
+},
+{
+    "uid": "00009",
+    "name": "Paul Hudson",
+    "title": "Hacking with Swift",
+    "photo": "https://2018.nsspain.com/images/speakers/paul.jpeg",
+    "page": "https://twitter.com/twostraws"
+},
+{
+    "uid": "00010",
+    "name": "Nelida Velazquez",
+    "title": "Detroit Labs",
+    "photo": "https://2018.nsspain.com/images/speakers/nelida.jpeg",
+    "page": "https://twitter.com/tolkiana"
+},
+{
+    "uid": "00011",
+    "name": "Benedikt Terhechte",
+    "title": "XING",
+    "photo": "https://2018.nsspain.com/images/speakers/benedikt.jpeg",
+    "page": "https://twitter.com/terhechte"
+},
+{
+    "uid": "00012",
+    "name": "Warren Burton",
+    "title": "Indie Developer",
+    "photo": "https://2018.nsspain.com/images/speakers/warren.jpeg",
+    "page": "https://twitter.com/TroutDev"
+},
+{
+    "uid": "00013",
+    "name": "Marcus Wermuth",
+    "title": "Buffer",
+    "photo": "https://2018.nsspain.com/images/speakers/marcus.jpeg",
+    "page": "https://twitter.com/mwermuth"
+},
+{
+    "uid": "00014",
+    "name": "Bart den Hollander",
+    "title": "Xebia",
+    "photo": "https://2018.nsspain.com/images/speakers/bart.jpeg",
+    "page": "https://twitter.com/hollanderbart"
+},
+{
+    "uid": "00015",
+    "name": "Isabel Barrera",
+    "title": "Kickstarter",
+    "photo": "https://2018.nsspain.com/images/speakers/isabel.jpeg",
+    "page": "https://twitter.com/ifbarrera"
+},
+{
+    "uid": "00016",
+    "name": "Adam Bell",
+    "title": "Facebook",
+    "photo": "https://2018.nsspain.com/images/speakers/adam.jpeg",
+    "page": "https://twitter.com/b3ll"
+},
+{
+    "uid": "00017",
+    "name": "Pavel Mazurin",
+    "title": "Uber",
+    "photo": "https://2018.nsspain.com/images/speakers/pavel.jpeg",
+    "page": "https://twitter.com/pmazurin"
+},
+{
+    "uid": "00018",
+    "name": "Victor Pena",
+    "title": "Uber",
+    "photo": "https://2018.nsspain.com/images/speakers/victor.jpeg",
+    "page": "https://twitter.com/vicpenap"
+},
+{
+    "uid": "00019",
+    "name": "Daniel Munoz",
+    "title": "LOVOO",
+    "photo": "https://2018.nsspain.com/images/speakers/dan.jpeg",
+    "page": "https://twitter.com/Makias"
+},
+{
+    "uid": "00020",
+    "name": "Vladislav Alexeev",
+    "title": "Avito",
+    "photo": "https://2018.nsspain.com/images/speakers/vlad.jpeg",
+    "page": "https://twitter.com/beefon"
+},
+{
+    "uid": "00021",
+    "name": "Stephen Celis",
+    "title": "Point-Free",
+    "photo": "https://2018.nsspain.com/images/speakers/stephen.jpeg",
+    "page": "https://twitter.com/stephencelis"
+}]

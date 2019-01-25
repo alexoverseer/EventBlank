@@ -1,0 +1,111 @@
+[{
+    "uid": "0001",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_01"
+},{
+    "uid": "0002",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_02"
+},{
+    "uid": "0003",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_03"
+},{
+    "uid": "0004",
+    "type": "image",
+    "url": "",
+    "local": "conference201801_04"
+},{
+    "uid": "0005",
+    "type": "video",
+    "url": "https://vimeo.com/292786900",
+    "local": ""
+},{
+    "uid": "0006",
+    "type": "video",
+    "url": "https://vimeo.com/292733041",
+    "local": ""
+},{
+    "uid": "0007",
+    "type": "video",
+    "url": "https://vimeo.com/292738016",
+    "local": ""
+},{
+    "uid": "0008",
+    "type": "video",
+    "url": "https://vimeo.com/292723588",
+    "local": ""
+},{
+    "uid": "0009",
+    "type": "video",
+    "url": "https://vimeo.com/292710821",
+    "local": ""
+},{
+    "uid": "0010",
+    "type": "video",
+    "url": "https://vimeo.com/291661648",
+    "local": ""
+},{
+    "uid": "0011",
+    "type": "video",
+    "url": "https://vimeo.com/291601850",
+    "local": ""
+},{
+    "uid": "0012",
+    "type": "video",
+    "url": "https://vimeo.com/291601827",
+    "local": ""
+},{
+    "uid": "0013",
+    "type": "video",
+    "url": "https://vimeo.com/291592300",
+    "local": ""
+},{
+    "uid": "0014",
+    "type": "video",
+    "url": "https://vimeo.com/291591293",
+    "local": ""
+},{
+    "uid": "0015",
+    "type": "video",
+    "url": "https://vimeo.com/291590798",
+    "local": ""
+},{
+    "uid": "0016",
+    "type": "video",
+    "url": "https://vimeo.com/291588126",
+    "local": ""
+},{
+    "uid": "0017",
+    "type": "video",
+    "url": "https://vimeo.com/290365159",
+    "local": ""
+},{
+    "uid": "0018",
+    "type": "video",
+    "url": "https://vimeo.com/290322018",
+    "local": ""
+},{
+    "uid": "0019",
+    "type": "video",
+    "url": "https://vimeo.com/290298402",
+    "local": ""
+},{
+    "uid": "0020",
+    "type": "video",
+    "url": "https://vimeo.com/290295358",
+    "local": ""
+},{
+    "uid": "0021",
+    "type": "video",
+    "url": "https://vimeo.com/290292060",
+    "local": ""
+},{
+    "uid": "0022",
+    "type": "video",
+    "url": "https://vimeo.com/290272240",
+    "local": ""
+}]

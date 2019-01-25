@@ -1,7 +1,7 @@
 import UIKit
 
 class AppInfoViewController: UIViewController, AppInfoView {
-
+    
     var viewModel: AppInfoViewModel!
     var onOpenMapImage: ((UIImage?, UIView) -> Void)?
     

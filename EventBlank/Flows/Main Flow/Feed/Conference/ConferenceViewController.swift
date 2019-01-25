@@ -1,13 +1,12 @@
 import UIKit
 
 class ConferenceViewController: UIViewController, ConferenceView {
-
-    var viewModel: ConferenceViewModel!
     
-    var onShowTopic: ((TalkViewModel) -> Void)?
+    var viewModel: ConferenceViewModel!
+    var onShowTopic: ((TalkViewVModel) -> Void)?
     var onShowSpeaker: ((SpeakerViewVModel) -> Void)?
     var onShowPhotoBrowser: ((PhotoBrowserModel) -> Void)?
-
+    
     @IBOutlet weak var photosCollectionView: UICollectionView!
     @IBOutlet weak var conferenceTableView: UITableView!
     @IBOutlet weak var pageIndicator: UIPageControl!
@@ -30,8 +29,10 @@ class ConferenceViewController: UIViewController, ConferenceView {
     
     private func setupUI() {
         navigationItem.title = "Details"
-        titleLabel.text = viewModel.conference.conference.title
-        descriptionLabel.text = viewModel.conference.conference.description
+        
+        let conferenceDetails = viewModel.conferenceDetails()
+        titleLabel.text = conferenceDetails.title
+        descriptionLabel.text = conferenceDetails.description
         
         viewModel.registerCollection(photosCollectionView)
         viewModel.registerTable(conferenceTableView)
@@ -49,7 +50,7 @@ class ConferenceViewController: UIViewController, ConferenceView {
 
 extension ConferenceViewController: ConferenceViewModelOutput {
     
-    func openTopic(topic: TalkViewModel) {
+    func openTopic(topic: TalkViewVModel) {
         onShowTopic?(topic)
     }
     

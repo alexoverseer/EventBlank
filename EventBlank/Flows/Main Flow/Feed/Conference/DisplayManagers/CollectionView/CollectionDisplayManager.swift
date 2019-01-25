@@ -2,7 +2,6 @@ import UIKit
 
 final class CollectionDisplayManager: NSObject, CollectionDelegatable {
     
-    #warning ("Replace String -> ViewModel")
     typealias Item = String
     
     private var dataSource = [Item]()
@@ -37,6 +36,7 @@ final class CollectionDisplayManager: NSObject, CollectionDelegatable {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: PhotoCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+        cell.photoImageView.image = UIImage(named: self.dataSource[indexPath.row])
         
         return cell
     }

@@ -22,11 +22,12 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makeTopicOutput(topic: TalkViewModel) -> TopicView {
+    func makeTopicOutput(topic: TalkViewVModel) -> TopicView {
         let viewModel = resolver.resolve(TopicViewModel.self)!
         let controller = TopicViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
+        viewModel.topic = topic
         
         return controller
     }
@@ -36,6 +37,7 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         let controller = SpeakerViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
+        viewModel.profile = speaker
         
         return controller
     }

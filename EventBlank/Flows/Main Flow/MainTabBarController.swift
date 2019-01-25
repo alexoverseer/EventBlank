@@ -10,7 +10,7 @@ class MainTabBarController: ESTabBarController, MainTabBarView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         delegate = self
     }
     

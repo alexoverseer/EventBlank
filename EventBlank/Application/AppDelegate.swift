@@ -2,7 +2,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     
     var rootController: UINavigationController? {
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         setUpWindow()
@@ -33,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func makeCoordinator() -> Coordinator {
         return ApplicationCoordinator(
             router: RouterImplementation(rootController: self.rootController!),
-            coordinatorFactory: CoordinatorFactoryImplementation(), container: DefaultAppAssembler.shared.resolver
+            coordinatorFactory: CoordinatorFactoryImplementation(),
+            container: DefaultAppAssembler.shared.resolver
         )
     }
 }

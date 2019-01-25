@@ -4,7 +4,6 @@ class DefaultAppAssembler: AppAssembler {
     
     private let container: Container
     private let assembler: Assembler
-    
     private (set) static var shared = DefaultAppAssembler()
     
     private init() {
@@ -16,12 +15,12 @@ class DefaultAppAssembler: AppAssembler {
         let viewModelAssembly = ViewModelAssembly()
         let factoryAssembly = FactoryAssembly()
         let networkServicesAssembly = NetworkAssembly()
+        let builderAssembly = BuilderAssembly()
         
-        assembler.apply(assemblies: [viewModelAssembly, factoryAssembly, networkServicesAssembly])
+        assembler.apply(assemblies: [builderAssembly, viewModelAssembly, factoryAssembly, networkServicesAssembly])
     }
     
     var resolver: Resolver {
-        
         return container
     }
 }

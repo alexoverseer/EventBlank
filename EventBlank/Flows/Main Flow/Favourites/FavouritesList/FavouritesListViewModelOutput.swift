@@ -1,5 +1,3 @@
 import Foundation
 
-protocol FavouritesListViewModelOutput {
-    
-}
+protocol FavouritesListViewModelOutput { }
