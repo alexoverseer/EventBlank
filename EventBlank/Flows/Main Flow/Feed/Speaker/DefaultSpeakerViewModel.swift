@@ -31,11 +31,22 @@ final class DefaultSpeakerViewModel: SpeakerViewModel {
     
     func openSpeakerTwitterPage() {
         let twitter = profile.twitterName
-        let url = profile.page
-        let application = UIApplication.shared
+        let page = profile.page
         
-        if application.canOpenURL() {
-            
+        if canOpenURL(url: twitter) {
+            openURL(url: twitter)
+        } else {
+            openURL(url: page)
         }
+    }
+    
+    func canOpenURL(url: URL?) -> Bool {
+        guard let url = url else { return false }
+        return UIApplication.shared.canOpenURL(url)
+    }
+    
+    func openURL(url: URL?) {
+        guard let url = url else { return }
+        UIApplication.shared.open(url, options: [: ], completionHandler: nil)
     }
 }
