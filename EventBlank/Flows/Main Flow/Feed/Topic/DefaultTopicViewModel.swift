@@ -3,7 +3,7 @@ import Foundation
 final class DefaultTopicViewModel: TopicViewModel {
     
     var output: TopicViewModelOutput?
-    var topic: TalkViewModel!
+    var topic: TalkViewVModel!
     
     func onViewDidLoad(_ view: TopicView) {
         

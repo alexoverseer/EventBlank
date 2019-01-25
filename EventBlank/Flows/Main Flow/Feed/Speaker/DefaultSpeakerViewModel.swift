@@ -4,7 +4,7 @@ import UIKit
 final class DefaultSpeakerViewModel: SpeakerViewModel {
     
     var output: SpeakerViewModelOutput?
-    var talks: [TalkViewModel] = [] {
+    var talks: [TalkViewVModel] = [] {
         didSet {
             output?.reloadData()
         }

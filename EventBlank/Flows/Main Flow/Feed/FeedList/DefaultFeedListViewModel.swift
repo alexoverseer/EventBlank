@@ -8,7 +8,6 @@ final class DefaultFeedListViewModel: FeedListViewModel {
             output?.reloadList()
         }
     }
-
     private var builder: ViewModelBuilder
     
     init(builder: ViewModelBuilder) {

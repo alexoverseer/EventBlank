@@ -22,7 +22,7 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makeTopicOutput(topic: TalkViewModel) -> TopicView {
+    func makeTopicOutput(topic: TalkViewVModel) -> TopicView {
         let viewModel = resolver.resolve(TopicViewModel.self)!
         let controller = TopicViewController()
         controller.viewModel = viewModel

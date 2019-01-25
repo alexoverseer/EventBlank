@@ -2,9 +2,9 @@ import UIKit
 import Kingfisher
 
 class SpeakerViewController: UIViewController, SpeakerView {
-
+    
     var viewModel: SpeakerViewModel!
-    var onSelectTopic: ((TalkViewModel) -> Void)?
+    var onSelectTopic: ((TalkViewVModel) -> Void)?
     
     @IBOutlet weak var speakerImgeView: UIImageView!
     @IBOutlet weak var speakerNameLabel: UILabel!
@@ -14,11 +14,11 @@ class SpeakerViewController: UIViewController, SpeakerView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         viewModel.onViewDidLoad(self)
         setupUI()
     }
-
+    
     private func setupUI() {
         navigationItem.title = "Details"
         SpeakerImageHelper.setupSpeakerImage(image: speakerImgeView)

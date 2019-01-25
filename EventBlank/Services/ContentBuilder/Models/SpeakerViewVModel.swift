@@ -14,7 +14,7 @@ struct SpeakerViewVModel {
     var title: String
     var photo: String
     var page: URL?
-    var topics: [TalkViewModel] = []
+    var topics: [TalkViewVModel] = []
     
     var twitterName: URL? {
         let name = page?.pathComponents.last

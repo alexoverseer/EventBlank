@@ -9,9 +9,9 @@
 import Foundation
 
 class FileDecoder: NSObject {
-
+    
     static let `default` = FileDecoder()
-
+    
     func transformJSON<T: Codable>(fileName: String) -> T? {
         
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {

@@ -19,7 +19,7 @@ extension SpeakerViewController: UITableViewDataSource {
 extension SpeakerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      
+        
         onSelectTopic?(viewModel.talks[indexPath.row])
     }
 }

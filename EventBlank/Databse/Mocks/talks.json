@@ -4,142 +4,142 @@
     "title": "Strings Seven Ways",
     "speaker": "00001",
     "media": [],
-    "startDate": 1536832800,
-    "endDate": 1536834900
+    "startDate": 1536822000,
+    "endDate": 1536823800
 },{
     "uid": "0000002",
     "conference": "201801",
     "title": "The Art of Spelunking",
     "speaker": "00003",
     "media": [],
-    "startDate": 1536837300,
-    "endDate": 1536839400
+    "startDate": 1536826500,
+    "endDate": 1536828300
 },{
     "uid": "0000003",
     "conference": "201801",
     "title": "Combinators",
     "speaker": "uid",
     "media": [],
-    "startDate": 1536839400,
-    "endDate": 1536841500
+    "startDate": 1536828600,
+    "endDate": 1536830400
 },{
     "uid": "0000004",
     "conference": "201801",
     "title": "Embracing Change",
     "speaker": "uid",
     "media": [],
-    "startDate": 1536841500,
-    "endDate": 1536843600
+    "startDate": 1536830700,
+    "endDate": 1536832500
 },{
     "uid": "0000005",
     "conference": "201801",
     "title": "Siri Shortcuts",
     "speaker": "00007",
     "media": [],
-    "startDate": 1536849000,
-    "endDate": 1536851100
+    "startDate": 1536838200,
+    "endDate": 1536840000
 },{
     "uid": "0000006",
     "conference": "201801",
     "title": "Avoiding culture shock. Designing apps for different cultures.",
     "speaker": "00019",
     "media": [],
-    "startDate": 1536851100,
-    "endDate": 1536853200
+    "startDate": 1536840300,
+    "endDate": 1536842100
 },{
     "uid": "0000007",
     "conference": "201801",
     "title": "From Engineer to Manager - A personal journey",
     "speaker": "00013",
     "media": [],
-    "startDate": 1536853200,
-    "endDate": 1536855300
+    "startDate": 1536842400,
+    "endDate": 1536844200
 },{
     "uid": "0000008",
     "conference": "201801",
     "title": "How To Control The World",
     "speaker": "00021",
     "media": [],
-    "startDate": 1536857100,
-    "endDate": 1536859200
+    "startDate": 1536846300,
+    "endDate": 1536848100
 },{
     "uid": "0000009",
     "conference": "201801",
     "title": "Live Podcast 🎉",
     "speaker": "00004",
     "media": [],
-    "startDate": 1536859200,
-    "endDate": 1536867000
+    "startDate": 1536848400,
+    "endDate": 1536855900
 },{
     "uid": "0000010",
     "conference": "201801",
     "title": "Building apps at scale",
     "speaker": "00018",
     "media": [],
-    "startDate": 1536919200,
-    "endDate": 1536921300
+    "startDate": 1536908400,
+    "endDate": 1536910200
 },{
     "uid": "0000011",
     "conference": "201801",
-    "title": "Embrace your Legacy… Code",
+    "title": "Embrace your Legacy...Code",
     "speaker": "00010",
     "media": [],
-    "startDate": 1536923700,
-    "endDate": 1536925800
+    "startDate": 1536912900,
+    "endDate": 1536914700
 },{
     "uid": "0000012",
     "conference": "201801",
     "title": "Synthesizing Synths in Swift",
     "speaker": "00016",
     "media": [],
-    "startDate": 1536925800,
-    "endDate": 1536927900
+    "startDate": 1536915000,
+    "endDate": 1536916800
 },{
     "uid": "0000013",
     "conference": "201801",
     "title": "UI Testing Infrastructure in Avito",
     "speaker": "00020",
     "media": [],
-    "startDate": 1536935400,
-    "endDate": 1536937500
+    "startDate": 1536924600,
+    "endDate": 1536926400
 },{
     "uid": "0000014",
     "conference": "201801",
     "title": "React Native Unfiltered – Insights from Introducing React Native to a Production Application",
     "speaker": "00015",
     "media": [],
-    "startDate": 1536937500,
-    "endDate": 1536939600
+    "startDate": 1536926700,
+    "endDate": 1536928500
 },{
     "uid": "0000015",
     "conference": "201801",
     "title": "Teaching Swift at Scale",
     "speaker": "00009",
     "media": [],
-    "startDate": 1536939600,
-    "endDate": 1536941700
+    "startDate": 1536928800,
+    "endDate": 1536930600
 },{
     "uid": "0000016",
     "conference": "201801",
     "title": "Going Deep With Animations in iOS",
     "speaker": "00008",
     "media": [],
-    "startDate": 1536943500,
-    "endDate": 1536945600
+    "startDate": 1536932700,
+    "endDate": 1536934500
 },{
     "uid": "0000017",
     "conference": "201801",
     "title": "Scaling up mobile at ING",
     "speaker": "00014",
     "media": [],
-    "startDate": 1536945600,
-    "endDate": 1536947700
+    "startDate": 1536934800,
+    "endDate": 1536936600
 },{
     "uid": "0000018",
     "conference": "201801",
     "title": "A Better MVC",
     "speaker": "00006",
     "media": [],
-    "startDate": 1536947700,
-    "endDate": 1536949800
+    "startDate": 1536936900,
+    "endDate": 1536938700
 }]

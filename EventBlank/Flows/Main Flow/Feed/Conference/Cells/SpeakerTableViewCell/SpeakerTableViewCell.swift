@@ -3,7 +3,7 @@ import Reusable
 import Kingfisher
 
 class SpeakerTableViewCell: UITableViewCell, NibReusable {
-
+    
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var speakerImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

@@ -2,9 +2,8 @@ import UIKit
 import Reusable
 
 class TopicTableViewCell: UITableViewCell, NibReusable {
-
-    @IBOutlet private weak var shadowView: UIView!
     
+    @IBOutlet private weak var shadowView: UIView!
     @IBOutlet weak var topicTitleLabel: UILabel!
     @IBOutlet weak var speakerLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
@@ -16,7 +15,7 @@ class TopicTableViewCell: UITableViewCell, NibReusable {
         shadowView.addShadow()
     }
     
-    func configure(with model: TalkViewModel) {
+    func configure(with model: TalkViewVModel) {
         topicTitleLabel.text = model.talk.title
         speakerLabel.text = model.speaker.name
         startDateLabel.text = model.talk.dateStart

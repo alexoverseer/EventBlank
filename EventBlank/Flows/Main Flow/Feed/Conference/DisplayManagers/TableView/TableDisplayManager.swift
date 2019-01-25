@@ -1,7 +1,7 @@
 import UIKit
 
 final class TableDisplayManager: NSObject, TableDelegatable {
-
+    
     typealias Item = Any
     
     private var dataSource = [Item]()
@@ -52,7 +52,7 @@ final class TableDisplayManager: NSObject, TableDelegatable {
     private func topicCell(for indexPath: IndexPath) -> UITableViewCell {
         let topicCell: TopicTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         
-        if let model = self.dataSource[indexPath.row] as? TalkViewModel {
+        if let model = self.dataSource[indexPath.row] as? TalkViewVModel {
             topicCell.configure(with: model)
         }
         
@@ -61,7 +61,7 @@ final class TableDisplayManager: NSObject, TableDelegatable {
     
     private func speakerCell(for indexPath: IndexPath) -> UITableViewCell {
         let speakerCell: SpeakerTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-
+        
         if let model = self.dataSource[indexPath.row] as? SpeakerViewVModel {
             speakerCell.configure(with: model)
         }

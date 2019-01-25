@@ -10,7 +10,7 @@ import UIKit
 
 struct ConferenceViewVModel {
     let conference: Conference
-    let resouces: [Resource]
+    let resources: [Resource]
     let people: [SpeakerViewVModel]
-    let topics: [TalkViewModel]
+    let topics: [TalkViewVModel]
 }

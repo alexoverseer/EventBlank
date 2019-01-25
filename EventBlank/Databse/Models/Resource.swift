@@ -8,8 +8,8 @@
 
 import UIKit
 
- public struct Resource: Codable {
-
+public struct Resource: Codable {
+    
     var uid: String
     var type: String
     var url: String?

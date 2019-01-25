@@ -2,7 +2,7 @@ import UIKit
 import Kingfisher
 
 class TopicViewController: UIViewController, TopicView {
-
+    
     var viewModel: TopicViewModel!
     
     @IBOutlet weak var topicNameLabel: UILabel!

@@ -6,7 +6,11 @@ struct PhotoBrowserModel {
     let sourceView: UIView
     let index: Int?
     
-    init(originImage: UIImage? = nil, images: [UIImage]? = nil, sourceView: UIView, index: Int? = nil) {
+    init(originImage: UIImage? = nil,
+         images: [UIImage]? = nil,
+         sourceView: UIView,
+         index: Int? = nil) {
+        
         self.originImage = originImage
         self.images = images
         self.sourceView = sourceView

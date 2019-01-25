@@ -9,7 +9,7 @@
 import Foundation
 
 struct Conference: Codable {
-
+    
     var uid: String
     var title: String
     var description: String?

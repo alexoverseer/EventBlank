@@ -24,7 +24,7 @@ class FeedTableViewCell: UITableViewCell, NibReusable {
     func configure(with viewModel: ConferenceViewVModel) {
         titleLabel.text = viewModel.conference.title
         descLabel.text = viewModel.conference.description
-        loadImage(resource: viewModel.resouces.first)
+        loadImage(resource: viewModel.resources.first)
     }
     
     private func loadImage(resource: Resource?) {

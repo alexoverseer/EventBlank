@@ -12,8 +12,8 @@ protocol ViewModelBuilder {
     func buildConferenceViewModels() -> [ConferenceViewVModel]
     func buildConferenceViewModel(conference: Conference) -> ConferenceViewVModel?
     
-    func buildTalkViewModel(talk: Topic) -> TalkViewModel?
-    func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewModel]
+    func buildTalkViewModel(talk: Topic) -> TalkViewVModel?
+    func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewVModel]
     
     func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewVModel?
 }

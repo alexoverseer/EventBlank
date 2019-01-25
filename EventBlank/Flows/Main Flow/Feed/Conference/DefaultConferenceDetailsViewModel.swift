@@ -7,7 +7,7 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     var tableDisplayManager: TableDisplayManager?
     var conference: ConferenceViewVModel!
     
-    var topics: [TalkViewModel] {
+    var topics: [TalkViewVModel] {
         return conference.topics
     }
     
@@ -24,7 +24,7 @@ final class DefaultConferenceViewModel: ConferenceViewModel {
     
     func onViewDidLoad(_ view: ConferenceView) {
         
-        let photoList = conference.resouces.compactMap { $0.local }
+        let photoList = conference.resources.compactMap { $0.local }
         
         output?.setTotalPhotosPagesNumber(pages: photoList.count)
         
@@ -64,10 +64,16 @@ extension DefaultConferenceViewModel: CollectionDisplayManagerDelegate {
     
     func openPhotoBrowser(originImage: UIImage?, fromCell: UICollectionViewCell) {
         
-        let originalPhotos = conference.resouces.compactMap { $0.local }
-                                                .compactMap { UIImage(named: $0) }
+        let originalPhotos = getPhotos(from: conference.resources)
         
-        output?.openPhotoBrowser(originImage: originImage, images: originalPhotos, cell: fromCell)
+        output?.openPhotoBrowser(originImage: originImage,
+                                 images: originalPhotos,
+                                 cell: fromCell)
+    }
+    
+    func getPhotos(from resources: [Resource]) -> [UIImage] {
+        return resources.compactMap { $0.local }
+            .compactMap { UIImage(named: $0) }
     }
 }
 

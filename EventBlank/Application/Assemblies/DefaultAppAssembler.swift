@@ -4,7 +4,6 @@ class DefaultAppAssembler: AppAssembler {
     
     private let container: Container
     private let assembler: Assembler
-    
     private (set) static var shared = DefaultAppAssembler()
     
     private init() {
@@ -22,7 +21,6 @@ class DefaultAppAssembler: AppAssembler {
     }
     
     var resolver: Resolver {
-        
         return container
     }
 }

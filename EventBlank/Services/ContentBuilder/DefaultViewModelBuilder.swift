@@ -30,33 +30,33 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         let people = speakerRepository.getBy(group: peopleIds).compactMap { buildSpeakerViewModel(speaker: $0)}
         let media = resourcesRepository.getBy(group: conference.images)
         let viewModel = ConferenceViewVModel(conference: conference,
-                                             resouces: media,
+                                             resources: media,
                                              people: people,
                                              topics: talks)
         
         return viewModel
     }
     
-    func buildTalkViewModel(talk: Topic) -> TalkViewModel? {
+    func buildTalkViewModel(talk: Topic) -> TalkViewVModel? {
         guard let speaker = speakerRepository.getBy(uid: talk.speaker),
             var speakerViewModel = buildSpeakerViewModel(speaker: speaker)
             else { return nil }
         let media = resourcesRepository.getBy(group: talk.media)
         
         speakerViewModel.topics = buildTalksViewModel(for: speakerViewModel)
-        let viewModel = TalkViewModel(talk: talk,
-                                      speaker: speakerViewModel,
-                                      resouces: media)
+        let viewModel = TalkViewVModel(talk: talk,
+                                       speaker: speakerViewModel,
+                                       resouces: media)
         
         return viewModel
     }
     
-    func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewModel] {
+    func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewVModel] {
         let talks = talksRepository.getBy(speaker: speaker.uid)
         
-        let viewModel = talks.compactMap { TalkViewModel(talk: $0,
-                                                         speaker: speaker,
-                                                         resouces: resourcesRepository.getBy(group: $0.media))}
+        let viewModel = talks.compactMap { TalkViewVModel(talk: $0,
+                                                          speaker: speaker,
+                                                          resouces: resourcesRepository.getBy(group: $0.media))}
         
         return viewModel
     }

@@ -28,25 +28,3 @@ class FeedListViewController: UIViewController, FeedListView {
 extension FeedListViewController: FeedListViewModelOutput {
     
 }
-
-extension FeedListViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return viewModel.datasource.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: FeedTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.configure(with: viewModel.datasource[indexPath.row])
-        
-        return cell
-    }
-}
-
-extension FeedListViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        onShowConferenceDetails?(viewModel.datasource[indexPath.row])
-    }
-}
