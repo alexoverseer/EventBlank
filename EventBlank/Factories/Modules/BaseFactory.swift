@@ -2,7 +2,7 @@ import Foundation
 import Swinject
 import SKPhotoBrowser
 
-class BaseFactory {
+class BaseFactory: NSObject {
     
     internal let resolver: Resolver
     

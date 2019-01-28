@@ -10,6 +10,7 @@ target 'EventBlank' do
   pod 'Reusable'
   pod 'SKPhotoBrowser'
   pod 'Kingfisher'
+  pod 'HCVimeoVideoExtractor'
 
   target 'EventBlankTests' do
     inherit! :search_paths

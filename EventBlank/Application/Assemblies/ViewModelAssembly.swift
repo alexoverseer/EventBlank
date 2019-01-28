@@ -21,8 +21,8 @@ class ViewModelAssembly: Assembly {
             return DefaultConferenceViewModel()
         }
         
-        container.register(TopicViewModel.self) { _ in
-            return DefaultTopicViewModel()
+        container.register(TopicViewModel.self) { resolver in
+            return DefaultTopicViewModel(videoExtractor: resolver.resolve(VimeoVideoExtractor.self)!)
         }
         
         container.register(SpeakerViewModel.self) { resolver in

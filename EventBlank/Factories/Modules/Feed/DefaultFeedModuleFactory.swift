@@ -1,5 +1,6 @@
 import UIKit
 import SKPhotoBrowser
+import AVKit
 
 final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
     
@@ -40,5 +41,13 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         viewModel.profile = speaker
         
         return controller
+    }
+    
+    func makeVideoPlayerOutput(videoURL: URL) -> Presentable {
+        let player = AVPlayer(url: videoURL)
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        
+        return playerController
     }
 }

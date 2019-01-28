@@ -23,6 +23,11 @@ final class RouterImplementation: NSObject, Router {
         rootController?.present(controller, animated: animated, completion: nil)
     }
     
+    func present(_ module: Presentable?, animated: Bool, completion: (() -> Void)?) {
+        guard let controller = module?.toPresent() else { return }
+        rootController?.present(controller, animated: animated, completion: completion)
+    }
+    
     func dismissModule() {
         dismissModule(animated: true, completion: nil)
     }
