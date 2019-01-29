@@ -8,4 +8,6 @@ protocol TopicViewModel: class {
     func topicName() -> String
     func speakerDetails() -> (name: String, title: String, imageURL: URL?)
     func getVideoDetails() -> VimeoVideo?
+    func setVideoQuality(quality: String?)
+    func currentVideoQuality() -> String?
 }

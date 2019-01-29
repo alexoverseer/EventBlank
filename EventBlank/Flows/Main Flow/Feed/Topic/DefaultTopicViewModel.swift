@@ -45,10 +45,20 @@ final class DefaultTopicViewModel: TopicViewModel {
             self?.output?.enablePlayerControlls()
             guard let thumbnail = self?.videoContents?.thumbnail else { return }
             self?.output?.setVideoThumbnail(url: thumbnail)
+            self?.output?.updateVideoQuality()
         }
     }
     
     func getVideoDetails() -> VimeoVideo? {
         return videoContents
+    }
+    
+    func setVideoQuality(quality: String?) {
+        videoContents?.changeQuality(to: quality)
+        self.output?.updateVideoQuality()
+    }
+    
+    func currentVideoQuality() -> String? {
+        return videoContents?.selectedQuality
     }
 }

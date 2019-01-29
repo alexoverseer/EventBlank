@@ -13,6 +13,8 @@ class TopicViewController: UIViewController, TopicView {
     @IBOutlet weak var videoLoadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var videoThumbnailImageView: UIImageView!
     @IBOutlet weak var videoPlayButton: UIButton!
+    @IBOutlet weak var videoQualityStackView: UIStackView!
+    @IBOutlet weak var videoResolutionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,12 @@ class TopicViewController: UIViewController, TopicView {
     }
     
     @IBAction func selectVideoQuality() {
+        showActionSheet { [weak self] selectedQuality in
+            self?.viewModel.setVideoQuality(quality: selectedQuality)
+        }
+    }
+    
+    @IBAction func showSpeaker() {
         
     }
 }
@@ -51,20 +59,41 @@ extension TopicViewController: TopicViewModelOutput {
     func enablePlayerControlls() {
         self.videoLoadingIndicator.stopAnimating()
         self.videoPlayButton.isHidden = false
+        self.videoQualityStackView.isHidden = false
+    }
+    
+    func updateVideoQuality() {
+        videoResolutionLabel.text = viewModel.currentVideoQuality()
     }
     
     func setVideoThumbnail(url: URL) {
         self.videoThumbnailImageView?.kf.setImage(with: url,
                                                   placeholder: nil,
-                                                  options: [.transition(.fade(0.5))],
+                                                  options: [.transition(.fade(0.4))],
                                                   progressBlock: nil,
                                                   completionHandler: { [weak self] result in
-                                                    switch result {
-                                                    case .success(let value):
+                                                    if let value = result.value {
                                                         self?.videoThumbnailImageView.image = value.image
-                                                    case .failure(let error):
-                                                        print("Error: \(error)")
                                                     }
         })
+    }
+}
+
+extension TopicViewController {
+    
+    func showActionSheet(handler: ((String?) -> Void)?) {
+        let optionMenu = UIAlertController(title: "Select quality",
+                                           message: nil,
+                                           preferredStyle: .actionSheet)
+        
+        viewModel.getVideoDetails()?.qualities?.forEach {
+            let action = UIAlertAction(title: $0, style: .default, handler: { action in
+                handler?(action.title)
+            })
+            optionMenu.addAction(action)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        optionMenu.addAction(cancelAction)
+        self.present(optionMenu, animated: true, completion: nil)
     }
 }

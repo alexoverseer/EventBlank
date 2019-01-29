@@ -26,6 +26,8 @@
                 <outlet property="topicNameLabel" destination="Gwj-23-j17" id="HSQ-4u-xLl"/>
                 <outlet property="videoLoadingIndicator" destination="gZr-k1-D8L" id="jks-vx-SkC"/>
                 <outlet property="videoPlayButton" destination="dKN-ig-Gqm" id="yU2-39-14d"/>
+                <outlet property="videoQualityStackView" destination="9f9-re-sR7" id="L6D-gj-tjP"/>
+                <outlet property="videoResolutionLabel" destination="C7B-HG-SCZ" id="H8f-kq-pNt"/>
                 <outlet property="videoThumbnailImageView" destination="pxm-Js-2AE" id="nrs-G9-3RE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -70,23 +72,35 @@
                                                 <action selector="showVideoPlayer" destination="-1" eventType="touchUpInside" id="Mer-2Z-Jc5"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-aE-YGG">
-                                            <rect key="frame" x="337" y="262" width="30" height="30"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="5Jn-Kb-9Os"/>
-                                                <constraint firstAttribute="width" constant="30" id="UpW-Sg-qeF"/>
-                                            </constraints>
-                                            <state key="normal" image="topic.video-resolution"/>
-                                            <connections>
-                                                <action selector="selectVideoQuality" destination="-1" eventType="touchUpInside" id="LU1-SI-rzL"/>
-                                            </connections>
-                                        </button>
+                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9f9-re-sR7">
+                                            <rect key="frame" x="285.66666666666669" y="262" width="81.333333333333314" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1080p" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7B-HG-SCZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                                    <color key="textColor" red="0.050980392159999999" green="0.87843137250000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-aE-YGG">
+                                                    <rect key="frame" x="51.333333333333314" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Fm4-54-JJD"/>
+                                                        <constraint firstAttribute="width" constant="30" id="cE2-np-XdA"/>
+                                                    </constraints>
+                                                    <state key="normal" image="topic.video-resolution"/>
+                                                    <connections>
+                                                        <action selector="selectVideoQuality" destination="-1" eventType="touchUpInside" id="LU1-SI-rzL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="F9O-aE-YGG" secondAttribute="bottom" constant="8" id="2YW-lD-eby"/>
+                                        <constraint firstAttribute="bottom" secondItem="9f9-re-sR7" secondAttribute="bottom" constant="8" id="1xR-hY-fX3"/>
                                         <constraint firstItem="gZr-k1-D8L" firstAttribute="centerX" secondItem="pxm-Js-2AE" secondAttribute="centerX" id="5lL-hM-M4g"/>
                                         <constraint firstItem="dKN-ig-Gqm" firstAttribute="centerY" secondItem="XbA-ve-HsX" secondAttribute="centerY" id="Aib-jj-tIY"/>
+                                        <constraint firstAttribute="trailing" secondItem="9f9-re-sR7" secondAttribute="trailing" constant="8" id="AzU-in-0QL"/>
                                         <constraint firstItem="gZr-k1-D8L" firstAttribute="centerY" secondItem="pxm-Js-2AE" secondAttribute="centerY" id="HBi-eM-E6n"/>
                                         <constraint firstAttribute="height" constant="300" id="IHK-Vv-Io7">
                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
@@ -95,7 +109,6 @@
                                         <constraint firstItem="dKN-ig-Gqm" firstAttribute="centerX" secondItem="XbA-ve-HsX" secondAttribute="centerX" id="Q7K-Ky-StR"/>
                                         <constraint firstAttribute="trailing" secondItem="pxm-Js-2AE" secondAttribute="trailing" id="g1p-54-IQJ"/>
                                         <constraint firstItem="pxm-Js-2AE" firstAttribute="leading" secondItem="XbA-ve-HsX" secondAttribute="leading" id="kBQ-Hh-oXy"/>
-                                        <constraint firstAttribute="trailing" secondItem="F9O-aE-YGG" secondAttribute="trailing" constant="8" id="klm-O6-Xxl"/>
                                         <constraint firstItem="pxm-Js-2AE" firstAttribute="top" secondItem="XbA-ve-HsX" secondAttribute="top" id="uPB-bE-cbD"/>
                                     </constraints>
                                 </view>
@@ -142,16 +155,25 @@
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFk-fF-A7T">
+                                    <rect key="frame" x="20" y="397" width="335" height="114.66666666666669"/>
+                                    <connections>
+                                        <action selector="showSpeaker" destination="-1" eventType="touchUpInside" id="0EN-4T-Hmj"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="c3t-6x-9ME" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" constant="20" id="4dW-wz-zrB"/>
                                 <constraint firstAttribute="trailing" secondItem="x6s-7W-tdz" secondAttribute="trailing" constant="20" id="5r1-b8-W1f"/>
                                 <constraint firstAttribute="trailing" secondItem="Pfv-DF-KKn" secondAttribute="trailing" constant="10" id="6Fz-Sz-7YO"/>
+                                <constraint firstItem="EFk-fF-A7T" firstAttribute="top" secondItem="c3t-6x-9ME" secondAttribute="bottom" constant="20" id="B0b-zm-ySQ"/>
                                 <constraint firstItem="psd-1y-hZv" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" constant="20" id="D6g-vp-ued"/>
                                 <constraint firstAttribute="bottom" secondItem="x6s-7W-tdz" secondAttribute="bottom" constant="50" id="Hp7-tg-4Rd"/>
                                 <constraint firstAttribute="trailing" secondItem="Gwj-23-j17" secondAttribute="trailing" constant="20" id="R8e-Qh-eVL"/>
                                 <constraint firstItem="x6s-7W-tdz" firstAttribute="top" secondItem="Pfv-DF-KKn" secondAttribute="bottom" constant="10" id="WgF-1S-b2Z"/>
+                                <constraint firstAttribute="trailing" secondItem="EFk-fF-A7T" secondAttribute="trailing" constant="20" id="XOF-xk-3Ep"/>
+                                <constraint firstAttribute="bottom" secondItem="EFk-fF-A7T" secondAttribute="bottom" constant="8" id="Y1F-bs-0CK"/>
                                 <constraint firstItem="Pfv-DF-KKn" firstAttribute="leading" secondItem="psd-1y-hZv" secondAttribute="trailing" constant="10" id="Yac-Vr-l4J"/>
                                 <constraint firstAttribute="trailing" secondItem="XbA-ve-HsX" secondAttribute="trailing" id="bhd-JR-IGu"/>
                                 <constraint firstItem="Pfv-DF-KKn" firstAttribute="top" secondItem="c3t-6x-9ME" secondAttribute="bottom" constant="20" id="eqo-2A-25L"/>
@@ -161,6 +183,7 @@
                                 <constraint firstItem="psd-1y-hZv" firstAttribute="top" secondItem="c3t-6x-9ME" secondAttribute="bottom" constant="20" id="hSe-1C-UqA"/>
                                 <constraint firstAttribute="trailing" secondItem="c3t-6x-9ME" secondAttribute="trailing" constant="20" id="k4C-Z9-geY"/>
                                 <constraint firstItem="Gwj-23-j17" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" constant="20" id="lLn-hL-8yr"/>
+                                <constraint firstItem="EFk-fF-A7T" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" constant="20" id="mqF-Sh-fkz"/>
                                 <constraint firstItem="XbA-ve-HsX" firstAttribute="leading" secondItem="SZC-K4-ORV" secondAttribute="leading" id="qcX-wF-abf"/>
                                 <constraint firstItem="Gwj-23-j17" firstAttribute="top" secondItem="XbA-ve-HsX" secondAttribute="bottom" constant="20" id="zrF-yP-8wr"/>
                             </constraints>
