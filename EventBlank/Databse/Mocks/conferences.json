@@ -1,32 +1,8 @@
 [{
-    "uid": "201301",
-    "title": "NSSpain 2013",
-    "description": "",
-    "images": []
-},
-{
-    "uid": "201401",
-    "title": "NSSpain 2014",
-    "description": "",
-    "images": []
-},
-{
-    "uid": "201501",
-    "title": "NSSpain 2015",
-    "description": "",
-    "images": []
-},
-{
-    "uid": "201601",
-    "title": "NSSpain 2016",
-    "description": "",
-    "images": []
-},
-{
     "uid": "201701",
     "title": "NSSpain 2017",
     "description": "The biggest iOS/macOS related event in the country carefully crafted for you by the community! Awesome speakers and lots of fun!",
-    "images": []
+    "images": ["0023", "0024", "0025","0026"]
 },
 {
     "uid": "201801",

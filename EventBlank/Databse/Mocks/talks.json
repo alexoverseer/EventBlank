@@ -142,4 +142,180 @@
     "media": ["0012"],
     "startDate": 1536936900,
     "endDate": 1536938700
+},{
+    "uid": "0000020",
+    "conference": "201701",
+    "title": "Effective Remote Communication",
+    "speaker": "00022",
+    "media": ["0027"],
+    "startDate": 1505370900,
+    "endDate": 1505373000
+},{
+    "uid": "0000021",
+    "conference": "201701",
+    "title": "Why You Shouldn't Write Tests (Yes, We're Going There)",
+    "speaker": "00039",
+    "media": ["0028"],
+    "startDate": 1505373000,
+    "endDate": 1505375100
+},{
+    "uid": "0000022",
+    "conference": "201701",
+    "title": "Highly maintainable App Architecture",
+    "speaker": "00042",
+    "media": ["0029"],
+    "startDate": 1505376600,
+    "endDate": 1505378700
+},{
+    "uid": "0000023",
+    "conference": "201701",
+    "title": "My Road to Damascus (or How I came to seriously consider Functional Reactive Programming)",
+    "speaker": "00030",
+    "media": ["0030"],
+    "startDate": 1505378700,
+    "endDate": 1505380800
+},{
+    "uid": "0000024",
+    "conference": "201701",
+    "title": "Understanding code signing: x509 and Apple",
+    "speaker": "00025",
+    "media": ["0031"],
+    "startDate": 1505380800,
+    "endDate": 1505383200
+},{
+    "uid": "0000025",
+    "conference": "201701",
+    "title": "Stop making average apps",
+    "speaker": "00026",
+    "media": ["0032"],
+    "startDate": 1505388600,
+    "endDate": 1505390700
+},{
+    "uid": "0000026",
+    "conference": "201701",
+    "title": "How I Spent All My Savings Reinventing Programming",
+    "speaker": "00032",
+    "media": ["0033"],
+    "startDate": 1505390700,
+    "endDate": 1505392800
+},{
+    "uid": "0000027",
+    "conference": "201701",
+    "title": "Start Where You Are: Iterating at Scale",
+    "speaker": "00035",
+    "media": ["0034"],
+    "startDate": 1505392800,
+    "endDate": 1505394900
+},{
+    "uid": "0000028",
+    "conference": "201701",
+    "title": "Creating a Computer Vision Machine Learning App From The Ground Up",
+    "speaker": "00044",
+    "media": ["0035"],
+    "startDate": 1505396400,
+    "endDate": 1505398500
+},{
+    "uid": "0000029",
+    "conference": "201701",
+    "title": "Disassembly for Fun and Profit",
+    "speaker": "00034",
+    "media": ["0036"],
+    "startDate": 1505398500,
+    "endDate": 1505400600
+},{
+    "uid": "0000030",
+    "conference": "201701",
+    "title": "Hyper fast app development with React Native",
+    "speaker": "00033",
+    "media": ["0038"],
+    "startDate": 1505400600,
+    "endDate": 1505403000
+},{
+    "uid": "0000031",
+    "conference": "201701",
+    "title": "Taming Animations",
+    "speaker": "00040",
+    "media": ["0039"],
+    "startDate": 1505455200,
+    "endDate": 1505457300
+},{
+    "uid": "0000032",
+    "conference": "201701",
+    "title": "Real World Accessibility",
+    "speaker": "00024",
+    "media": ["0040"],
+    "startDate": 1505457300,
+    "endDate": 1505459400
+},{
+    "uid": "0000033",
+    "conference": "201701",
+    "title": "How to get started contributing to open source projects",
+    "speaker": "00031",
+    "media": ["0041"],
+    "startDate": 1505459400,
+    "endDate": 1505461500
+},{
+    "uid": "0000034",
+    "conference": "201701",
+    "title": "Metaprogramming in Swift",
+    "speaker": "00027",
+    "media": ["0042"],
+    "startDate": 1505463000,
+    "endDate": 1505465100
+},{
+    "uid": "0000035",
+    "conference": "201701",
+    "title": "Building Buddybuild",
+    "speaker": "00041",
+    "media": ["0043"],
+    "startDate": 1505465100,
+    "endDate": 1505467200
+},{
+    "uid": "0000036",
+    "conference": "201701",
+    "title": "Asymmetric Cryptography Between iOS and the Rest of the World",
+    "speaker": "00036",
+    "media": ["0044"],
+    "startDate": 1505475000,
+    "endDate": 1505477100
+},{
+    "uid": "0000037",
+    "conference": "201701",
+    "title": "Facing the VIPER",
+    "speaker": "00023",
+    "media": ["0045"],
+    "startDate": 1505477100,
+    "endDate": 1505479200
+},{
+    "uid": "0000038",
+    "conference": "201701",
+    "title": "Gems of GameplayKit",
+    "speaker": "00038",
+    "media": ["0047"],
+    "startDate": 1505479200,
+    "endDate": 1505481300
+},{
+    "uid": "0000039",
+    "conference": "201701",
+    "title": "Building an IDE for iOS",
+    "speaker": "00037",
+    "media": ["0048"],
+    "startDate": 1505482800,
+    "endDate": 1505484900
+},{
+    "uid": "0000040",
+    "conference": "201701",
+    "title": "Growing",
+    "speaker": "00028",
+    "media": ["0049"],
+    "startDate": 1505484900,
+    "endDate": 1505487000
+},{
+    "uid": "0000041",
+    "conference": "201701",
+    "title": "Everyone is an API designer",
+    "speaker": "00029",
+    "media": ["0050"],
+    "startDate": 1505487000,
+    "endDate": 1505489400
 }]

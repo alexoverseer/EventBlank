@@ -59,28 +59,43 @@
                                             <rect key="frame" x="177.66666666666666" y="140" width="20" height="20"/>
                                             <color key="color" red="0.050980392159999999" green="0.87843137250000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </activityIndicatorView>
-                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-ig-Gqm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-ig-Gqm">
+                                            <rect key="frame" x="162.66666666666666" y="125" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="0M4-fu-s5A"/>
+                                                <constraint firstAttribute="height" constant="50" id="rFg-d0-VNf"/>
+                                            </constraints>
                                             <state key="normal" image="topic.play-button"/>
                                             <connections>
                                                 <action selector="showVideoPlayer" destination="-1" eventType="touchUpInside" id="Mer-2Z-Jc5"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-aE-YGG">
+                                            <rect key="frame" x="337" y="262" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="5Jn-Kb-9Os"/>
+                                                <constraint firstAttribute="width" constant="30" id="UpW-Sg-qeF"/>
+                                            </constraints>
+                                            <state key="normal" image="topic.video-resolution"/>
+                                            <connections>
+                                                <action selector="selectVideoQuality" destination="-1" eventType="touchUpInside" id="LU1-SI-rzL"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="F9O-aE-YGG" secondAttribute="bottom" constant="8" id="2YW-lD-eby"/>
                                         <constraint firstItem="gZr-k1-D8L" firstAttribute="centerX" secondItem="pxm-Js-2AE" secondAttribute="centerX" id="5lL-hM-M4g"/>
+                                        <constraint firstItem="dKN-ig-Gqm" firstAttribute="centerY" secondItem="XbA-ve-HsX" secondAttribute="centerY" id="Aib-jj-tIY"/>
                                         <constraint firstItem="gZr-k1-D8L" firstAttribute="centerY" secondItem="pxm-Js-2AE" secondAttribute="centerY" id="HBi-eM-E6n"/>
                                         <constraint firstAttribute="height" constant="300" id="IHK-Vv-Io7">
                                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                         </constraint>
-                                        <constraint firstAttribute="bottom" secondItem="dKN-ig-Gqm" secondAttribute="bottom" id="LhB-hb-3dF"/>
                                         <constraint firstAttribute="bottom" secondItem="pxm-Js-2AE" secondAttribute="bottom" id="Mag-1p-E0t"/>
-                                        <constraint firstItem="dKN-ig-Gqm" firstAttribute="top" secondItem="XbA-ve-HsX" secondAttribute="top" id="cHu-IA-Wcf"/>
+                                        <constraint firstItem="dKN-ig-Gqm" firstAttribute="centerX" secondItem="XbA-ve-HsX" secondAttribute="centerX" id="Q7K-Ky-StR"/>
                                         <constraint firstAttribute="trailing" secondItem="pxm-Js-2AE" secondAttribute="trailing" id="g1p-54-IQJ"/>
-                                        <constraint firstItem="dKN-ig-Gqm" firstAttribute="leading" secondItem="XbA-ve-HsX" secondAttribute="leading" id="g7H-bD-V7r"/>
                                         <constraint firstItem="pxm-Js-2AE" firstAttribute="leading" secondItem="XbA-ve-HsX" secondAttribute="leading" id="kBQ-Hh-oXy"/>
-                                        <constraint firstAttribute="trailing" secondItem="dKN-ig-Gqm" secondAttribute="trailing" id="pHt-Rn-vbV"/>
+                                        <constraint firstAttribute="trailing" secondItem="F9O-aE-YGG" secondAttribute="trailing" constant="8" id="klm-O6-Xxl"/>
                                         <constraint firstItem="pxm-Js-2AE" firstAttribute="top" secondItem="XbA-ve-HsX" secondAttribute="top" id="uPB-bE-cbD"/>
                                     </constraints>
                                 </view>
@@ -178,6 +193,7 @@
     </objects>
     <resources>
         <image name="blank.person" width="800" height="799"/>
-        <image name="topic.play-button" width="540" height="540"/>
+        <image name="topic.play-button" width="180" height="180"/>
+        <image name="topic.video-resolution" width="180" height="180"/>
     </resources>
 </document>

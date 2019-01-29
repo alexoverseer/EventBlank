@@ -25,8 +25,9 @@ class ConferenceViewController: UIViewController, ConferenceView {
         super.viewDidLayoutSubviews()
         
         updateTableHeight()
+        photosCollectionView.reloadData()
     }
-    
+
     private func setupUI() {
         navigationItem.title = "Details"
         

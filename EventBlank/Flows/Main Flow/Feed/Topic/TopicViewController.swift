@@ -36,6 +36,10 @@ class TopicViewController: UIViewController, TopicView {
         let video = viewModel.getVideoDetails()
         onShowVideoPlayer?(video)
     }
+    
+    @IBAction func selectVideoQuality() {
+        
+    }
 }
 
 extension TopicViewController: TopicViewModelOutput {

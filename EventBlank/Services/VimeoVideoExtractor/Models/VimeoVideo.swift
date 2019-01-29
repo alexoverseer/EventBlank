@@ -11,12 +11,12 @@ import HCVimeoVideoExtractor
 
 struct VimeoVideo {
     let title: String
-    let videoURL: URL?
+    let videoURL: [HCVimeoVideoQuality: URL]?
     let thumbnail: URL?
     
     init(with hcVimeoVideo: HCVimeoVideo) {
         self.title = hcVimeoVideo.title
-        self.videoURL = hcVimeoVideo.videoURL[.Quality1080p]
+        self.videoURL = hcVimeoVideo.videoURL
         self.thumbnail = hcVimeoVideo.thumbnailURL[.QualityBase]
     }
 }

@@ -63,7 +63,9 @@ final class FeedCoordinator: BaseCoordinator {
     private func showAVPlayerViewController(video: VimeoVideo?) {
         guard let vimeoVideo = video else { return }
         guard let videoURL = vimeoVideo.videoURL else { return }
-        let videoPlayerOutput = factory.makeVideoPlayerOutput(videoURL: videoURL)
+        #warning("TODO: Implement video quality selector")
+        let videoPlayerOutput = factory.makeVideoPlayerOutput(videoURL: URL(string: "")!)
+//        let videoPlayerOutput = factory.makeVideoPlayerOutput(videoURL: videoURL)
         router.present(videoPlayerOutput, animated: true)
     }
 }

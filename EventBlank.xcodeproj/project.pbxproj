@@ -34,6 +34,7 @@
 		822A9FFD21FEF863004CF876 /* VideoExtractorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822A9FFC21FEF863004CF876 /* VideoExtractorError.swift */; };
 		822AA00021FF0809004CF876 /* VimeoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822A9FFF21FF0809004CF876 /* VimeoVideo.swift */; };
 		822AA00221FF1A5B004CF876 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */; };
+		824728D722004DC6003BFB9E /* VideoQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824728D622004DC6003BFB9E /* VideoQuality.swift */; };
 		8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336921F85B3A00933AAF /* ConferenceRepository.swift */; };
 		8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* TalksRepository.swift */; };
 		8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* SpeakerRepository.swift */; };
@@ -179,6 +180,7 @@
 		822A9FFC21FEF863004CF876 /* VideoExtractorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExtractorError.swift; sourceTree = "<group>"; };
 		822A9FFF21FF0809004CF876 /* VimeoVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoVideo.swift; sourceTree = "<group>"; };
 		822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		824728D622004DC6003BFB9E /* VideoQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoQuality.swift; sourceTree = "<group>"; };
 		8261336921F85B3A00933AAF /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
 		8261336B21F85B7D00933AAF /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
 		8261336D21F85BA200933AAF /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				822A9FFF21FF0809004CF876 /* VimeoVideo.swift */,
+				824728D622004DC6003BFB9E /* VideoQuality.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1180,6 +1183,7 @@
 				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
 				62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */,
 				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
+				824728D722004DC6003BFB9E /* VideoQuality.swift in Sources */,
 				822AA00021FF0809004CF876 /* VimeoVideo.swift in Sources */,
 				BC01756621A635000090DAE2 /* DefaultSpeakerViewModel.swift in Sources */,
 				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,

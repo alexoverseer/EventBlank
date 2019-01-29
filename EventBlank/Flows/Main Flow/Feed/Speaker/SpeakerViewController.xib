@@ -116,7 +116,7 @@
                         <constraint firstAttribute="width" constant="50" id="I4a-Ql-2rJ"/>
                         <constraint firstAttribute="height" constant="50" id="gT9-zh-YEA"/>
                     </constraints>
-                    <state key="normal" image="other.twitter-logo"/>
+                    <state key="normal" image="speaker.twitter-logo"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="25"/>
@@ -146,6 +146,6 @@
     </objects>
     <resources>
         <image name="blank.person" width="800" height="799"/>
-        <image name="other.twitter-logo" width="37.305698394775391" height="37.305698394775391"/>
+        <image name="speaker.twitter-logo" width="37.305698394775391" height="37.305698394775391"/>
     </resources>
 </document>
