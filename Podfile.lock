@@ -1,24 +1,24 @@
 PODS:
-  - ESTabBarController-swift (2.6.4)
+  - ESTabBarController-swift (2.7)
   - HCVimeoVideoExtractor (0.0.1)
-  - Kingfisher (5.1.0)
-  - Reusable (4.0.4):
-    - Reusable/Storyboard (= 4.0.4)
-    - Reusable/View (= 4.0.4)
-  - Reusable/Storyboard (4.0.4)
-  - Reusable/View (4.0.4)
-  - SKPhotoBrowser (6.0.0)
-  - SwiftLint (0.28.1)
-  - Swinject (2.5.0)
+  - Kingfisher (5.4.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - SKPhotoBrowser (6.1.0)
+  - SwiftLint (0.32.0)
+  - Swinject (2.6.0)
 
 DEPENDENCIES:
-  - ESTabBarController-swift
-  - HCVimeoVideoExtractor
-  - Kingfisher
-  - Reusable
-  - SKPhotoBrowser
-  - SwiftLint
-  - Swinject
+  - ESTabBarController-swift (= 2.7)
+  - HCVimeoVideoExtractor (= 0.0.1)
+  - Kingfisher (= 5.4.0)
+  - Reusable (= 4.1.0)
+  - SKPhotoBrowser (= 6.1.0)
+  - SwiftLint (= 0.32.0)
+  - Swinject (= 2.6.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -31,14 +31,14 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
-  ESTabBarController-swift: 58cca4ab7de980657d99a02181c1ff310983e975
+  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
   HCVimeoVideoExtractor: d3c251280f7027ffd324266e1930b3618e0adb46
-  Kingfisher: fcec238063d17404fca89bf0a850583211c4cbf6
-  Reusable: 7fc772097df3e5fc86f59d8a7af9708e49b5ff55
-  SKPhotoBrowser: 76eb862685761707b5745fde7762757966565e07
-  SwiftLint: 7f5f7de0da74a649b16616cb5246ae323489656e
-  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
 
-PODFILE CHECKSUM: 1400820a200245a4b740328b8b7f11e8483eae0b
+PODFILE CHECKSUM: c78bc5364142f790756427b834eb87cecf482e80
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.6.1

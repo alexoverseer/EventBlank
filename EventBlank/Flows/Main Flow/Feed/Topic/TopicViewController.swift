@@ -74,8 +74,10 @@ extension TopicViewController: TopicViewModelOutput {
                                                   options: [.transition(.fade(0.4))],
                                                   progressBlock: nil,
                                                   completionHandler: { [weak self] result in
-                                                    if let value = result.value {
+                                                    switch result {
+                                                    case .success(let value):
                                                         self?.videoThumbnailImageView.image = value.image
+                                                    case .failure: break
                                                     }
         })
     }
