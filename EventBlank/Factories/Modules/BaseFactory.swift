@@ -2,7 +2,7 @@ import Foundation
 import Swinject
 import SKPhotoBrowser
 
-class BaseFactory {
+class BaseFactory: NSObject {
     
     internal let resolver: Resolver
     
@@ -14,13 +14,10 @@ class BaseFactory {
         
         let originImage = model.originImage ?? UIImage()
         let images = model.images?.map { SKPhoto.photoWithImage($0) }
-        let browser = SKPhotoBrowser(originImage: originImage,
-                                     photos: images ?? [SKPhoto.photoWithImage(originImage)],
-                                     animatedFromView: model.sourceView)
-        if let index = model.index {
-            browser.initializePageIndex(index)
-        }
-        
+        let index = model.index ?? 0
+        let browser = SKPhotoBrowser(photos: images ?? [SKPhoto.photoWithImage(originImage)],
+                                     initialPageIndex: index)
+
         return browser
     }
 }

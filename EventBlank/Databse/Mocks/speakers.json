@@ -144,4 +144,186 @@
     "title": "Point-Free",
     "photo": "https://2018.nsspain.com/images/speakers/stephen.jpeg",
     "page": "https://twitter.com/stephencelis"
+},
+{
+    "uid": "00022",
+    "name": "Peter Steinberger",
+    "title": "Founder and CEO, PSPDFKit",
+    "photo": "https://2017.nsspain.com/img/people/peter.jpg",
+    "page": "https://twitter.com/steipete"
+},
+{
+    "uid": "00023",
+    "name": "Esteban Torres",
+    "title": "iOS Developer, SoundCloud",
+    "photo": "https://2017.nsspain.com/img/people/esteban.jpg",
+    "page": "https://twitter.com/esttorhe"
+},
+{
+    "uid": "00024",
+    "name": "Sommer Panage",
+    "title": "Mobile Developer, Chorus",
+    "photo": "https://2017.nsspain.com/img/people/sommer.jpg",
+    "page": "https://twitter.com/sommer"
+},
+{
+    "uid": "00025",
+    "name": "Marin Usalj",
+    "title": "Señor Engineer, Lyft",
+    "photo": "https://2017.nsspain.com/img/people/marinu.jpg",
+    "page": "https://twitter.com/_supermarin"
+},
+{
+    "uid": "00026",
+    "name": "Sally Shepard",
+    "title": "iOS developer, Accessibility Evangelist, speaker, and writer.",
+    "photo": "https://2017.nsspain.com/img/people/sally.jpg",
+    "page": "https://twitter.com/mostgood"
+},
+{
+    "uid": "00027",
+    "name": "Krzysztof Zabłocki",
+    "title": "Dev, Speaker, Creator, The New York Times",
+    "photo": "https://2017.nsspain.com/img/people/krzysz.jpg",
+    "page": "https://twitter.com/merowing_"
+},
+{
+    "uid": "00028",
+    "name": "Roy Marmelstein",
+    "title": "Software Engineer, Spotify",
+    "photo": "https://2017.nsspain.com/img/people/roy.jpg",
+    "page": "https://twitter.com/marmelroy"
+},
+{
+    "uid": "00029",
+    "name": "John Sundell",
+    "title": "Software Developer, Hyper",
+    "photo": "https://2017.nsspain.com/img/people/john.jpg",
+    "page": "https://twitter.com/johnsundell"
+},
+{
+    "uid": "00030",
+    "name": "Abizer Nasir",
+    "title": "Contractor  platforms, Contractor",
+    "photo": "https://2017.nsspain.com/img/people/abizer.jpg",
+    "page": "https://twitter.com/abizern"
+},
+{
+    "uid": "00031",
+    "name": "Felix Krause",
+    "title": "Fastlane Guy, Google",
+    "photo": "https://2017.nsspain.com/img/people/felix.jpg",
+    "page": "https://twitter.com/krauseFx"
+},
+{
+    "uid": "00032",
+    "name": "Luis Solano",
+    "title": "Fool Stuck Developer, Independent",
+    "photo": "https://2017.nsspain.com/img/people/luis.jpg",
+    "page": "https://twitter.com/luisobo"
+},
+{
+    "uid": "00033",
+    "name": "Fabio Pelosin",
+    "title": "Independent",
+    "photo": "https://2017.nsspain.com/img/people/fabio.jpg",
+    "page": "https://twitter.com/fabiopelosin"
+},
+{
+    "uid": "00034",
+    "name": "Alexsander Akers",
+    "title": "iOS & Mac Developer, Microsoft To-Do",
+    "photo": "https://2017.nsspain.com/img/people/a2.jpg",
+    "page": "https://twitter.com/a2"
+},
+{
+    "uid": "00035",
+    "name": "Kathy Tafel",
+    "title": "Director I Mobile Engineering, meetup",
+    "photo": "https://2017.nsspain.com/img/people/kathy.jpg",
+    "page": "https://twitter.com/kathytafel"
+},
+{
+    "uid": "00036",
+    "name": "Ignacio Nieto",
+    "title": "Senior freelance developer, Independent",
+    "photo": "https://2017.nsspain.com/img/people/ignacio.jpg",
+    "page": "https://twitter.com/digitalleaves"
+},
+{
+    "uid": "00037",
+    "name": "Mark Villacampa",
+    "title": "Chauffeur herder, Cabify & RubyMotion",
+    "photo": "https://2017.nsspain.com/img/people/mark.jpg",
+    "page": "https://twitter.com/MarkVillacampa"
+},
+{
+    "uid": "00038",
+    "name": "Tobias Due Munk",
+    "title": "Design + Dev of apps, FindZebra + Storytel + ECCOshoes",
+    "photo": "https://2017.nsspain.com/img/people/tobias.jpg",
+    "page": "https://twitter.com/tobiasdm"
+},
+{
+    "uid": "00039",
+    "name": "Dave Schukin 🤘",
+    "title": "Cereal entrepreneur, Buglife",
+    "photo": "https://2017.nsspain.com/img/people/dave.jpg",
+    "page": "https://twitter.com/schukin"
+},
+{
+    "uid": "00040",
+    "name": "Sash Zats",
+    "title": "Software Engineer",
+    "photo": "https://2017.nsspain.com/img/people/zats.jpg",
+    "page": "https://twitter.com/zats"
+},
+{
+    "uid": "00041",
+    "name": "Dennis Pilarinos",
+    "title": "Founder & CEO, Buddybuild",
+    "photo": "https://2017.nsspain.com/img/people/dennis.png",
+    "page": "https://twitter.com/dennispilarinos"
+},
+{
+    "uid": "00042",
+    "name": "Aleksandar Vacić",
+    "title": "Software Developer, Radiant Tap",
+    "photo": "https://2017.nsspain.com/img/people/alek.jpg",
+    "page": "https://twitter.com/radiantav"
+},
+{
+    "uid": "00043",
+    "name": "Jorge Ortiz",
+    "title": "Founder & Mobile Dev Instructor, PoWWaU",
+    "photo": "https://2017.nsspain.com/img/people/jorge.jpg",
+    "page": "https://twitter.com/jdortiz"
+},
+{
+    "uid": "00044",
+    "name": "Jorge Para Molina",
+    "title": "Mobility Architect, Cognizant",
+    "photo": "https://2017.nsspain.com/img/people/jorgepara.jpg",
+    "page": "https://twitter.com/jparamolina"
+},
+{
+    "uid": "00045",
+    "name": "George Karavias",
+    "title": "Mobility Architect, Cognizant",
+    "photo": "https://2017.nsspain.com/img/people/george.jpg",
+    "page": "https://twitter.com/cognizant"
+},
+{
+    "uid": "00046",
+    "name": "Marcos Cobeña-Morián",
+    "title": "Senior Mobile Developer, DEVSDNA",
+    "photo": "https://2017.nsspain.com/img/people/marcos.png",
+    "page": "https://twitter.com/1Marcos2Cobena"
+},
+{
+    "uid": "00047",
+    "name": "Oriol Noya Giner",
+    "title": "Web & Mobile Developer, DEVSDNA",
+    "photo": "https://2017.nsspain.com/img/people/oriol.jpg",
+    "page": "https://twitter.com/oriolnoya"
 }]

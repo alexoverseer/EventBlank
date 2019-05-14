@@ -14,10 +14,10 @@ class DefaultAppAssembler: AppAssembler {
     func assembly() {
         let viewModelAssembly = ViewModelAssembly()
         let factoryAssembly = FactoryAssembly()
-        let networkServicesAssembly = NetworkAssembly()
+        let networkAssembly = NetworkAssembly()
         let builderAssembly = BuilderAssembly()
         
-        assembler.apply(assemblies: [builderAssembly, viewModelAssembly, factoryAssembly, networkServicesAssembly])
+        assembler.apply(assemblies: [builderAssembly, viewModelAssembly, factoryAssembly, networkAssembly])
     }
     
     var resolver: Resolver {

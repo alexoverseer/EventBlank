@@ -30,12 +30,19 @@
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
 		8218EE2F21EE211300BEEF1E /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC366C4821A464AD006111DF /* ViewModelAssembly.swift */; };
 		822926FC21FAF2CD00184741 /* FeedListViewController+TableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822926FB21FAF2CD00184741 /* FeedListViewController+TableViewDelegates.swift */; };
+		822A9FFB21FEF57E004CF876 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822A9FFA21FEF57E004CF876 /* Result.swift */; };
+		822A9FFD21FEF863004CF876 /* VideoExtractorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822A9FFC21FEF863004CF876 /* VideoExtractorError.swift */; };
+		822AA00021FF0809004CF876 /* VimeoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822A9FFF21FF0809004CF876 /* VimeoVideo.swift */; };
+		822AA00221FF1A5B004CF876 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */; };
+		824728D722004DC6003BFB9E /* VideoQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824728D622004DC6003BFB9E /* VideoQuality.swift */; };
 		8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336921F85B3A00933AAF /* ConferenceRepository.swift */; };
 		8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* TalksRepository.swift */; };
 		8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* SpeakerRepository.swift */; };
 		8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336F21F85BDC00933AAF /* ResourceRepository.swift */; };
 		82E9CEDE21F9CB34009D7F66 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */; };
 		82E9CEE021F9CD9E009D7F66 /* BuilderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CEDF21F9CD9E009D7F66 /* BuilderAssembly.swift */; };
+		82FBA03C21FB34D700AD7FB1 /* VimeoVideoExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBA03B21FB34D700AD7FB1 /* VimeoVideoExtractor.swift */; };
+		82FBA03E21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBA03D21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift */; };
 		BC01751721A5AA3D0090DAE2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */; };
 		BC01751921A5AA480090DAE2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */; };
 		BC01751B21A5B6BB0090DAE2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */; };
@@ -169,12 +176,19 @@
 		62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewVModel.swift; sourceTree = "<group>"; };
 		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		822926FB21FAF2CD00184741 /* FeedListViewController+TableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedListViewController+TableViewDelegates.swift"; sourceTree = "<group>"; };
+		822A9FFA21FEF57E004CF876 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		822A9FFC21FEF863004CF876 /* VideoExtractorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExtractorError.swift; sourceTree = "<group>"; };
+		822A9FFF21FF0809004CF876 /* VimeoVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoVideo.swift; sourceTree = "<group>"; };
+		822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		824728D622004DC6003BFB9E /* VideoQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoQuality.swift; sourceTree = "<group>"; };
 		8261336921F85B3A00933AAF /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
 		8261336B21F85B7D00933AAF /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
 		8261336D21F85BA200933AAF /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
 		8261336F21F85BDC00933AAF /* ResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRepository.swift; sourceTree = "<group>"; };
 		82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBuilder.swift; sourceTree = "<group>"; };
 		82E9CEDF21F9CD9E009D7F66 /* BuilderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderAssembly.swift; sourceTree = "<group>"; };
+		82FBA03B21FB34D700AD7FB1 /* VimeoVideoExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoVideoExtractor.swift; sourceTree = "<group>"; };
+		82FBA03D21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVimeoVideoExtractor.swift; sourceTree = "<group>"; };
 		BC01751621A5AA3D0090DAE2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		BC01751821A5AA480090DAE2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -359,6 +373,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		822A9FF921FEF56C004CF876 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				822A9FFA21FEF57E004CF876 /* Result.swift */,
+				822A9FFC21FEF863004CF876 /* VideoExtractorError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		822A9FFE21FF07FF004CF876 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				822A9FFF21FF0809004CF876 /* VimeoVideo.swift */,
+				824728D622004DC6003BFB9E /* VideoQuality.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8261336421F85A0200933AAF /* Databse */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +441,7 @@
 		82E9CEDB21F9CA58009D7F66 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				82FBA03A21FB346D00AD7FB1 /* VimeoVideoExtractor */,
 				62DE44B921A5BB5900C3AC14 /* ContentBuilder */,
 			);
 			path = Services;
@@ -422,6 +455,16 @@
 				62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		82FBA03A21FB346D00AD7FB1 /* VimeoVideoExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				822A9FFE21FF07FF004CF876 /* Models */,
+				82FBA03B21FB34D700AD7FB1 /* VimeoVideoExtractor.swift */,
+				82FBA03D21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift */,
+			);
+			path = VimeoVideoExtractor;
 			sourceTree = "<group>";
 		};
 		95409B95AAF8E58D1E16B6E5 /* Pods */ = {
@@ -713,6 +756,7 @@
 				BC70A3C221A56C5B00988533 /* Extensions */,
 				BC366C5121A46584006111DF /* Protocols */,
 				BC366C5821A46609006111DF /* Router */,
+				822A9FF921FEF56C004CF876 /* Network */,
 				8261336421F85A0200933AAF /* Databse */,
 				82E9CEDB21F9CA58009D7F66 /* Services */,
 				BC366C5D21A4669C006111DF /* Factories */,
@@ -767,6 +811,7 @@
 				BC70A3C321A56C7F00988533 /* UINavigationControllerExtensions.swift */,
 				BC70A3CE21A5720A00988533 /* UIColorExtensions.swift */,
 				BC01751A21A5B6BB0090DAE2 /* UIViewExtensions.swift */,
+				822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1030,6 +1075,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EventBlank/Pods-EventBlank-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HCVimeoVideoExtractor/HCVimeoVideoExtractor.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
@@ -1040,6 +1086,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCVimeoVideoExtractor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
@@ -1086,8 +1133,12 @@
 				62DE44BD21A5BBBA00C3AC14 /* TalkViewVModel.swift in Sources */,
 				62DE44B321A5B8E600C3AC14 /* DefaultSpeakerRepository.swift in Sources */,
 				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
+				82FBA03C21FB34D700AD7FB1 /* VimeoVideoExtractor.swift in Sources */,
 				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
+				822AA00221FF1A5B004CF876 /* UIViewControllerExtensions.swift in Sources */,
 				8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */,
+				822A9FFB21FEF57E004CF876 /* Result.swift in Sources */,
+				82FBA03E21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift in Sources */,
 				BC70A3E321A5953B00988533 /* AppInfoModuleFactory.swift in Sources */,
 				8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */,
 				62DE44AD21A5B59D00C3AC14 /* DefaultConferenceRepository.swift in Sources */,
@@ -1132,6 +1183,8 @@
 				BC366C3F21A462BB006111DF /* Alert.swift in Sources */,
 				62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */,
 				BC366C5B21A4660A006111DF /* Router.swift in Sources */,
+				824728D722004DC6003BFB9E /* VideoQuality.swift in Sources */,
+				822AA00021FF0809004CF876 /* VimeoVideo.swift in Sources */,
 				BC01756621A635000090DAE2 /* DefaultSpeakerViewModel.swift in Sources */,
 				BC366C4F21A46516006111DF /* ApplicationCoordinator.swift in Sources */,
 				BC01752221A5C09C0090DAE2 /* ConferenceViewModel.swift in Sources */,
@@ -1153,6 +1206,7 @@
 				62DE44B821A5B9CB00C3AC14 /* DefaultTalksRepository.swift in Sources */,
 				BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */,
 				BC366C4521A46487006111DF /* DefaultAppAssembler.swift in Sources */,
+				822A9FFD21FEF863004CF876 /* VideoExtractorError.swift in Sources */,
 				BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */,
 				62DE44BB21A5BB7A00C3AC14 /* ConferenceViewVModel.swift in Sources */,
 				BC70A3AE21A5529800988533 /* DefaultFeedListViewModel.swift in Sources */,

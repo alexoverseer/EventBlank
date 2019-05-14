@@ -19,12 +19,11 @@ class FeedListViewController: UIViewController, FeedListView {
         feedTableView.register(cellType: FeedTableViewCell.self)
         feedTableView.tableFooterView = UIView()
     }
-    
-    func reloadList() {
-        self.feedTableView.reloadData()
-    }
 }
 
 extension FeedListViewController: FeedListViewModelOutput {
     
+    func reloadList() {
+        self.feedTableView.reloadData()
+    }
 }

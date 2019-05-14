@@ -46,6 +46,12 @@ final class FeedCoordinator: BaseCoordinator {
     
     private func showTopicScreen(topic: TalkViewVModel) {
         let topicOutput = factory.makeTopicOutput(topic: topic)
+        topicOutput.onShowVideoPlayer = { [weak self] video in
+            self?.showAVPlayerViewController(video: video)
+        }
+        topicOutput.onShowSpeaker = { [weak self] speaker in
+            self?.showSpeakerScreen(speaker: speaker)
+        }
         router.push(topicOutput, animated: true)
     }
     
@@ -55,5 +61,14 @@ final class FeedCoordinator: BaseCoordinator {
             self?.showTopicScreen(topic: topic)
         }
         router.push(speakerOutput, animated: true)
+    }
+    
+    private func showAVPlayerViewController(video: VimeoVideo?) {
+        guard let vimeoVideo = video else { return }
+        guard let quality = vimeoVideo.selectedQuality else { return }
+        guard let videoURL = vimeoVideo.getVideoURL(for: quality) else { return }
+        
+        let videoPlayerOutput = factory.makeVideoPlayerOutput(videoURL: videoURL)
+        router.present(videoPlayerOutput, animated: true)
     }
 }
