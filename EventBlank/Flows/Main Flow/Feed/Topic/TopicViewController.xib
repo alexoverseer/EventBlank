@@ -158,7 +158,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFk-fF-A7T">
                                     <rect key="frame" x="20" y="397" width="335" height="114.66666666666669"/>
                                     <connections>
-                                        <action selector="showSpeaker" destination="-1" eventType="touchUpInside" id="0EN-4T-Hmj"/>
+                                        <action selector="showSpeaker" destination="-1" eventType="touchUpInside" id="K05-Od-Nm8"/>
                                     </connections>
                                 </button>
                             </subviews>

@@ -5,6 +5,7 @@ class TopicViewController: UIViewController, TopicView {
     
     var viewModel: TopicViewModel!
     var onShowVideoPlayer: ((VimeoVideo?) -> Void)?
+    var onShowSpeaker: ((SpeakerViewVModel) -> Void)?
     
     @IBOutlet weak var topicNameLabel: UILabel!
     @IBOutlet weak var speakerImageView: UIImageView!
@@ -46,7 +47,8 @@ class TopicViewController: UIViewController, TopicView {
     }
     
     @IBAction func showSpeaker() {
-        
+        let speaker = viewModel.topic.speaker
+        onShowSpeaker?(speaker)
     }
 }
 

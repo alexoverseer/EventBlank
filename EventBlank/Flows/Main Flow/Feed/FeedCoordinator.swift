@@ -49,6 +49,9 @@ final class FeedCoordinator: BaseCoordinator {
         topicOutput.onShowVideoPlayer = { [weak self] video in
             self?.showAVPlayerViewController(video: video)
         }
+        topicOutput.onShowSpeaker = { [weak self] speaker in
+            self?.showSpeakerScreen(speaker: speaker)
+        }
         router.push(topicOutput, animated: true)
     }
     

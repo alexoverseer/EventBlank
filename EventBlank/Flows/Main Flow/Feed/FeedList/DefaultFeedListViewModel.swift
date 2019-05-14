@@ -16,5 +16,6 @@ final class DefaultFeedListViewModel: FeedListViewModel {
     
     func onViewDidLoad(_ view: FeedListView) {
         datasource = builder.buildConferenceViewModels().reversed()
+        output?.reloadList()
     }
 }
