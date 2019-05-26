@@ -1,11 +1,12 @@
 import UIKit
+import MapKit
 
 class AppInfoViewController: UIViewController, AppInfoView {
     
+    @IBOutlet private weak var mapView: MKMapView!
+    
     var viewModel: AppInfoViewModel!
     var onOpenMapImage: ((UIImage?, UIView) -> Void)?
-    
-    @IBOutlet weak var mapImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +19,15 @@ class AppInfoViewController: UIViewController, AppInfoView {
         navigationItem.title = "About"
     }
     
-    @IBAction func didTapOnImage() {
-        onOpenMapImage?(mapImageView.image, mapImageView)
+    @IBAction private func togleCameraView(_ sender: UIButton) {
+        viewModel.openEventLocation()
     }
 }
 
 extension AppInfoViewController: AppInfoViewModelOutput {
     
+    func showRegion(_ region: MKCoordinateRegion, with annotation: MKPointAnnotation) {
+        mapView.setRegion(region, animated: true)
+        mapView.addAnnotation(annotation)
+    }
 }
