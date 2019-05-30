@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppInfoViewController" customModule="EventBlank" customModuleProvider="target">
             <connections>
-                <outlet property="mapImageView" destination="qQI-Np-kgG" id="As0-ZW-aqI"/>
+                <outlet property="mapView" destination="u2J-ZE-wFY" id="hgC-8k-XqR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,82 +26,72 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-fc-KdB">
-                    <rect key="frame" x="0.0" y="44" width="375" height="0.0"/>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2J-ZE-wFY">
+                    <rect key="frame" x="0.0" y="44" width="375" height="324.66666666666669"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzW-hb-aXk">
+                    <rect key="frame" x="309" y="302.66666666666669" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.87843137250000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="AlO-go-N0U"/>
+                        <constraint firstAttribute="height" constant="50" id="MJs-5A-LoB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="about.map"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="togleCameraView:" destination="-1" eventType="touchUpInside" id="ikh-9e-qff"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-sH-TMt">
+                    <rect key="frame" x="16" y="368.66666666666674" width="343" height="393.33333333333326"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" id="3RE-AX-7k0"/>
-                    </constraints>
-                </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="997-fO-WVO">
-                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keY-x8-KFh">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="652"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about.location" translatesAutoresizingMaskIntoConstraints="NO" id="qQI-Np-kgG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                    <gestureRecognizers/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="300" id="IDM-ie-J1C">
-                                            <variation key="heightClass=regular-widthClass=regular" constant="600"/>
-                                        </constraint>
-                                    </constraints>
-                                    <connections>
-                                        <outletCollection property="gestureRecognizers" destination="TCQ-5b-abj" appends="YES" id="ILD-nu-WFz"/>
-                                    </connections>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-7v-qH1">
-                                    <rect key="frame" x="20" y="320" width="335" height="312"/>
-                                    <mutableString key="text">NSSpain is organized by the “NSSpain Association”, a non­profit, volunteer­driven association to promote iOS/macOS development in Spain, funded by Luis Ascorbe and Borja Reinares.
+                    <mutableString key="text">About
 
-The members of the association have organized the “BetabeersRIO”, a popular monthly meetup for developers in La Rioja, also, a very popular meetup in Spain (there are the BetabeersMAD for Madrid, BetabeersBCN for Barcelona, etc).</mutableString>
-                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
-                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="rCa-7v-qH1" secondAttribute="bottom" constant="20" id="6Xs-qt-WAB"/>
-                                <constraint firstItem="qQI-Np-kgG" firstAttribute="leading" secondItem="keY-x8-KFh" secondAttribute="leading" id="Iin-1D-PqC"/>
-                                <constraint firstAttribute="trailing" secondItem="qQI-Np-kgG" secondAttribute="trailing" id="S42-8U-lPz"/>
-                                <constraint firstAttribute="trailing" secondItem="rCa-7v-qH1" secondAttribute="trailing" constant="20" id="VxF-S7-kaA"/>
-                                <constraint firstItem="qQI-Np-kgG" firstAttribute="top" secondItem="keY-x8-KFh" secondAttribute="top" id="ZR8-2L-tG8"/>
-                                <constraint firstItem="rCa-7v-qH1" firstAttribute="leading" secondItem="keY-x8-KFh" secondAttribute="leading" constant="20" id="fzw-fZ-wd0"/>
-                                <constraint firstItem="rCa-7v-qH1" firstAttribute="top" secondItem="qQI-Np-kgG" secondAttribute="bottom" constant="20" id="h9E-jP-CHW"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="keY-x8-KFh" secondAttribute="bottom" id="3by-X7-wSB"/>
-                        <constraint firstItem="keY-x8-KFh" firstAttribute="leading" secondItem="997-fO-WVO" secondAttribute="leading" id="XCi-mb-tU7"/>
-                        <constraint firstItem="keY-x8-KFh" firstAttribute="height" secondItem="997-fO-WVO" secondAttribute="height" priority="250" id="eCc-gi-8lZ"/>
-                        <constraint firstItem="keY-x8-KFh" firstAttribute="width" secondItem="997-fO-WVO" secondAttribute="width" id="f2y-tw-Kvl"/>
-                        <constraint firstAttribute="trailing" secondItem="keY-x8-KFh" secondAttribute="trailing" id="sJl-8M-jdZ"/>
-                        <constraint firstItem="keY-x8-KFh" firstAttribute="top" secondItem="997-fO-WVO" secondAttribute="top" id="zst-9g-AuO"/>
-                    </constraints>
-                </scrollView>
+NSSpain is organized by the “NSSpain Association”, a non­profit, volunteer­driven association to promote iOS/macOS development in Spain, funded by Luis Ascorbe and Borja Reinares.
+
+The members of the association have organized the “BetabeersRIO”, a popular monthly meetup for developers in La Rioja, also, a very popular meetup in Spain (there are the BetabeersMAD for Madrid, BetabeersBCN for Barcelona, etc).
+
+Travel
+By Plane
+A direct flight connects Madrid with Logroño (RJL). You can book it at theIberia website
+By Train
+Several trains arrive to Logroño from the whole country. More information is available at the Renfe website.
+By Bus
+A four hours from Madrid or less than six hours from Barcelona trip, you could also arrive to Logroño by bus. Alsa is the largest bus company of Spain.
+By Car
+The easiest way is to plan your trip using Google Maps or Waze 😀
+
+Accommodation
+We work closely with a travel agency to help you on your trip to NSSpain. Drop a few lines to infologrono@pisamundo.com, Att. to Laura C. Del Cerro, and she will try to take care of everything you need.
+
+Because of the wine festival it's usually all booked during the weekend, so if you're planning to stay a bit longer, wait no more and book right now!</mutableString>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="997-fO-WVO" secondAttribute="bottom" id="4zO-bj-mY0"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i6c-fc-KdB" secondAttribute="trailing" id="CW1-kD-LcJ"/>
-                <constraint firstItem="997-fO-WVO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fk4-tw-sd5"/>
-                <constraint firstItem="i6c-fc-KdB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z26-0W-RRH"/>
-                <constraint firstItem="997-fO-WVO" firstAttribute="top" secondItem="i6c-fc-KdB" secondAttribute="bottom" id="bSh-oM-cQP"/>
-                <constraint firstItem="i6c-fc-KdB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f4k-4Q-Moj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="997-fO-WVO" secondAttribute="trailing" id="uSI-xa-jPf"/>
+                <constraint firstItem="OP6-sH-TMt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2Y9-DC-psD"/>
+                <constraint firstItem="u2J-ZE-wFY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="95z-1i-ktk"/>
+                <constraint firstItem="DzW-hb-aXk" firstAttribute="bottom" secondItem="u2J-ZE-wFY" secondAttribute="bottom" constant="-16" id="EdQ-6x-kyh"/>
+                <constraint firstItem="OP6-sH-TMt" firstAttribute="top" secondItem="u2J-ZE-wFY" secondAttribute="bottom" id="IgF-qc-fRj"/>
+                <constraint firstItem="u2J-ZE-wFY" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="aPG-4d-Jav"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OP6-sH-TMt" secondAttribute="bottom" constant="16" id="deV-vR-JoW"/>
+                <constraint firstItem="u2J-ZE-wFY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gov-QD-mH0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DzW-hb-aXk" secondAttribute="trailing" constant="16" id="mMb-aA-LUS"/>
+                <constraint firstItem="u2J-ZE-wFY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qH9-C4-9mN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OP6-sH-TMt" secondAttribute="trailing" constant="16" id="xmO-2C-PFa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="153.69458128078819"/>
         </view>
-        <tapGestureRecognizer id="TCQ-5b-abj">
-            <connections>
-                <action selector="didTapOnImage" destination="-1" id="wtY-KF-Zym"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="about.location" width="1059" height="713"/>
+        <image name="about.map" width="90" height="90"/>
     </resources>
 </document>
