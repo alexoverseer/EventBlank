@@ -1,8 +1,8 @@
 import UIKit
 
-final class CoordinatorFactoryImplementation: CoordinatorFactory {
+public final class DefaultCoordinatorFactory: NSObject, CoordinatorFactory {
     
-    func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?) {
+    public func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?) {
         
         typealias Color = Stylesheet.Color
         
@@ -24,41 +24,41 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
         controller.viewControllers = controllers
         
         let coordinator = MainTabBarCoordinator(mainTabBarView: controller,
-                                                coordinatorFactory: CoordinatorFactoryImplementation(), router: router)
+                                                coordinatorFactory: DefaultCoordinatorFactory(), router: router)
         
         return (coordinator, controller)
     }
     
-    func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
+    public func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
         
         let factory = DefaultFeedModuleFactory()
         let coordinator = FeedCoordinator(router: router(navigationController),
                                           factory: factory,
-                                          coordinatorFactory: CoordinatorFactoryImplementation())
+                                          coordinatorFactory: DefaultCoordinatorFactory())
         
         return coordinator
     }
     
-    func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
+    public func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
         let factory = DefaultAppInfoModuleFactory()
         let coordinator = AppInfoCoordinator(router: router(navigationController),
                                              factory: factory,
-                                             coordinatorFactory: CoordinatorFactoryImplementation())
+                                             coordinatorFactory: DefaultCoordinatorFactory())
         
         return coordinator
     }
     
-    func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
+    public func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
         let factory = DefaultFavouritesModuleFactory()
         let coordinator = FavouritesCoordinator(router: router(navigationController),
                                                 factory: factory,
-                                                coordinatorFactory: CoordinatorFactoryImplementation())
+                                                coordinatorFactory: DefaultCoordinatorFactory())
         
         return coordinator
     }
 }
 
-extension CoordinatorFactoryImplementation {
+extension DefaultCoordinatorFactory {
     
     private func router(_ navController: UINavigationController?) -> Router {
         return RouterImplementation(rootController: navigationController(navController))

@@ -101,7 +101,7 @@
 		BC70A38B21A5441000988533 /* MainTabCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */; };
 		BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */; };
 		BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A38E21A5469E00988533 /* MainTabBarController.swift */; };
-		BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */; };
+		BC70A3A321A54AE100988533 /* DefaultCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A221A54AE100988533 /* DefaultCoordinatorFactory.swift */; };
 		BC70A3A521A5521C00988533 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A421A5521C00988533 /* FeedCoordinator.swift */; };
 		BC70A3A821A5527A00988533 /* FeedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A721A5527A00988533 /* FeedListView.swift */; };
 		BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */; };
@@ -249,7 +249,7 @@
 		BC70A38A21A5441000988533 /* MainTabCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinatorOutput.swift; sourceTree = "<group>"; };
 		BC70A38C21A5445900988533 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
 		BC70A38E21A5469E00988533 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
+		BC70A3A221A54AE100988533 /* DefaultCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoordinatorFactory.swift; sourceTree = "<group>"; };
 		BC70A3A421A5521C00988533 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		BC70A3A721A5527A00988533 /* FeedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListView.swift; sourceTree = "<group>"; };
 		BC70A3A921A5528400988533 /* FeedListViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewModelOutput.swift; sourceTree = "<group>"; };
@@ -672,7 +672,7 @@
 			isa = PBXGroup;
 			children = (
 				BC366C6021A46756006111DF /* CoordinatorFactory.swift */,
-				BC70A3A221A54AE100988533 /* CoordinatorFactoryImplementation.swift */,
+				BC70A3A221A54AE100988533 /* DefaultCoordinatorFactory.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -1127,7 +1127,7 @@
 				8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */,
 				BC70A3EE21A599F800988533 /* FavouritesListViewModel.swift in Sources */,
 				BC01753721A5CFF50090DAE2 /* TopicTableViewCell.swift in Sources */,
-				BC70A3A321A54AE100988533 /* CoordinatorFactoryImplementation.swift in Sources */,
+				BC70A3A321A54AE100988533 /* DefaultCoordinatorFactory.swift in Sources */,
 				BC01752021A5C08D0090DAE2 /* ConferenceViewModelOutput.swift in Sources */,
 				BC70A3F221A59A0D00988533 /* DefaultFavouritesListViewModel.swift in Sources */,
 				BC01753F21A5ECB10090DAE2 /* TableDelegatable.swift in Sources */,
