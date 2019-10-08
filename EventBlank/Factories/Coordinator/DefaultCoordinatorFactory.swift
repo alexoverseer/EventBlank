@@ -1,8 +1,21 @@
 import UIKit
 
-final class CoordinatorFactoryImplementation: CoordinatorFactory {
+public final class DefaultCoordinatorFactory: NSObject, CoordinatorFactory {
     
-    func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?) {
+    let feedModuleFactory: FeedModuleFactory
+    let appInfoModuleFactory: AppInfoModuleFactory
+    let favouritesModuleFactory: FavouritesModuleFactory
+    
+    public init(feedModuleFactory: FeedModuleFactory = DefaultFeedModuleFactory(),
+                appInfoModuleFactory: AppInfoModuleFactory = DefaultAppInfoModuleFactory(),
+                favouritesModuleFactory: FavouritesModuleFactory = DefaultFavouritesModuleFactory()){
+        
+        self.feedModuleFactory = feedModuleFactory
+        self.appInfoModuleFactory = appInfoModuleFactory
+        self.favouritesModuleFactory = favouritesModuleFactory
+    }
+    
+    public func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?) {
         
         typealias Color = Stylesheet.Color
         
@@ -24,41 +37,39 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
         controller.viewControllers = controllers
         
         let coordinator = MainTabBarCoordinator(mainTabBarView: controller,
-                                                coordinatorFactory: CoordinatorFactoryImplementation(), router: router)
+                                                coordinatorFactory: self, router: router)
         
         return (coordinator, controller)
     }
     
-    func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        
-        let factory = DefaultFeedModuleFactory(resolver: self.resolver)
+    public func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
+
         let coordinator = FeedCoordinator(router: router(navigationController),
-                                          factory: factory,
-                                          coordinatorFactory: CoordinatorFactoryImplementation())
+                                          factory: feedModuleFactory,
+                                          coordinatorFactory: self)
         
         return coordinator
     }
     
-    func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultAppInfoModuleFactory(resolver: self.resolver)
+    public func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
         let coordinator = AppInfoCoordinator(router: router(navigationController),
-                                             factory: factory,
-                                             coordinatorFactory: CoordinatorFactoryImplementation())
+                                             factory: appInfoModuleFactory,
+                                             coordinatorFactory: self)
         
         return coordinator
     }
     
-    func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultFavouritesModuleFactory(resolver: self.resolver)
+    public func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
+ 
         let coordinator = FavouritesCoordinator(router: router(navigationController),
-                                                factory: factory,
-                                                coordinatorFactory: CoordinatorFactoryImplementation())
+                                                factory: favouritesModuleFactory,
+                                                coordinatorFactory: self)
         
         return coordinator
     }
 }
 
-extension CoordinatorFactoryImplementation {
+extension DefaultCoordinatorFactory {
     
     private func router(_ navController: UINavigationController?) -> Router {
         return RouterImplementation(rootController: navigationController(navController))

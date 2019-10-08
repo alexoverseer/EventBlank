@@ -1,5 +1,5 @@
 import Foundation
 
-protocol SpeakerViewModelOutput {
+public protocol SpeakerViewModelOutput {
     func reloadData()
 }

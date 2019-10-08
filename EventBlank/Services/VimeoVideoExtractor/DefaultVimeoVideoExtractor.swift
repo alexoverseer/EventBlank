@@ -9,7 +9,7 @@
 import Foundation
 import HCVimeoVideoExtractor
 
-final class DefaultVimeoVideoExtractor: VimeoVideoExtractor {
+public final class DefaultVimeoVideoExtractor: NSObject, VimeoVideoExtractor {
     
     typealias VimeoHandler = (HCVimeoVideo?, Error?) -> Void
     
@@ -17,7 +17,7 @@ final class DefaultVimeoVideoExtractor: VimeoVideoExtractor {
         return HCVimeoVideoExtractor.fetchVideoURLFrom
     }
     
-    func fetchVideoURLFrom(path: String?, handler: @escaping Handler) {
+    public func fetchVideoURLFrom(path: String?, handler: @escaping Handler) {
         
         guard let validPath = path else {
             handler(.failure(VideoExtractorError.invalidPath))

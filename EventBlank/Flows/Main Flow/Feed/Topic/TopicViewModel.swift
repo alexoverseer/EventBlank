@@ -1,6 +1,6 @@
 import Foundation
 
-protocol TopicViewModel: class {
+public protocol TopicViewModel: class {
     var output: TopicViewModelOutput? { get set }
     var topic: TalkViewVModel! { get set }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Repository {
+public protocol Repository {
     associatedtype Element
     func getAll() -> [Element]
     func getBy(uid: String) -> Element?

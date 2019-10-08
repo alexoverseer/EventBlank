@@ -1,4 +1,4 @@
-protocol Router: Presentable {
+public protocol Router: Presentable {
     
     func present(_ module: Presentable?)
     func present(_ module: Presentable?, animated: Bool)

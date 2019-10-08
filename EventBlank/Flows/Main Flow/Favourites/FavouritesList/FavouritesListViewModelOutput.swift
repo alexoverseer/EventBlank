@@ -1,3 +1,3 @@
 import Foundation
 
-protocol FavouritesListViewModelOutput { }
+public protocol FavouritesListViewModelOutput { }

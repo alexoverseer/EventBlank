@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Conference: Codable {
+public struct Conference: Codable {
     
     var uid: String
     var title: String

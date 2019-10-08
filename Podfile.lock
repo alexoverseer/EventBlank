@@ -9,7 +9,6 @@ PODS:
   - Reusable/View (4.1.0)
   - SKPhotoBrowser (6.1.0)
   - SwiftLint (0.32.0)
-  - Swinject (2.6.0)
 
 DEPENDENCIES:
   - ESTabBarController-swift (= 2.7)
@@ -18,7 +17,6 @@ DEPENDENCIES:
   - Reusable (= 4.1.0)
   - SKPhotoBrowser (= 6.1.0)
   - SwiftLint (= 0.32.0)
-  - Swinject (= 2.6.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -28,7 +26,6 @@ SPEC REPOS:
     - Reusable
     - SKPhotoBrowser
     - SwiftLint
-    - Swinject
 
 SPEC CHECKSUMS:
   ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
@@ -37,8 +34,7 @@ SPEC CHECKSUMS:
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
   SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
-  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
 
-PODFILE CHECKSUM: c78bc5364142f790756427b834eb87cecf482e80
+PODFILE CHECKSUM: 86159d049368a6e2197484cb38fb53ac19ee98bf
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.7.5

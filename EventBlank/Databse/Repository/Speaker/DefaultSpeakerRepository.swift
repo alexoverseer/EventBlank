@@ -8,20 +8,20 @@
 
 import Foundation
 
-class DefaultSpeakerRepository: NSObject, SpeakerRepository {
+public class DefaultSpeakerRepository: NSObject, SpeakerRepository {
     
     let appCache = ApplicationCache.inappCache
     
-    func getBy(group: [String]) -> [Speaker] {
+    public func getBy(group: [String]) -> [Speaker] {
         let all = getAll()
         return all.filter { group.contains($0.uid) }
     }
     
-    func getAll() -> [Speaker] {
+    public func getAll() -> [Speaker] {
         return appCache.speakers
     }
     
-    func getBy(uid: String) -> Speaker? {
+    public func getBy(uid: String) -> Speaker? {
         let all = getAll()
         return all.first(where: { $0.uid == uid })
     }

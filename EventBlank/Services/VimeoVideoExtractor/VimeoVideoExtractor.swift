@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol VimeoVideoExtractor {
+public protocol VimeoVideoExtractor {
     typealias Handler = (Result<VimeoVideo, VideoExtractorError>) -> Void
     
     func fetchVideoURLFrom(path: String?, handler: @escaping Handler)

@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol ConferenceRepository: Repository { }
+public protocol ConferenceRepository: Repository {
+    
+}

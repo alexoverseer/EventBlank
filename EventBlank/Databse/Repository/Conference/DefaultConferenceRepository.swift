@@ -8,15 +8,15 @@
 
 import UIKit
 
-class DefaultConferenceRepository: NSObject, ConferenceRepository {
+public class DefaultConferenceRepository: NSObject, ConferenceRepository {
     
     let appCache = ApplicationCache.inappCache
     
-    func getAll() -> [Conference] {
+    public func getAll() -> [Conference] {
         return appCache.conferences
     }
     
-    func getBy(uid: String) -> Conference? {
+    public func getBy(uid: String) -> Conference? {
         let all = getAll()
         return all.first(where: { $0.uid == uid })
     }

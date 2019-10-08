@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct TalkViewVModel {
+public struct TalkViewVModel {
     let talk: Topic
     let speaker: SpeakerViewVModel
     let resouces: [Resource]

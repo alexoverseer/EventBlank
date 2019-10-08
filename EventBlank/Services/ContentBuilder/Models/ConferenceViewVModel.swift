@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ConferenceViewVModel {
+public struct ConferenceViewVModel {
     let conference: Conference
     let resources: [Resource]
     let people: [SpeakerViewVModel]

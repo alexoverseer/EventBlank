@@ -5,7 +5,6 @@ target 'EventBlank' do
   inhibit_all_warnings!
 
   pod 'SwiftLint', '0.32.0'
-  pod 'Swinject', '2.6.0'
   pod 'ESTabBarController-swift', '2.7'
   pod 'Reusable', '4.1.0'
   pod 'SKPhotoBrowser', '6.1.0'

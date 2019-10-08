@@ -6,9 +6,10 @@
 //  Copyright © 2018 Bananaland. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-final class DefaultViewModelBuilder {
+public final class DefaultViewModelBuilder: NSObject {
+    
     private let conferenceRepository = DefaultConferenceRepository()
     private let speakerRepository = DefaultSpeakerRepository()
     private let talksRepository = DefaultTalksRepository()
@@ -17,14 +18,14 @@ final class DefaultViewModelBuilder {
 
 extension DefaultViewModelBuilder: ViewModelBuilder {
     
-    func buildConferenceViewModels() -> [ConferenceViewVModel] {
+    public func buildConferenceViewModels() -> [ConferenceViewVModel] {
         let conferences = conferenceRepository.getAll()
         let viewModels = conferences.compactMap { buildConferenceViewModel(conference: $0) }
         
         return viewModels
     }
     
-    func buildConferenceViewModel(conference: Conference) -> ConferenceViewVModel? {
+    public func buildConferenceViewModel(conference: Conference) -> ConferenceViewVModel? {
         let talks = talksRepository.getBy(conference: conference.uid).compactMap { buildTalkViewModel(talk: $0)}
         let peopleIds = talks.map { $0.speaker.uid }
         let people = speakerRepository.getBy(group: peopleIds).compactMap { buildSpeakerViewModel(speaker: $0)}
@@ -37,7 +38,7 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         return viewModel
     }
     
-    func buildTalkViewModel(talk: Topic) -> TalkViewVModel? {
+    public func buildTalkViewModel(talk: Topic) -> TalkViewVModel? {
         guard let speaker = speakerRepository.getBy(uid: talk.speaker),
             var speakerViewModel = buildSpeakerViewModel(speaker: speaker)
             else { return nil }
@@ -50,8 +51,7 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         
         return viewModel
     }
-    
-    func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewVModel] {
+    public func buildTalksViewModel(for speaker: SpeakerViewVModel) -> [TalkViewVModel] {
         let talks = talksRepository.getBy(speaker: speaker.uid)
         
         let viewModel = talks.compactMap { TalkViewVModel(talk: $0,
@@ -61,7 +61,7 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         return viewModel
     }
     
-    func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewVModel? {
+    public func buildSpeakerViewModel(speaker: Speaker) -> SpeakerViewVModel? {
         let viewModel = SpeakerViewVModel(speaker: speaker)
         
         return viewModel

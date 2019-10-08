@@ -1,3 +1,3 @@
 import Foundation
 
-protocol BaseView: NSObjectProtocol, Presentable { }
+public protocol BaseView: NSObjectProtocol, Presentable { }

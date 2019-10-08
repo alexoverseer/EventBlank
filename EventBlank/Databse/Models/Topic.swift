@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Topic: Codable {
+public struct Topic: Codable {
     var uid: String
     var conference: String?
     var title: String
@@ -36,7 +36,7 @@ struct Topic: Codable {
 
 extension Topic {
     
-    init(from decoder: Swift.Decoder) throws {
+    public init(from decoder: Swift.Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         uid = try values.decode(String.self, forKey: .uid)

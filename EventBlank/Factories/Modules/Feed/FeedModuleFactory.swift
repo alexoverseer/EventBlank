@@ -1,6 +1,6 @@
 import UIKit
 
-protocol FeedModuleFactory {
+public protocol FeedModuleFactory {
     func makeFeedListOutput() -> FeedListView
     func makeConferenceOutput(conference: ConferenceViewVModel) -> ConferenceView
     func makePhotoBrowserOutput(model: PhotoBrowserModel) -> Presentable

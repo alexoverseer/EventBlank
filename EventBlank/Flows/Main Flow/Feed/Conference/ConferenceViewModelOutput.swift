@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ConferenceViewModelOutput {
+public protocol ConferenceViewModelOutput {
     func setTotalPhotosPagesNumber(pages: Int)
     func setCurrentPage(page: Int)
     func updateTableHeight()

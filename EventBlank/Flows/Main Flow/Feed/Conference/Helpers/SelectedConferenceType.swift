@@ -1,6 +1,6 @@
 import Foundation
 
-enum SelectedConferenceType: Int {
+public enum SelectedConferenceType: Int {
     case topics
     case speakers
     
