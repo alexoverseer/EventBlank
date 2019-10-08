@@ -8,25 +8,25 @@
 
 import Foundation
 
-class DefaultTalksRepository: NSObject, TalksRepository {
+public class DefaultTalksRepository: NSObject, TalksRepository {
     
     let appCache = ApplicationCache.inappCache
     
-    func getBy(conference: String) -> [Topic] {
+    public func getBy(conference: String) -> [Topic] {
         let all = getAll()
         return all.filter { $0.conference == conference }
     }
     
-    func getAll() -> [Topic] {
+    public func getAll() -> [Topic] {
         return appCache.topics
     }
     
-    func getBy(uid: String) -> Topic? {
+    public func getBy(uid: String) -> Topic? {
         let all = getAll()
         return all.first(where: { $0.uid == uid })
     }
     
-    func getBy(speaker: String) -> [Topic] {
+    public func getBy(speaker: String) -> [Topic] {
         let all = getAll()
         return all.filter { $0.speaker == speaker }
     }

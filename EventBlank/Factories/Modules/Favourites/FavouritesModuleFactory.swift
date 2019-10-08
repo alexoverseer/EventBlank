@@ -1,5 +1,5 @@
 import Foundation
 
-protocol FavouritesModuleFactory {
+public protocol FavouritesModuleFactory {
     func makeFavouritesListOutput() -> FavouritesListView
 }

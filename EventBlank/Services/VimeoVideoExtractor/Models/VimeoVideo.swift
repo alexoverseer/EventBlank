@@ -9,7 +9,7 @@
 import Foundation
 import HCVimeoVideoExtractor
 
-struct VimeoVideo {
+public struct VimeoVideo {
     let title: String
     let thumbnail: URL?
     var selectedQuality: String?

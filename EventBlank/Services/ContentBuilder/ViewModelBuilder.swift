@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ViewModelBuilder {
+public protocol ViewModelBuilder {
     func buildConferenceViewModels() -> [ConferenceViewVModel]
     func buildConferenceViewModel(conference: Conference) -> ConferenceViewVModel?
     

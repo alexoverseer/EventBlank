@@ -1,6 +1,6 @@
 import UIKit
 
-struct PhotoBrowserModel {
+public struct PhotoBrowserModel {
     let originImage: UIImage?
     let images: [UIImage]?
     let sourceView: UIView

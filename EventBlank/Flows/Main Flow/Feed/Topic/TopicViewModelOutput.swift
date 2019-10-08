@@ -1,6 +1,6 @@
 import Foundation
 
-protocol TopicViewModelOutput {
+public protocol TopicViewModelOutput {
     func showError(title: String, message: String)
     func enablePlayerControlls()
     func setVideoThumbnail(url: URL)

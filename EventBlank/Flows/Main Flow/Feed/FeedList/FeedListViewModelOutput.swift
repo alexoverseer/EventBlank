@@ -1,5 +1,5 @@
 import Foundation
 
-protocol FeedListViewModelOutput {
+public protocol FeedListViewModelOutput {
     func reloadList()
 }

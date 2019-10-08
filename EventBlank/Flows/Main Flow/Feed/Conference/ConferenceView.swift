@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ConferenceView: BaseView {
+public protocol ConferenceView: BaseView {
     var viewModel: ConferenceViewModel! { get set }
     var onShowTopic: ((TalkViewVModel) -> Void)? { get set }
     var onShowSpeaker: ((SpeakerViewVModel) -> Void)? { get set }

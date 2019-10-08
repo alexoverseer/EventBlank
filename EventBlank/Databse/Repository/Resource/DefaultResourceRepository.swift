@@ -8,20 +8,20 @@
 
 import Foundation
 
-class DefaultResourceRepository: NSObject, ResourceRepository {
+public class DefaultResourceRepository: NSObject, ResourceRepository {
     
     let appCache = ApplicationCache.inappCache
     
-    func getAll() -> [Resource] {
+    public func getAll() -> [Resource] {
         return appCache.resources
     }
     
-    func getBy(uid: String) -> Resource? {
+    public func getBy(uid: String) -> Resource? {
         let all = getAll()
         return all.first(where: { $0.uid == uid })
     }
     
-    func getBy(group: [String]) -> [Resource] {
+    public func getBy(group: [String]) -> [Resource] {
         let all = getAll()
         return all.filter { group.contains($0.uid) }
     }

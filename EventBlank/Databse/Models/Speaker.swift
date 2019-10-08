@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Speaker: Codable {
+public struct Speaker: Codable {
     var uid: String
     var name: String
     var title: String

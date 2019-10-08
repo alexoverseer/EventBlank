@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TalksRepository: Repository {
+public protocol TalksRepository: Repository where Element == Topic {
     func getBy(conference: String) -> [Topic]
     func getBy(speaker: String) -> [Topic]
 }

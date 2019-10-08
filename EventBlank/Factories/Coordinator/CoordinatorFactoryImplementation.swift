@@ -31,7 +31,7 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
     
     func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
         
-        let factory = DefaultFeedModuleFactory(resolver: self.resolver)
+        let factory = DefaultFeedModuleFactory()
         let coordinator = FeedCoordinator(router: router(navigationController),
                                           factory: factory,
                                           coordinatorFactory: CoordinatorFactoryImplementation())
@@ -40,7 +40,7 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
     }
     
     func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultAppInfoModuleFactory(resolver: self.resolver)
+        let factory = DefaultAppInfoModuleFactory()
         let coordinator = AppInfoCoordinator(router: router(navigationController),
                                              factory: factory,
                                              coordinatorFactory: CoordinatorFactoryImplementation())
@@ -49,7 +49,7 @@ final class CoordinatorFactoryImplementation: CoordinatorFactory {
     }
     
     func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultFavouritesModuleFactory(resolver: self.resolver)
+        let factory = DefaultFavouritesModuleFactory()
         let coordinator = FavouritesCoordinator(router: router(navigationController),
                                                 factory: factory,
                                                 coordinatorFactory: CoordinatorFactoryImplementation())

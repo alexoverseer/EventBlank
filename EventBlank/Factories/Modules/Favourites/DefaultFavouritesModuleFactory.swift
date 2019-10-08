@@ -1,9 +1,9 @@
 import Foundation
 
-final class DefaultFavouritesModuleFactory: BaseFactory, FavouritesModuleFactory {
+public final class DefaultFavouritesModuleFactory: BaseFactory, FavouritesModuleFactory {
     
-    func makeFavouritesListOutput() -> FavouritesListView {
-        let viewModel = resolver.resolve(FavouritesListViewModel.self)!
+    public func makeFavouritesListOutput() -> FavouritesListView {
+        let viewModel = DefaultFavouritesListViewModel()
         let controller = FavouritesListViewController()
         controller.viewModel = viewModel
         viewModel.output = controller

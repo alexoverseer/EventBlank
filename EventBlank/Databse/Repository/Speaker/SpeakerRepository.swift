@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SpeakerRepository: Repository {
-    func getBy(group: [String]) -> [Element]
+public protocol SpeakerRepository: Repository where Element == Speaker {
+    func getBy(group: [String]) -> [Speaker]
 }

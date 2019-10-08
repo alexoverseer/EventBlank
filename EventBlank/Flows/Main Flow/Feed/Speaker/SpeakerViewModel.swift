@@ -1,6 +1,6 @@
 import Foundation
 
-protocol SpeakerViewModel: class {
+public protocol SpeakerViewModel: class {
     var output: SpeakerViewModelOutput? { get set }
     var talks: [TalkViewVModel] { get set }
     var profile: SpeakerViewVModel! { get set }

@@ -2,10 +2,11 @@ import UIKit
 import SKPhotoBrowser
 import AVKit
 
-final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
+public final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
     
-    func makeFeedListOutput() -> FeedListView {
-        let viewModel = resolver.resolve(FeedListViewModel.self)!
+    public func makeFeedListOutput() -> FeedListView {
+        let viewModel = DefaultFeedListViewModel(builder: AppEnvironment.viewModelBuilder)
+        
         let controller = FeedListViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
@@ -13,8 +14,8 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makeConferenceOutput(conference: ConferenceViewVModel) -> ConferenceView {
-        let viewModel = resolver.resolve(ConferenceViewModel.self)!
+    public func makeConferenceOutput(conference: ConferenceViewVModel) -> ConferenceView {
+        let viewModel = DefaultConferenceViewModel()
         let controller = ConferenceViewController()
         viewModel.conference = conference
         controller.viewModel = viewModel
@@ -23,8 +24,8 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makeTopicOutput(topic: TalkViewVModel) -> TopicView {
-        let viewModel = resolver.resolve(TopicViewModel.self)!
+    public func makeTopicOutput(topic: TalkViewVModel) -> TopicView {
+        let viewModel = DefaultTopicViewModel(videoExtractor: AppEnvironment.videoExtractor)
         let controller = TopicViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
@@ -33,8 +34,8 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makeSpeakerOutput(speaker: SpeakerViewVModel) -> SpeakerView {
-        let viewModel = resolver.resolve(SpeakerViewModel.self)!
+    public func makeSpeakerOutput(speaker: SpeakerViewVModel) -> SpeakerView {
+        let viewModel = DefaultSpeakerViewModel(builder: AppEnvironment.viewModelBuilder)
         let controller = SpeakerViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
@@ -43,7 +44,7 @@ final class DefaultFeedModuleFactory: BaseFactory, FeedModuleFactory {
         return controller
     }
     
-    func makeVideoPlayerOutput(videoURL: URL) -> Presentable {
+    public func makeVideoPlayerOutput(videoURL: URL) -> Presentable {
         let player = AVPlayer(url: videoURL)
         let playerController = AVPlayerViewController()
         playerController.player = player

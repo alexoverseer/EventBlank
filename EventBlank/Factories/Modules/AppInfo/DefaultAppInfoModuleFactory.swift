@@ -1,10 +1,10 @@
 import UIKit
 import SKPhotoBrowser
 
-final class DefaultAppInfoModuleFactory: BaseFactory, AppInfoModuleFactory {
+public final class DefaultAppInfoModuleFactory: BaseFactory, AppInfoModuleFactory {
     
-    func makeAppInfoOutput() -> AppInfoView {
-        let viewModel = resolver.resolve(AppInfoViewModel.self)!
+    public func makeAppInfoOutput() -> AppInfoView {
+        let viewModel = DefaultAppInfoViewModel()
         let controller = AppInfoViewController()
         controller.viewModel = viewModel
         viewModel.output = controller
@@ -12,7 +12,7 @@ final class DefaultAppInfoModuleFactory: BaseFactory, AppInfoModuleFactory {
         return controller
     }
     
-    func makeImageBrowserOutput(model: PhotoBrowserModel) -> Presentable {
+    public func makeImageBrowserOutput(model: PhotoBrowserModel) -> Presentable {
         return makePhotoBrowserOutput(model: model)
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol FeedListViewModel: class {
+public protocol FeedListViewModel: class {
     var output: FeedListViewModelOutput? { get set }
     var datasource: [ConferenceViewVModel] { get set }
     

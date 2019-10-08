@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ResourceRepository: Repository {
+public protocol ResourceRepository: Repository where Element == Resource {
     func getBy(group: [String]) -> [Resource]
 }

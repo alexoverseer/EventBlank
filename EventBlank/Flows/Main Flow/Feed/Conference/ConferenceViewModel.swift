@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ConferenceViewModel: class {
+public protocol ConferenceViewModel: class {
     var output: ConferenceViewModelOutput? { get set }
     var conference: ConferenceViewVModel! { get set }
     

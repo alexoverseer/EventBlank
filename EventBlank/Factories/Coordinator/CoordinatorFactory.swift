@@ -1,5 +1,4 @@
-import Foundation
-import Swinject
+import UIKit
 
 protocol CoordinatorFactory {
     
@@ -8,10 +7,4 @@ protocol CoordinatorFactory {
     func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator
     func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator
     func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator
-}
-
-extension CoordinatorFactory {
-    var resolver: Resolver {
-        return DefaultAppAssembler.shared.resolver
-    }
 }

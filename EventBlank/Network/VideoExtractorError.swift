@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum VideoExtractorError: Error {
+public enum VideoExtractorError: Error {
     case invalidPath
     case invalidURL
     case extractorError(Error)
