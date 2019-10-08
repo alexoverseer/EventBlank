@@ -29,4 +29,9 @@ extension AppEnvironment {
     static var videoExtractor: VimeoVideoExtractor {
         return current.vimeoVideoExtractor
     }
+    
+    static var coordinatorFactory: CoordinatorFactory {
+        return current.coordinatorFactory
+    }
+    
 }

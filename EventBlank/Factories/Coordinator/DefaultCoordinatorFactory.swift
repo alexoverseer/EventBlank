@@ -2,6 +2,19 @@ import UIKit
 
 public final class DefaultCoordinatorFactory: NSObject, CoordinatorFactory {
     
+    let feedModuleFactory: FeedModuleFactory
+    let appInfoModuleFactory: AppInfoModuleFactory
+    let favouritesModuleFactory: FavouritesModuleFactory
+    
+    public init(feedModuleFactory: FeedModuleFactory = DefaultFeedModuleFactory(),
+                appInfoModuleFactory: AppInfoModuleFactory = DefaultAppInfoModuleFactory(),
+                favouritesModuleFactory: FavouritesModuleFactory = DefaultFavouritesModuleFactory()){
+        
+        self.feedModuleFactory = feedModuleFactory
+        self.appInfoModuleFactory = appInfoModuleFactory
+        self.favouritesModuleFactory = favouritesModuleFactory
+    }
+    
     public func makeTabBarCoordinator(router: Router) -> (configurator: Coordinator & MainTabCoordinatorOutput, toPresent: Presentable?) {
         
         typealias Color = Stylesheet.Color
@@ -24,35 +37,33 @@ public final class DefaultCoordinatorFactory: NSObject, CoordinatorFactory {
         controller.viewControllers = controllers
         
         let coordinator = MainTabBarCoordinator(mainTabBarView: controller,
-                                                coordinatorFactory: DefaultCoordinatorFactory(), router: router)
+                                                coordinatorFactory: self, router: router)
         
         return (coordinator, controller)
     }
     
     public func makeFeedCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        
-        let factory = DefaultFeedModuleFactory()
+
         let coordinator = FeedCoordinator(router: router(navigationController),
-                                          factory: factory,
-                                          coordinatorFactory: DefaultCoordinatorFactory())
+                                          factory: feedModuleFactory,
+                                          coordinatorFactory: self)
         
         return coordinator
     }
     
     public func makeAboutCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultAppInfoModuleFactory()
         let coordinator = AppInfoCoordinator(router: router(navigationController),
-                                             factory: factory,
-                                             coordinatorFactory: DefaultCoordinatorFactory())
+                                             factory: appInfoModuleFactory,
+                                             coordinatorFactory: self)
         
         return coordinator
     }
     
     public func makeFavouritesCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let factory = DefaultFavouritesModuleFactory()
+ 
         let coordinator = FavouritesCoordinator(router: router(navigationController),
-                                                factory: factory,
-                                                coordinatorFactory: DefaultCoordinatorFactory())
+                                                factory: favouritesModuleFactory,
+                                                coordinatorFactory: self)
         
         return coordinator
     }
