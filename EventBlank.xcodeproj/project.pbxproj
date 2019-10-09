@@ -11,6 +11,8 @@
 		508FB03C234C7D3B006D1AEF /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508FB03B234C7D3B006D1AEF /* AppEnvironment.swift */; };
 		508FB03E234C7D48006D1AEF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508FB03D234C7D48006D1AEF /* Environment.swift */; };
 		508FB040234C7D5D006D1AEF /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508FB03F234C7D5D006D1AEF /* DeviceType.swift */; };
+		508FB042234DBC9E006D1AEF /* AnyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508FB041234DBC9E006D1AEF /* AnyRepository.swift */; };
+		508FB044234DBD2A006D1AEF /* InCacheConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508FB043234DBD29006D1AEF /* InCacheConferenceRepository.swift */; };
 		62DE449721A595B900C3AC14 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449621A595B900C3AC14 /* Conference.swift */; };
 		62DE449921A595D100C3AC14 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449821A595D100C3AC14 /* Speaker.swift */; };
 		62DE449B21A595E100C3AC14 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE449A21A595E100C3AC14 /* Topic.swift */; };
@@ -20,15 +22,11 @@
 		62DE44A621A5A85F00C3AC14 /* resources.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A521A5A85F00C3AC14 /* resources.json */; };
 		62DE44A821A5A86F00C3AC14 /* talks.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DE44A721A5A86F00C3AC14 /* talks.json */; };
 		62DE44AA21A5B4CB00C3AC14 /* FileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */; };
-		62DE44AD21A5B59D00C3AC14 /* DefaultConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AC21A5B59D00C3AC14 /* DefaultConferenceRepository.swift */; };
 		62DE44AF21A5B6E800C3AC14 /* ApplicationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */; };
 		62DE44B121A5B8C300C3AC14 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B021A5B8C300C3AC14 /* Repository.swift */; };
-		62DE44B321A5B8E600C3AC14 /* DefaultSpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B221A5B8E600C3AC14 /* DefaultSpeakerRepository.swift */; };
-		62DE44B621A5B98F00C3AC14 /* DefaultResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B521A5B98F00C3AC14 /* DefaultResourceRepository.swift */; };
-		62DE44B821A5B9CB00C3AC14 /* DefaultTalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */; };
 		62DE44BB21A5BB7A00C3AC14 /* ConferenceViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */; };
 		62DE44BD21A5BBBA00C3AC14 /* TalkViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BC21A5BBBA00C3AC14 /* TalkViewVModel.swift */; };
-		62DE44BF21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift */; };
+		62DE44BF21A5BBFA00C3AC14 /* AppViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44BE21A5BBFA00C3AC14 /* AppViewModelBuilder.swift */; };
 		62DE44C121A5CE2100C3AC14 /* SpeakerViewVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */; };
 		684E20E073382404189F5E36 /* Pods_EventBlank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95354DF73E836795643492 /* Pods_EventBlank.framework */; };
 		822926FC21FAF2CD00184741 /* FeedListViewController+TableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822926FB21FAF2CD00184741 /* FeedListViewController+TableViewDelegates.swift */; };
@@ -36,10 +34,9 @@
 		822AA00021FF0809004CF876 /* VimeoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822A9FFF21FF0809004CF876 /* VimeoVideo.swift */; };
 		822AA00221FF1A5B004CF876 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */; };
 		824728D722004DC6003BFB9E /* VideoQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824728D622004DC6003BFB9E /* VideoQuality.swift */; };
-		8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336921F85B3A00933AAF /* ConferenceRepository.swift */; };
-		8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* TalksRepository.swift */; };
-		8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* SpeakerRepository.swift */; };
-		8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336F21F85BDC00933AAF /* ResourceRepository.swift */; };
+		8261336C21F85B7D00933AAF /* InCacheTalksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336B21F85B7D00933AAF /* InCacheTalksRepository.swift */; };
+		8261336E21F85BA200933AAF /* InCacheSpeakersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336D21F85BA200933AAF /* InCacheSpeakersRepository.swift */; };
+		8261337021F85BDC00933AAF /* InCacheResourceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261336F21F85BDC00933AAF /* InCacheResourceRepository.swift */; };
 		82E9CEDE21F9CB34009D7F66 /* ViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */; };
 		82FBA03C21FB34D700AD7FB1 /* VimeoVideoExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBA03B21FB34D700AD7FB1 /* VimeoVideoExtractor.swift */; };
 		82FBA03E21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBA03D21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift */; };
@@ -154,6 +151,8 @@
 		508FB03B234C7D3B006D1AEF /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		508FB03D234C7D48006D1AEF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		508FB03F234C7D5D006D1AEF /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		508FB041234DBC9E006D1AEF /* AnyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepository.swift; sourceTree = "<group>"; };
+		508FB043234DBD29006D1AEF /* InCacheConferenceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InCacheConferenceRepository.swift; sourceTree = "<group>"; };
 		5A95354DF73E836795643492 /* Pods_EventBlank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventBlank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DE449621A595B900C3AC14 /* Conference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		62DE449821A595D100C3AC14 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
@@ -164,15 +163,11 @@
 		62DE44A521A5A85F00C3AC14 /* resources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resources.json; sourceTree = "<group>"; };
 		62DE44A721A5A86F00C3AC14 /* talks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = talks.json; sourceTree = "<group>"; };
 		62DE44A921A5B4CB00C3AC14 /* FileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDecoder.swift; sourceTree = "<group>"; };
-		62DE44AC21A5B59D00C3AC14 /* DefaultConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConferenceRepository.swift; sourceTree = "<group>"; };
 		62DE44AE21A5B6E800C3AC14 /* ApplicationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCache.swift; sourceTree = "<group>"; };
 		62DE44B021A5B8C300C3AC14 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		62DE44B221A5B8E600C3AC14 /* DefaultSpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeakerRepository.swift; sourceTree = "<group>"; };
-		62DE44B521A5B98F00C3AC14 /* DefaultResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResourceRepository.swift; sourceTree = "<group>"; };
-		62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTalksRepository.swift; sourceTree = "<group>"; };
 		62DE44BA21A5BB7A00C3AC14 /* ConferenceViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceViewVModel.swift; sourceTree = "<group>"; };
 		62DE44BC21A5BBBA00C3AC14 /* TalkViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewVModel.swift; sourceTree = "<group>"; };
-		62DE44BE21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewModelBuilder.swift; sourceTree = "<group>"; };
+		62DE44BE21A5BBFA00C3AC14 /* AppViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModelBuilder.swift; sourceTree = "<group>"; };
 		62DE44C021A5CE2100C3AC14 /* SpeakerViewVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerViewVModel.swift; sourceTree = "<group>"; };
 		6C4FB8056E5B75C1A39423CD /* Pods-EventBlankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBlankTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBlankTests/Pods-EventBlankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		822926FB21FAF2CD00184741 /* FeedListViewController+TableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedListViewController+TableViewDelegates.swift"; sourceTree = "<group>"; };
@@ -180,10 +175,9 @@
 		822A9FFF21FF0809004CF876 /* VimeoVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoVideo.swift; sourceTree = "<group>"; };
 		822AA00121FF1A5B004CF876 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		824728D622004DC6003BFB9E /* VideoQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoQuality.swift; sourceTree = "<group>"; };
-		8261336921F85B3A00933AAF /* ConferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceRepository.swift; sourceTree = "<group>"; };
-		8261336B21F85B7D00933AAF /* TalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksRepository.swift; sourceTree = "<group>"; };
-		8261336D21F85BA200933AAF /* SpeakerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerRepository.swift; sourceTree = "<group>"; };
-		8261336F21F85BDC00933AAF /* ResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRepository.swift; sourceTree = "<group>"; };
+		8261336B21F85B7D00933AAF /* InCacheTalksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCacheTalksRepository.swift; sourceTree = "<group>"; };
+		8261336D21F85BA200933AAF /* InCacheSpeakersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCacheSpeakersRepository.swift; sourceTree = "<group>"; };
+		8261336F21F85BDC00933AAF /* InCacheResourceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InCacheResourceRepository.swift; sourceTree = "<group>"; };
 		82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBuilder.swift; sourceTree = "<group>"; };
 		82FBA03B21FB34D700AD7FB1 /* VimeoVideoExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoVideoExtractor.swift; sourceTree = "<group>"; };
 		82FBA03D21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultVimeoVideoExtractor.swift; sourceTree = "<group>"; };
@@ -345,6 +339,7 @@
 				8261336821F85AFA00933AAF /* Talks */,
 				8261336621F85AF000933AAF /* Speaker */,
 				8261336721F85AF400933AAF /* Resource */,
+				508FB041234DBC9E006D1AEF /* AnyRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -363,7 +358,7 @@
 			children = (
 				82E9CEDC21F9CAFE009D7F66 /* Models */,
 				82E9CEDD21F9CB34009D7F66 /* ViewModelBuilder.swift */,
-				62DE44BE21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift */,
+				62DE44BE21A5BBFA00C3AC14 /* AppViewModelBuilder.swift */,
 			);
 			path = ContentBuilder;
 			sourceTree = "<group>";
@@ -408,8 +403,7 @@
 		8261336521F85AE700933AAF /* Conference */ = {
 			isa = PBXGroup;
 			children = (
-				8261336921F85B3A00933AAF /* ConferenceRepository.swift */,
-				62DE44AC21A5B59D00C3AC14 /* DefaultConferenceRepository.swift */,
+				508FB043234DBD29006D1AEF /* InCacheConferenceRepository.swift */,
 			);
 			path = Conference;
 			sourceTree = "<group>";
@@ -417,8 +411,7 @@
 		8261336621F85AF000933AAF /* Speaker */ = {
 			isa = PBXGroup;
 			children = (
-				8261336D21F85BA200933AAF /* SpeakerRepository.swift */,
-				62DE44B221A5B8E600C3AC14 /* DefaultSpeakerRepository.swift */,
+				8261336D21F85BA200933AAF /* InCacheSpeakersRepository.swift */,
 			);
 			path = Speaker;
 			sourceTree = "<group>";
@@ -426,8 +419,7 @@
 		8261336721F85AF400933AAF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				8261336F21F85BDC00933AAF /* ResourceRepository.swift */,
-				62DE44B521A5B98F00C3AC14 /* DefaultResourceRepository.swift */,
+				8261336F21F85BDC00933AAF /* InCacheResourceRepository.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -435,8 +427,7 @@
 		8261336821F85AFA00933AAF /* Talks */ = {
 			isa = PBXGroup;
 			children = (
-				8261336B21F85B7D00933AAF /* TalksRepository.swift */,
-				62DE44B721A5B9CB00C3AC14 /* DefaultTalksRepository.swift */,
+				8261336B21F85B7D00933AAF /* InCacheTalksRepository.swift */,
 			);
 			path = Talks;
 			sourceTree = "<group>";
@@ -1102,31 +1093,29 @@
 			files = (
 				62DE449921A595D100C3AC14 /* Speaker.swift in Sources */,
 				BC70A3A821A5527A00988533 /* FeedListView.swift in Sources */,
-				62DE44B621A5B98F00C3AC14 /* DefaultResourceRepository.swift in Sources */,
 				BC366C6321A4678C006111DF /* BaseFactory.swift in Sources */,
 				BC366C3E21A462BB006111DF /* TabItem.swift in Sources */,
 				BC01757621A6ACB60090DAE2 /* SpeakerImageHelper.swift in Sources */,
 				BC70A3CD21A571D000988533 /* Stylesheet.swift in Sources */,
 				62DE44BD21A5BBBA00C3AC14 /* TalkViewVModel.swift in Sources */,
-				62DE44B321A5B8E600C3AC14 /* DefaultSpeakerRepository.swift in Sources */,
 				BC366C5621A465A4006111DF /* Coordinator.swift in Sources */,
 				82FBA03C21FB34D700AD7FB1 /* VimeoVideoExtractor.swift in Sources */,
 				BC366C7021A46831006111DF /* DefaultFeedModuleFactory.swift in Sources */,
 				822AA00221FF1A5B004CF876 /* UIViewControllerExtensions.swift in Sources */,
-				8261336C21F85B7D00933AAF /* TalksRepository.swift in Sources */,
+				8261336C21F85B7D00933AAF /* InCacheTalksRepository.swift in Sources */,
 				82FBA03E21FB34E800AD7FB1 /* DefaultVimeoVideoExtractor.swift in Sources */,
 				BC70A3E321A5953B00988533 /* AppInfoModuleFactory.swift in Sources */,
-				8261337021F85BDC00933AAF /* ResourceRepository.swift in Sources */,
-				62DE44AD21A5B59D00C3AC14 /* DefaultConferenceRepository.swift in Sources */,
+				8261337021F85BDC00933AAF /* InCacheResourceRepository.swift in Sources */,
 				BC70A3E521A5954B00988533 /* DefaultAppInfoModuleFactory.swift in Sources */,
 				BC70A3D821A5940800988533 /* AppInfoViewModelOutput.swift in Sources */,
 				BC70A3FE21A59C3300988533 /* FavouritesListViewController.swift in Sources */,
 				BC366C6A21A467F5006111DF /* FeedModuleFactory.swift in Sources */,
 				BC01751E21A5C0780090DAE2 /* ConferenceView.swift in Sources */,
 				BC01756921A6350E0090DAE2 /* SpeakerViewController.swift in Sources */,
-				8261336E21F85BA200933AAF /* SpeakerRepository.swift in Sources */,
+				8261336E21F85BA200933AAF /* InCacheSpeakersRepository.swift in Sources */,
 				BC70A3EE21A599F800988533 /* FavouritesListViewModel.swift in Sources */,
 				BC01753721A5CFF50090DAE2 /* TopicTableViewCell.swift in Sources */,
+				508FB044234DBD2A006D1AEF /* InCacheConferenceRepository.swift in Sources */,
 				BC70A3A321A54AE100988533 /* DefaultCoordinatorFactory.swift in Sources */,
 				BC01752021A5C08D0090DAE2 /* ConferenceViewModelOutput.swift in Sources */,
 				BC70A3F221A59A0D00988533 /* DefaultFavouritesListViewModel.swift in Sources */,
@@ -1149,7 +1138,6 @@
 				BC01755021A62E2B0090DAE2 /* TableDisplayManagerDelegate.swift in Sources */,
 				BC70A3D321A593A000988533 /* AboutCoordinator.swift in Sources */,
 				62DE449B21A595E100C3AC14 /* Topic.swift in Sources */,
-				8261336A21F85B3A00933AAF /* ConferenceRepository.swift in Sources */,
 				82E9CEDE21F9CB34009D7F66 /* ViewModelBuilder.swift in Sources */,
 				62DE449D21A5966100C3AC14 /* Resource.swift in Sources */,
 				BC70A38D21A5445900988533 /* MainTabBarCoordinator.swift in Sources */,
@@ -1178,7 +1166,6 @@
 				BC70A3D621A593FB00988533 /* AppInfoView.swift in Sources */,
 				BC70A3DC21A5942600988533 /* DefaultAppInfoViewModel.swift in Sources */,
 				62DE44AF21A5B6E800C3AC14 /* ApplicationCache.swift in Sources */,
-				62DE44B821A5B9CB00C3AC14 /* DefaultTalksRepository.swift in Sources */,
 				BC70A3AA21A5528400988533 /* FeedListViewModelOutput.swift in Sources */,
 				822A9FFD21FEF863004CF876 /* VideoExtractorError.swift in Sources */,
 				BC70A3CF21A5720A00988533 /* UIColorExtensions.swift in Sources */,
@@ -1189,11 +1176,12 @@
 				BC366C5C21A4660A006111DF /* RouterImplementation.swift in Sources */,
 				BC70A38F21A5469E00988533 /* MainTabBarController.swift in Sources */,
 				62DE44AA21A5B4CB00C3AC14 /* FileDecoder.swift in Sources */,
-				62DE44BF21A5BBFA00C3AC14 /* DefaultViewModelBuilder.swift in Sources */,
+				62DE44BF21A5BBFA00C3AC14 /* AppViewModelBuilder.swift in Sources */,
 				BC366C5021A46516006111DF /* BaseCoordinator.swift in Sources */,
 				BCCBA75F229B2625004DE6FE /* EventRegionBuilder.swift in Sources */,
 				BC70A38921A5432E00988533 /* MainTabBarView.swift in Sources */,
 				62DE44C121A5CE2100C3AC14 /* SpeakerViewVModel.swift in Sources */,
+				508FB042234DBC9E006D1AEF /* AnyRepository.swift in Sources */,
 				BC01755421A632600090DAE2 /* TopicView.swift in Sources */,
 				BC43944221A4609400FE2BE1 /* AppDelegate.swift in Sources */,
 				BC01755A21A632920090DAE2 /* DefaultTopicViewModel.swift in Sources */,

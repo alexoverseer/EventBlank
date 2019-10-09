@@ -8,7 +8,7 @@ public final class DefaultCoordinatorFactory: NSObject, CoordinatorFactory {
     
     public init(feedModuleFactory: FeedModuleFactory = DefaultFeedModuleFactory(),
                 appInfoModuleFactory: AppInfoModuleFactory = DefaultAppInfoModuleFactory(),
-                favouritesModuleFactory: FavouritesModuleFactory = DefaultFavouritesModuleFactory()){
+                favouritesModuleFactory: FavouritesModuleFactory = DefaultFavouritesModuleFactory()) {
         
         self.feedModuleFactory = feedModuleFactory
         self.appInfoModuleFactory = appInfoModuleFactory
