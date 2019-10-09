@@ -8,15 +8,27 @@
 
 import Foundation
 
-public final class DefaultViewModelBuilder: NSObject {
+public final class AppViewModelBuilder: NSObject {
     
-    private let conferenceRepository = DefaultConferenceRepository()
-    private let speakerRepository = DefaultSpeakerRepository()
-    private let talksRepository = DefaultTalksRepository()
-    private let resourcesRepository = DefaultResourceRepository()
+    public let conferenceRepository: AnyRepository<Conference>
+    public let talksRepository: AnyRepository<Topic>
+    public let resourceRepository: AnyRepository<Resource>
+    public let speakerRepository: AnyRepository<Speaker>
+    
+    public init(_ conferenceCache: AnyRepository<Conference> =           AnyRepository(InCacheConferenceRepository()),
+                _ talksCache: AnyRepository<Topic> = AnyRepository(InCacheTalksRepository()),
+                _ resourceCache: AnyRepository<Resource> = AnyRepository(InCacheResourceRepository()),
+                _ speakerCache: AnyRepository<Speaker> = AnyRepository(InCacheSpeakersRepository())) {
+        
+        self.conferenceRepository = conferenceCache
+        self.talksRepository = talksCache
+        self.resourceRepository = resourceCache
+        self.speakerRepository = speakerCache
+    }
+
 }
 
-extension DefaultViewModelBuilder: ViewModelBuilder {
+extension AppViewModelBuilder: ViewModelBuilder {
     
     public func buildConferenceViewModels() -> [ConferenceViewVModel] {
         let conferences = conferenceRepository.getAll()
@@ -29,7 +41,7 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         let talks = talksRepository.getBy(conference: conference.uid).compactMap { buildTalkViewModel(talk: $0)}
         let peopleIds = talks.map { $0.speaker.uid }
         let people = speakerRepository.getBy(group: peopleIds).compactMap { buildSpeakerViewModel(speaker: $0)}
-        let media = resourcesRepository.getBy(group: conference.images)
+        let media = resourceRepository.getBy(group: conference.images)
         let viewModel = ConferenceViewVModel(conference: conference,
                                              resources: media,
                                              people: people,
@@ -42,7 +54,7 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         guard let speaker = speakerRepository.getBy(uid: talk.speaker),
             var speakerViewModel = buildSpeakerViewModel(speaker: speaker)
             else { return nil }
-        let media = resourcesRepository.getBy(group: talk.media)
+        let media = resourceRepository.getBy(group: talk.media)
         
         speakerViewModel.topics = buildTalksViewModel(for: speakerViewModel)
         let viewModel = TalkViewVModel(talk: talk,
@@ -56,7 +68,7 @@ extension DefaultViewModelBuilder: ViewModelBuilder {
         
         let viewModel = talks.compactMap { TalkViewVModel(talk: $0,
                                                           speaker: speaker,
-                                                          resouces: resourcesRepository.getBy(group: $0.media))}
+                                                          resouces: resourceRepository.getBy(group: $0.media))}
         
         return viewModel
     }

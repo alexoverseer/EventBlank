@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol Repository {
-    associatedtype Element
+    associatedtype Element: Decodable
     func getAll() -> [Element]
     func getBy(uid: String) -> Element?
 }

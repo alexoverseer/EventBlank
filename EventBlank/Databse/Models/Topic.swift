@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Topic: Codable {
+public class Topic: Codable {
     var uid: String
     var conference: String?
     var title: String
@@ -32,11 +32,8 @@ public struct Topic: Codable {
         case startDateTimeInterval = "startDate"
         case endDateTimeTimeInterval = "endDate"
     }
-}
-
-extension Topic {
     
-    public init(from decoder: Swift.Decoder) throws {
+    public required init(from decoder: Swift.Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         uid = try values.decode(String.self, forKey: .uid)

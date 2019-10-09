@@ -2,13 +2,15 @@
 //  ConferenceRepository.swift
 //  EventBlank
 //
-//  Created by Ilia Gutu on 11/21/18.
-//  Copyright © 2018 Bananaland. All rights reserved.
+//  Created by Alexandr Pavlov on 1/23/19.
+//  Copyright © 2019 Bananaland. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-public class DefaultConferenceRepository: NSObject, ConferenceRepository {
+public class InCacheConferenceRepository: Repository {
+ 
+    public init() {}
     
     let appCache = ApplicationCache.inappCache
     
